@@ -1,30 +1,102 @@
-<CTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Striped by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <title>{{ page.title }}</title>
-    <!-- link to main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-  </head>
-  <body>
-    <nav>
-        <ul>
-                  <li><a headref="/">Home</a></li>
-                          <li><a href="/about">About</a></li>
-                                         <li><a href="/cv">CV</a></li>
-                                                 <li><a href="/blog">Blog</a></li>
-                                                     </ul>
-                                                     </nav>
-                                                     <div class="container">
+	<head>
+		<title>{{ page.title }}</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="{{ site.url }}/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+		<script src="{{ site.baseurl }}/js/skel.min.js"></script>
+		<script src="{{ site.baseurl }}/js/skel-layers.min.js"></script>
+		<script src="{{ site.baseurl }}/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/skel.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/style-desktop.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<!--
+		Note: Set the body element's class to "left-sidebar" to position the sidebar on the left.
+		Set it to "right-sidebar" to, you guessed it, position it on the right.
+	-->
+	<body class="left-sidebar">
 
-                                                       {headref{ content }}
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-                                                     </div><!-- /.container -->
-                                                     <footer>
-                                                         <ul>
-                                                                                          <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>com
-                                                                                                  <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-                                                                                                </ul>
-                                                                                                </footer>
-                                                                                              </body>
-                                                                                            </html>
+				<!-- Content -->
+					<div id="content">
+						<div class="inner">
+                            {{content}}
+						</div>
+					</div>
 
+				<!-- Sidebar -->
+					<div id="sidebar">
+					
+						<!-- Logo -->
+							<h1 id="logo"><a href="#">STRIPED</a></h1>
+					
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+                                    
+									<li><a href="/">Home</a></li>
+									<li><a href="/blog">Notes</a></li>
+									<li><a href="/about.html">About Me</a></li>
+									
+								</ul>
+							</nav>
+
+						<!-- Search -->
+							
+					
+						<!-- Text -->
+							<section class="box text-style1">
+								<div class="inner">
+									<p>
+										 <strong>Breifly </strong> Machine Learning enthusisast, PhD student at Max Planck Inst.<br> Programming primarily with Python.
+									</p>
+								</div>
+							</section>
+					
+						<!-- Recent Posts -->
+							<section class="box recent-posts">
+								<header>
+									<h2>Recent Posts</h2>
+								</header>
+								<ul>
+									{% for post in site.posts limit:20 %}  
+                                       <li>  
+                                           <span>{{ post.date | date_to_string }}</span> &raquo;  
+                                           <a href="{{ BASE_PATH }}{{ post.url }}">  
+                                           {{ post.title }}</a>  
+                                       </li>  
+                                    {% endfor %} 
+								</ul>
+							</section>
+					
+						
+					
+						<!-- Calendar -->
+							
+						
+						<!-- Copyright -->
+							<ul id="copyright">
+								<li>&copy; Behzad Tabibian.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+
+					</div>
+
+			</div>
+
+	</body>
+</html>
