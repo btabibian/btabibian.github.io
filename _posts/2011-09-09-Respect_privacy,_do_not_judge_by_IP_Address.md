@@ -4,7 +4,7 @@ title: Respect privacy, do not judge by IP Address
 categories: notes
 date: 2011-09-09
 ---
-<div class="entry-content"><div xmlns="http://www.w3.org/1999/xhtml"><table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div style="display:inline;float:left;margin-top:5px;margin-right:10px;margin-bottom:0px;margin-left:0px"><font face="arial, sans-serif" size="2"><a href="../../notes/respectprivacydonotjudgebyipaddress/Human%20Rights%20Logo.jpg?attredirects=0/index.html" imageanchor="1"><img border="0" height="200" src="https://sites.google.com/site/btabibian/_/rsrc/1315596994308/notes/respectprivacydonotjudgebyipaddress/Human%20Rights%20Logo.jpg" width="200"/></a></font></div><font face="arial, sans-serif" size="2">Human rights and freedom
+<div style="display:inline;float:left;margin-top:5px;margin-right:10px;margin-bottom:0px;margin-left:0px"><font face="arial, sans-serif" size="2"><a href="../../notes/respectprivacydonotjudgebyipaddress/Human%20Rights%20Logo.jpg?attredirects=0/index.html" imageanchor="1"><img border="0" height="200" src="https://sites.google.com/site/btabibian/_/rsrc/1315596994308/notes/respectprivacydonotjudgebyipaddress/Human%20Rights%20Logo.jpg" width="200"/></a></font></div><font face="arial, sans-serif" size="2">Human rights and freedom
 of speech are one of the corner-stones of Internet technology. Within last few decades a huge progress has been made in technology, enabling people from all over
 the world to communicate through safe and secure channels. However, unfortunately
 this technology has not yet been able to address all of the security and
@@ -14,6 +14,7 @@ banning citizens of certain countries from their services. Most of these
 companies disable many features of their services by using techniques known in
 the field of computer science as Anti-Features in conjunction with the
 limitations of today’s technology. </font>
+<!--break-->
 <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:12.0pt"><span style="color:black"><font face="arial, sans-serif" size="2">Mechanics of their
 approach is to use IP address (Internet Protocol Address, an address which makes It
 possible to transfer a message from one location in a network of connected
@@ -48,4 +49,4 @@ for IPv6 are well described in the book "Protocol Politics" by Laura DeNardls. I
 is important to note that however, the problem is not yet eliminated in IPv6
 and therefore an action is required to call all members of the Internet
 society (including companies and governments) to avoid such practices which compromise
-users’ privacy.</font></span></p></div></td></tr></tbody></table></div></div>
+users’ privacy.</font></span></p>

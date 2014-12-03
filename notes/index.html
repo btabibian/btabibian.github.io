@@ -4,18 +4,24 @@ title: Notes
 ---
 
 	  {% for post in site.posts %}
-        {% if post.categories contains 'notes' %}
-        <article class="box post post-excerpt">
+        {% if post.categories contains 'notpublish' %}
+        {% else %}
+            {% if post.categories contains 'notes' %}
+<article class="box post post-excerpt">
 									<header>
-										<h2><a href="{{ note.url }}">{{ post.title }}</a></h2>
+										<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 										
 									</header>
 									<div class="info">
-										<span class="date"><span class="month">Jul</span> <span class="day">8</span><span class="year">, 2013</span></span>
+										<span class="date"><span class="month">{{post.date | date: "%d"}}<span>y</span></span> <span class="day">{{post.date | date: "%b"}}</span><span class="year">, 2013</span></span>
 										
-									</div>
-            {{post.content}}
-								</article>
-
-        {%endif%}
+									</div> 
+    
+            {{post.content |split:'<!--break-->' | first}}
+            {% if post.content contains '<!--break-->' %}
+			 <a href="{{ post.url }}">read more</a>
+		    {% endif %}
+    	</article>
+            {% endif %}
+        {% endif %}
 	  {% endfor %}

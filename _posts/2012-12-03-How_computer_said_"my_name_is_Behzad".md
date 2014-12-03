@@ -4,12 +4,15 @@ title: How computer said "my name is Behzad"
 categories: notes
 date: 2012-12-03
 ---
-<div class="entry-content"><div xmlns="http://www.w3.org/1999/xhtml"><table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><p>Speaking of the past can be hard sometimes specially if you
+<img border="0" height="244" src="https://sites.google.com/site/btabibian/_/rsrc/1331691189599/notes/howcomputersaidmynameisbehzad/6.0-enterprise-sp6.png" style="display:inline;float:right;margin-top:5px;margin-right:10px;margin-bottom:5px;margin-left:10px" width="320"/><p>Speaking of the past can be hard sometimes specially if you
 want to draw a picture of the past with all of its details. I am about to tell
-a short story about the first time I wrote a piece of program.For that I should
+a short story about the first time I wrote a piece of program. For that I should
 go back to more than a decade ago. At a time when there were no Internet, not
 many books and no geek around you to learn from.</p>
-<p> </p>
+
+<!--break-->
+
+
 <p>I still remember the first computer I worked with, if you
 are expecting me to give models or details I am not, the concept of computer
 itself was so new to me that I never cared what kind or model it is, it was a
@@ -34,7 +37,7 @@ variables, I can remember one time I had a big argument with my sister, who was
 not in computers at all but had the course at high school, when she was trying
 to teach me Pascal and I still could not understand. Time passed and the more I
 tried the less I could understand how to write a program in Basic or Pascal. </p>
-<p><br/></p><img border="0" height="244" src="https://sites.google.com/site/btabibian/_/rsrc/1331691189599/notes/howcomputersaidmynameisbehzad/6.0-enterprise-sp6.png" style="display:inline;float:right;margin-top:5px;margin-right:10px;margin-bottom:5px;margin-left:10px" width="320"/>
+<p><br/></p>
 <p>Finally I could get a copy of Microsoft Visual Basic
 installed on a machine in our home. It finally had the basic ingredients of
 what I was looking for, the first thing you could see was a “window”, something
@@ -74,4 +77,4 @@ in my life than that first time when I could truly understand what I was doing.
 Things have been going since then but that moment was so special that I try to
 celebrate every year around this time. For many Iranians this time of the year
 is new-year and things start afresh but for me it all started a few weeks
-earlier when I could make the computer say “My name is Behzad”.</p></div></td></tr></tbody></table></div></div>
+earlier when I could make the computer say “My name is Behzad”.</p>
