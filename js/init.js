@@ -73,10 +73,10 @@
 				.on('resize', function() {
 					window.clearTimeout(tid);
 					tid = window.setTimeout(function() {
-						if (skel.isActive('mobile') || skel.isActive('narrower'))
-							$sc.css('min-height', '0').css('height', 'auto');
-						else
-							$sc.css('min-height', $window.height()).css('height', $document.height());
+						//if (skel.isActive('mobile') || skel.isActive('narrower'))
+				        $sc.css('min-height', '0').css('height', 'inherit');
+						//else
+						//	$sc.css('min-height', $window.height()).css('height', $document.height());
 					}, 100);
 				})
 				.on('load', function() {

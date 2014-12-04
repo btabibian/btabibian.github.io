@@ -2,7 +2,7 @@
 layout: note
 title: How computer said "my name is Behzad"
 categories: notes
-date: 2012-12-03
+date: 2012-03-13
 ---
 <img border="0" height="244" src="https://sites.google.com/site/btabibian/_/rsrc/1331691189599/notes/howcomputersaidmynameisbehzad/6.0-enterprise-sp6.png" style="display:inline;float:right;margin-top:5px;margin-right:10px;margin-bottom:5px;margin-left:10px" width="320"/><p>Speaking of the past can be hard sometimes specially if you
 want to draw a picture of the past with all of its details. I am about to tell

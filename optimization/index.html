@@ -14,11 +14,12 @@ title: Notes
 										<span class="date"><span class="month">{{post.date | date: "%d"}}<span>y</span></span> <span class="day">{{post.date | date: "%b"}}</span><span class="year">, 2013</span></span>
 										
 									</div> 
-    
+                            <div id="ipython">
             {{post.content |split:'<!--break-->' | first}}
             {% if post.content contains '<!--break-->' %}
 			 <a href="{{ post.url }}">read more</a>
 		    {% endif %}
+                </div>	
     	</article>
         {% endif %}
 	  {% endfor %}
