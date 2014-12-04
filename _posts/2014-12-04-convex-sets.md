@@ -41,7 +41,8 @@ Optimization book** by Stephen Boyd.
 
 + If $$C$$ is affine set and $$x_0 \in C$$ we have:
 
-  $$V=C-x_0=\{x-x_0 |x \in C\}$$
+
+  $$V=C-x_0=\{x-x_0\|x \in C\}$$
 
 + Solution of a linear equation is an affine set.
 + **affine hull**:
