@@ -41,14 +41,14 @@ Optimization book** by Stephen Boyd.
 
 + If $$C$$ is affine set and $$x_0 \in C$$ we have:
 
-  $$V=C-x_0=\{x-x_0\|x \in C\}$$
+  $$V=C-x_0=\{x-x_0 \mid x \in C\}$$
 
 + Solution of a linear equation is an affine set.
 + **affine hull**:
   The set of all affine combinations of points in some set $$C \subseteq R^n$$
 and denoted **aff $$C$$**:
 
-  **aff** $$C= \{ \theta_1 x_1+\dots+\theta_k x_k|x_1,...x_k \in
+  **aff** $$C= \{ \theta_1 x_1+\dots+\theta_k x_k \mid x_1,...x_k \in
 C,\theta_1+\dots+\theta_k = 1\}$$
 
   if $$S$$ is any affine set with $$C \subseteq S$$, then **aff $$C \subseteq
@@ -90,7 +90,7 @@ $$C$$ lies in the affine set $$\textbf{aff} C \neq R^n$$.
 #### Relative Interior
 + relative interior of a set $C$:
 
-  $$\textbf{relint}=\{X \in C |  B(x,r)  \cap  \textbf{aff}  C  \subseteq C,
+  $$\textbf{relint}=\{X \in C \mid  B(x,r)  \cap  \textbf{aff}  C  \subseteq C,
 \text{for some} r > 0\}$$. note the $$r>0$$ condition excludes $$x$$ itself.
 + **relative boundary** of a set $$C$$ is defined as :
   $$\textbf{cl} C \setminus \textbf{relint} C$$
@@ -116,7 +116,7 @@ point, along an unobstructed straight line path between them.
 
 #### Convex hull:
 
-$$ \textbf{Conv} C = \{ \theta_1 x_1 + \dots + \theta_k x_k | x_i \in C,
+$$ \textbf{Conv} C = \{ \theta_1 x_1 + \dots + \theta_k x_k \mid x_i \in C,
 \theta_i \geq 0, i=1,\dots,k, \theta_1+ \dots+\theta_k=1\}$$
 
 This can be generalized as:
@@ -201,7 +201,7 @@ elements.
 + **conic hull** of a set $$C$$ is the set of all conic combinations of points
 in $C$:
   $$\begin{align}
-  \{\theta_1x_1+\dots+\theta_kx_k|x_i \in C, \theta_i \geq 0, i=1,\dots,k\}
+  \{\theta_1x_1+\dots+\theta_kx_k \mid x_i \in C, \theta_i \geq 0, i=1,\dots,k\}
   \end{align}$$
   Which is the smallest convex cone that contains $$C$$.
 
@@ -241,12 +241,12 @@ $$R^n$$ are **affine** and thus **convex** subsets of $$R^n$$.
 + Any line is **affine**. If it passes through zero, it is a subspace, hence a
 **convex cone**.
 + A line segment is **convex**, but not **affine**.
-+ A *ray*, $$\{x_0+\theta\nu|\theta\geq0\}$$ where $$\nu \neq 0$$, is
++ A *ray*, $$\{x_0+\theta\nu \mid \theta\geq0\}$$ where $$\nu \neq 0$$, is
 **convex**, but not **affine**. It is **convex cone** if its base is $$x_0=0$$.
 + Any *Subspace* is **affine**, and **a convex cone**(hence **convex**)
 + *Halfspaces* are **convex**:
 
-    $$C=\{x|a^Tx \leq b\}$$
+    $$C=\{x\mid a^Tx \leq b\}$$
 
     if $$x_0,x_1 \in C$$ and $$0 \leq \theta \leq 1$$:
 
@@ -257,8 +257,8 @@ $$R^n$$ are **affine** and thus **convex** subsets of $$R^n$$.
 + A <a href="http://en.wikipedia.org/wiki/Ball_(mathematics)">*Euclidean
 ball*</a>: in $$R^n$$:
 
-  $$B(x_c,r)=\{x|\parallel x-x_c \parallel_2 \leq r\} = \{x| (x-x_c)^T(x-x_c)
-\leq r^2\} $$
+  $$B(x_c,r)=\{x \mid \parallel x-x_c \parallel_2 \leq r\} = \{x \mid
+(x-x_c)^T(x-x_c) \leq r^2\} $$
 
   is **convex**:
 
@@ -301,13 +301,13 @@ _=plt.legend()
 + A <a href="http://en.wikipedia.org/wiki/Ball_(mathematics)#Balls_in_normed_vec
 tor_spaces">*norm ball*</a> is any norm on $R^n$ .
 
-  $$B(x_c,r)=\{x\|\parallel x-x_c \parallel \leq r\}$$
+  $$B(x_c,r)=\{x\mid \parallel x-x_c \parallel \leq r\}$$
 
   is **convex**.
 
 + A *norm cone* associated with $$\parallel \cdot \parallel$$ is the set:
 
-  $$C=\{(x,t)\|\parallel x \parallel \leq t\} \subseteq R^{n+1}$$
+  $$C=\{(x,t)\mid\parallel x \parallel \leq t\} \subseteq R^{n+1}$$
 
   is **convex cone**.
 
@@ -333,14 +333,14 @@ _=fig.suptitle('norm cone in $R^3$ with $r=4$', fontsize=14)
 
 + [*Polyhedra*](http://en.wikipedia.org/wiki/Polyhedron) is **convex**:
 
-   $$ P = \{x|a_j^T x \leq b_j, j= 1,\dots, m, c_j^Tx=d_j, j= 1,\dots,p\} = \{x
-| Ax\preceq b.Cx=d\}$$
+   $$ P = \{x\mid a_j^T x \leq b_j, j= 1,\dots, m, c_j^Tx=d_j, j= 1,\dots,p\} =
+\{x \mid Ax\preceq b.Cx=d\}$$
 
   + [*Simplexes*](https://en.wikipedia.org/wiki/Simplex) are **convex**:
 
     Suppose the $$k+1$$ points $$\nu_0,\dots,\nu_k \in R^n$$ are *affinely
 independent*: $$\nu_1-\nu_0,\dots,\nu_k-\nu_0$$ are linearly independent.
-    $$C=conv\{\nu_0,\dots,\nu_k\}=\{\theta_0\nu_0+\dots+\theta_k\nu_k|\theta
+    $$C=conv\{\nu_0,\dots,\nu_k\}=\{\theta_0\nu_0+\dots+\theta_k\nu_k\mid \theta
 \succeq0,\boldsymbol{1}^T\theta=1\}$$
 
     assume:
@@ -386,15 +386,15 @@ $$A=(A_1,A_2)\in R^{n\times n}$$ such that:
 
 + *Positive semidefinite cone*:
 
-  $$ \boldsymbol{S}^n = \{X \in \boldsymbol{R}^{n\times n} \| X=X^T \}$$
+  $$ \boldsymbol{S}^n = \{X \in \boldsymbol{R}^{n\times n} \mid X=X^T \}$$
 
   which is a vector space with dimension $$n(n+1)/2$$.
 
-  $$ \boldsymbol{S}^n_+ = \{X \in \boldsymbol{S}^{n} \| X\succeq 0 \}$$
+  $$ \boldsymbol{S}^n_+ = \{X \in \boldsymbol{S}^{n} \mid X\succeq 0 \}$$
 
   and
 
-  $$ \boldsymbol{S}^n_{++} = \{X \in \boldsymbol{S}^{n} \| X\succ 0 \}$$
+  $$ \boldsymbol{S}^n_{++} = \{X \in \boldsymbol{S}^{n} \mid X\succ 0 \}$$
 
   The set $$\boldsymbol{S}^n_+$$ is a convex cone:
   if:
