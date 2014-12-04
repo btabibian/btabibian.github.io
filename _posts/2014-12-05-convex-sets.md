@@ -386,15 +386,15 @@ $$A=(A_1,A_2)\in R^{n\times n}$$ such that:
 
 + *Positive semidefinite cone*:
 
-  $$ \boldsymbol{S}^n = \{X \in \boldsymbol{R}^{n\times n} | X=X^T \}$$
+  $$ \boldsymbol{S}^n = \{X \in \boldsymbol{R}^{n\times n} \| X=X^T \}$$
 
   which is a vector space with dimension $$n(n+1)/2$$.
 
-  $$ \boldsymbol{S}^n_+ = \{X \in \boldsymbol{S}^{n} | X\succeq 0 \}$$
+  $$ \boldsymbol{S}^n_+ = \{X \in \boldsymbol{S}^{n} \| X\succeq 0 \}$$
 
   and
 
-  $$ \boldsymbol{S}^n_{++} = \{X \in \boldsymbol{S}^{n} | X\succ 0 \}$$
+  $$ \boldsymbol{S}^n_{++} = \{X \in \boldsymbol{S}^{n} \| X\succ 0 \}$$
 
   The set $$\boldsymbol{S}^n_+$$ is a convex cone:
   if:

@@ -1,5 +1,5 @@
 name: Behzad Tabibian
-markdown: Kramdown
+markdown: kramdown
 baseurl: "http://btabibian.github.io/"
-
+highlight: pygments
 
