@@ -4,6 +4,7 @@ title: "02-Convexity Preserving Operations"
 tags: [ipython, convex, blog]
 categories: [optimization]
 date:  2014-12-05
+parent: [/optimization/,optimization]
 ---
 This is the second notebook of the series going through Convex Optimizaion. The
 topics here are following MOOC [Convex

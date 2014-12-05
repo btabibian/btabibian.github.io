@@ -79,6 +79,9 @@
 									<li><a href="/">Home</a></li>
 									<li><a href="/notes">Notes</a></li>
 									<li><a href="/about.html">About Me</a></li>
+                                    {% if page.parent != Null %}
+                                    <li class="current"><a href="{{page.parent[0]}}" >{{page.parent[1]}}</a></li>
+                                    {% endif %}
 									
 								</ul>
 							</nav>
