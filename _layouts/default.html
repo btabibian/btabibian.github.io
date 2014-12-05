@@ -15,6 +15,7 @@
 		<script src="{{ site.baseurl }}/js/skel.min.js"></script>
 		<script src="{{ site.baseurl }}/js/skel-layers.min.js"></script>
 		<script src="{{ site.baseurl }}/js/init.js"></script>
+        
         <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
@@ -30,6 +31,7 @@
               //displayIndent: "2em"
             });
         </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
 		<noscript>
 			<link rel="stylesheet" href="{{ site.baseurl }}/css/skel.css" />
@@ -45,13 +47,21 @@
 		Set it to "right-sidebar" to, you guessed it, position it on the right.
 	-->
 	<body class="left-sidebar">
-
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=1381214945440313&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Content -->
 					<div id="content">
 						<div class="inner">
+                            
                             {{content}}
 						</div>
 					</div>
