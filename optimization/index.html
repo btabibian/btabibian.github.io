@@ -37,3 +37,30 @@ title: Convex Optimization
     	</article>
         {% endif %}
 	  {% endfor %}
+
+{% assign sorted_posts = site.posts | sort:"name" %}
+	  {% for post in sorted_posts reversed %}
+        {% if post.categories contains 'optimization_hw' %}
+<article class="box post post-excerpt">
+    
+    
+									<header>
+										<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+										<div class="fb-like" data-href="{{ post.url }}" data-width="100" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
+                                        
+									</header>
+									<div class="info">
+										<span class="date"><span class="month">{{post.date | date: "%d"}}</span> <span class="day">{{post.date | date: " %b"}}</span><span class="year">{{post.date | date: " %Y"}}</span></span>
+										
+									</div>
+    
+                            <div id="ipython">
+            {{post.content |split:'<!--break-->' | first}}
+            {% if post.content contains '<!--break-->' %}
+			 <a href="{{ post.url }}">read more</a>
+		    {% endif %}
+                </div>	
+    	</article>
+        {% endif %}
+	  {% endfor %}
+
