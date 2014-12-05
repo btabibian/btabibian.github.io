@@ -20,8 +20,7 @@ $$\begin{align}
 & a_i^Tx=0 , i=1,\dots,p\\
 \end{align}$$
 
-where $$f_0,\dots,f_m$$ are convex functions and equality constraints are
-affine.
+where $f_0,\dots,f_m$ are convex functions and equality constraints are affine.
 
 + feasible set of a convex optimization problem is convex: $$D=\bigcap_{i=0}^m
 \textbf{dom }f_i \cap \bigcap_{j=0}^p \textbf{dom }h_j$$
@@ -37,41 +36,41 @@ For any **convex optimization problem**, any *locally optimal* point is also
 
 > Suppose:
 
-> $$f_0(x)=\text{inf }\{f_0(z)|z \text{ feasible }, \parallel z-x \parallel_2
-\leq R\}$$ for some R.
+> $f_0(x)=\text{inf }\\{f_0(z)|z \text{ feasible }, \parallel z-x \parallel_2
+\leq R\\}$ for some R.
 
-> Suppose $$x$$ is not globally optimal. Then there is a feasible $$y$$ such
-that $$f_0(y)<f_0(x)$$ and $$\parallel y-x\parallel_2>R$$.
+> Suppose $x$ is not globally optimal. Then there is a feasible $y$ such that
+$f_0(y)<f_0(x)$ and $\parallel y-x\parallel_2>R$.
 
 > Now consider the point $z$:
 
-> $$z=(1-\theta)x+\theta y, \theta=\frac{R}{2\parallel y-x\parallel_2}$$
+> $z=(1-\theta)x+\theta y, \theta=\frac{R}{2\parallel y-x\parallel_2}$
 
-> and therefore $$\parallel z-x\parallel_2=R/2<R$$.
+> and therefore $\parallel z-x\parallel_2=R/2<R$.
 
-> By convexity of $$f_0$$ we have:
+> By convexity of $f_0$ we have:
 
-> $$f_0(z)\leq (1-\theta)f_0(x)+\theta f_0(y)<f_0(x)$$
+> $f_0(z)\leq (1-\theta)f_0(x)+\theta f_0(y)<f_0(x)$
 
 > Which is a contradiction to earlier assumption and therefore there exist no
-feasible $$y$$ with $$f_0(y)<f_0(x)$$.
+feasible $y$ with $f_0(y)<f_0(x)$.
 
 
 
 ### Optimality criterion for differentiable $f_0$
 
-Suppose $$f_0$$ in a convex optimization problem is differentiable, so that for
-all $$x,y \in \textbf{dom } f_0$$,
+Suppose $f_0$ in a convex optimization problem is differentiable, so that for
+all $x,y \in \textbf{dom } f_0$,
 
-$$f_0(y)\geq f_0(x)+\nabla f_0(x)^T(y-x)$$
+$f_0(y)\geq f_0(x)+\nabla f_0(x)^T(y-x)$
 
-Let $$X$$ denote the feasible set,
+Let $X$ denote the feasible set,
 
-$$X=\{x|f_i(x)\leq0,i=1,\dots,m,h_i(x)=0,i=1,\dots,p\}$$
+$X=\\{x \vert f_i(x) \leq 0,i=1,\dots,m,h_i(x)=0,i=1,\dots,p\\}$
 
-Then $$x$$ is *optimal* iff $$x\in X$$ and:
+Then $x$ is *optimal* iff $x\in X$ and:
 
-$$\nabla f_0(x)^T(y-x)\geq 0 \text{ for all } y\in X$$.
+$\nabla f_0(x)^T(y-x)\geq 0 \text{ for all } y\in X$.
 
 ----
 
@@ -240,7 +239,7 @@ import mpl_toolkits.mplot3d.axes3d as p3
 import matplotlib.pyplot as plt
 {% endhighlight %}
 
-**In [2]:**
+**In [7]:**
 
 {% highlight python linenos  %}
 x=cvp.Variable(rows=3)
@@ -273,11 +272,7 @@ print 'optimal point:\n',x.value
     
 
 
-    /Library/Python/2.7/site-packages/numpy/core/fromnumeric.py:2499: VisibleDeprecationWarning: `rank` is deprecated; use the `ndim` attribute or function instead. To find the rank of a matrix see `numpy.linalg.matrix_rank`.
-      VisibleDeprecationWarning)
-
-
-**In [3]:**
+**In [8]:**
 
 {% highlight python linenos  %}
 fig=plt.figure()
@@ -322,27 +317,24 @@ ax.set_ylabel('y')
 ax.view_init(elev=30, azim=145)
 {% endhighlight %}
 
-    -c:21: RuntimeWarning: invalid value encountered in less
 
-
-
-![png]({{ site.baseurl}}/images/2014-12-05-03-convex-optimization-problems_files/2014-12-05-03-convex-optimization-problems_16_1.png)
+![png]({{ site.baseurl}}/images/2014-12-05-03-convex-optimization-problems_files/2014-12-05-03-convex-optimization-problems_16_0.png)
 
 
 #### Chebyshev center of polyhedron
 
 Chebyshev center of
 
-$$P=\{x|a_i^Tx\leq b_i,i=1\dots m\}$$
+$P=\\{x\vert a_i^Tx\leq b_i,i=1\dots m\\}$
 
 is center of largest inscribed ball:
 
-$$B=\{x_c+u \vert \parallel u \parallel_2 \leq r \}$$
+$B=\\{x_c+u \vert \parallel u \parallel_2 \leq r \\}$
 
-> $$a_i^T x\leq b_i$$ for all $$x \in B$$ iff:
+> $a_i^T x\leq b_i$ for all $x \in B$ iff:
 
->  $$sup\{a_i^T(x_c+u)|\parallel u \parallel_2 \leq r \}=a_i^Tx_c+r \parallel
-a_i \parallel_2 \leq b_i$$
+> $sup\\{a_i^T(x_c+u) \vert \parallel u \parallel_2 \leq r \\}=a_i^Tx_c+r
+\parallel a_i \parallel_2 \leq b_i$
 
 > hence: $$\begin{align}
 \text{ maximize }&r \\
@@ -439,27 +431,27 @@ plt.show()
 
 ### Quadratic Programming
 
-\begin{align}
+$$\begin{align}
 \text{ minimize }&1/2x^TP x+q^T x +r\\
 \text{subject to }&Gx\leq h \\
 &Ax=b\\
-\end{align}
+\end{align}$$
 
-$P \in S_{+}^n$ and therefore objective is convex.
+$P \in S\_{+}^n$ and therefore objective is convex.
 
 + Least square is an example of QP:
 
-\begin{align}
+$$\begin{align}
 \text{ minimize }&\parallel Ax-b\parallel_2^2 \\
 \text{subject to }&Gx\leq h \\
 &Ax=b\\
-\end{align}
+\end{align}$$
 
-> \begin{align}
+> $$\begin{align}
 \parallel Ax-b\parallel_2^2 &= (Ax-b)^T(Ax-b)\\
 &=(x^TA^T-b^T)(Ax-b)\\
 &=x^TA^TAx-x^TA^Tb-b^TAx+b^Tb
-\end{align}
+\end{align}$$
 
 
 **In [5]:**

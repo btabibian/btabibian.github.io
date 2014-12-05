@@ -53,38 +53,38 @@ is **convex**.
 
 + If $f: R^k
 \rightarrow R^n$ is an affine function, then inverse image of $S$ under
-$f$:$f^{-1}(S) = \{x\mid f(x)\in S\}$ is **convex**.
+$f$:$f^{-1}(S) = \\{x\mid f(x)\in S\\}$ is **convex**.
 
 ####Examples:
 
 + *Scaling* and *translations* are convex preserving:
 
-    if $S\subseteq R^n$ is **convex**, $\alpha \in R$ an $$a\in R^n$, then the
+    if $S\subseteq R^n$ is **convex**, $\alpha \in R$ an $a\in R^n$, then the
 sets $\alpha S$ and $S+a$ are **convex**:
 
-    $\alpha S=\{\alpha x\mid x\in S\}$, $S+a=\{x+a\mid x \in S\}$
+    $\alpha S=\\{\alpha x\mid x\in S\\}$, $S+a=\\{x+a\mid x \in S\\}$
 
 + *Projection* of a convex set onto some of its  coordinates is convex.:
 
   if $S\subseteq R^m \times R^n$ is **convex**, then
 
-  $T=\{x_1 \in R^m\mid (x_1,x_2) \in S \text{ for some } x_2 \in R^n\}$
+  $T=\\{x_1 \in R^m\mid (x_1,x_2) \in S \text{ for some } x_2 \in R^n\\}$
 
   is **convex**.
 
 + The sum of two sets is defined as:
 
-  $$S_1+S_2=\{x+y\mid x\in S_1,s_2\in S_2\}$$
+  $$S_1+S_2=\\{x+y\mid x\in S_1,s_2\in S_2\\}$$
 
-  If $$S_1$$ and $$S_2$$ are **convex**, then $$S_1+S_2$$ are **convex**.
+  If $S_1$ and $S_2$ are **convex**, then $S_1+S_2$ are **convex**.
 
   >To see why we note that:
 
-  >if $$S_1$$ and $$S_2$$ are convex so is Cartesian product:
-  >$$S_1\times S_2=\{(x_1,x_2)\mid x_1\in S_1, x_2 \in S_2\}$$
+  >if $S_1$ and $S_2$ are convex so is Cartesian product:
+  >$S_1\times S_2=\\{(x_1,x_2)\mid x_1\in S_1, x_2 \in S_2\\}$
 
-  >The image of this set under the linear funciton $$f(x_1,x_2)=x_1+x_2$$ is the
-sum $$S_1+S_2$$.
+  >The image of this set under the linear funciton $f(x_1,x_2)=x_1+x_2$ is the
+sum $S_1+S_2$.
 
 ###Linear Fractionals and perspective functions:
 
@@ -99,14 +99,14 @@ P(z,t)=z/t\\
 This function scales or normalizes vectors by last component and then drops
 normalizer.
 
-+ If $$C \subseteq \textbf{dom} P$$ is **convex**, then its image:
++ If $C \subseteq \textbf{dom} P$ is **convex**, then its image:
 
   $$P(C)=\{P(x)\mid x\in C\}$$
 
   is **convex**.
 
-> Suppose $$x = (\tilde{x},x_{n+1}),y = (\tilde{y},y_{n+1}) \in R^n+1$$ and
-$$x_{n+1}>0, y_{n+1}> 0$$, then for $$0 \leq \theta \leq 1$$:
+> Suppose $x = (\tilde{x},x_{n+1}),y = (\tilde{y},y_{n+1}) \in R^n+1$ and
+$x_{n+1}>0, y_{n+1}> 0$, then for $0 \leq \theta \leq 1$:
 
 > $$\begin{align}
 P(\theta x+(1-\theta)y)&=\frac{\theta \tilde{x}+(1-\theta)\tilde{y}}{\theta
