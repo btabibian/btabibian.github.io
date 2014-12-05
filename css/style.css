@@ -837,6 +837,17 @@
         background-image: None;
     }
 
+    #ipython ul
+		{
+			list-style: disc;
+			padding-left: 1em;
+		}
+		
+        #ipython ul li
+        {
+            padding-left: 0.5em;
+        }
+
 
 /*********************************************************************************/
 /* IPython

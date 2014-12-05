@@ -1,6 +1,6 @@
 ---
 layout: python_note
-title: "Convex Optimization Problems"
+title: "03-Convex Optimization Problems"
 tags: [ipython, convex, blog]
 categories: [optimization]
 date:  2014-12-05
@@ -326,7 +326,7 @@ ax.view_init(elev=30, azim=145)
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-convex-optimization-problems_files/2014-12-05-convex-optimization-problems_16_1.png)
+![png]({{ site.baseurl}}/images/2014-12-05-03-convex-optimization-problems_files/2014-12-05-03-convex-optimization-problems_16_1.png)
 
 
 #### Chebyshev center of polyhedron
@@ -434,7 +434,7 @@ plt.show()
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-convex-optimization-problems_files/2014-12-05-convex-optimization-problems_18_1.png)
+![png]({{ site.baseurl}}/images/2014-12-05-03-convex-optimization-problems_files/2014-12-05-03-convex-optimization-problems_18_1.png)
 
 
 ### Quadratic Programming
@@ -493,5 +493,5 @@ plt.grid()
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-convex-optimization-problems_files/2014-12-05-convex-optimization-problems_20_1.png)
+![png]({{ site.baseurl}}/images/2014-12-05-03-convex-optimization-problems_files/2014-12-05-03-convex-optimization-problems_20_1.png)
 

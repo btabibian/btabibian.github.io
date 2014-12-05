@@ -1,9 +1,19 @@
 ---
 layout: default
-title: Notes
+title: Convex Optimization
 ---
-
-	  {% for post in site.posts %}
+<header>
+                                        
+										<!--
+											Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+											if they get too long. You can also remove the <p> entirely if you don't
+											need a subtitle.
+										-->
+										<h1>Convex Optimization</h1>
+										
+									</header>
+{% assign sorted_posts = site.posts | sort:"name" %}
+	  {% for post in sorted_posts reversed %}
         {% if post.categories contains 'optimization' %}
 <article class="box post post-excerpt">
     
@@ -11,7 +21,7 @@ title: Notes
 									<header>
 										<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 										<div class="fb-like" data-href="{{ post.url }}" data-width="100" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
-                                        <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ post.url }}" data-text="{{ post.title }}" data-via="btabibian">Tweet</a></div>
+                                        
 									</header>
 									<div class="info">
 										<span class="date"><span class="month">{{post.date | date: "%d"}}<span>y</span></span> <span class="day">{{post.date | date: "%b"}}</span><span class="year">, 2013</span></span>
