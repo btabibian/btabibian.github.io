@@ -40,8 +40,9 @@ title: Convex Optimization
     	</article>
         {% endif %}
 	  {% endfor %}
-
-
+<article class="box post ">
+<p> There are various solved examples in different topics of optimization below. They are not limitted to convex optimization and topics such as linear programming, integer linear programming and Min-Cut are covered.</p>
+</article>
 {% assign sorted_posts = site.posts | sort:"name" %}
 	  {% for post in sorted_posts reversed %}
         {% if post.categories contains 'optimization_hw' %}
