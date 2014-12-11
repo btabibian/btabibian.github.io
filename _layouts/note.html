@@ -1,19 +1,20 @@
 ---
 layout: default
 ---
-<article class="box post post-excerpt">
+<div id="main-wrapper">
+				<div id="main" class="container">
+					<div id="content">
+
+<article class="box post">
 									<header>
-										<h2><a href="{{ url }}">{{ page.title }}</a></h2>
+										<h2>{{ page.title }}</h2>
 										
+
 									</header>
-									<div class="info">
-										<span class="date"><span class="month">{{page.date | date: "%d"}}<span>y</span></span> <span class="day">{{page.date | date: "%b"}}</span><span class="year">, 2013</span></span>
-										
-									</div> 
-    <div class="fb-like" data-href="http://btabibian.github.io/optimization/" data-width="100" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
-    
-            {{content}}
-            
+    <div class="fb-like" data-href="{{ page.url }}" data-width="100" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
+                                        </br>
+                                        <div><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><a href="https://twitter.com/share" class="twitter-share-button" data-url="{{url}}" data-text="{{page.title}}" data-via="btabibian">Tweet</a></div>
+                        {{content}}
+             
     	</article>
-
-
+                    </div></div></div>

@@ -1,35 +1,84 @@
 ---
 layout: default
 title: Notes
+kind: homepage
 ---
 
-	  {% for post in site.posts %}
-        {% if post.categories contains 'notpublish' %}
-        {% else %}
-            {% if post.categories contains 'notes' %}
-<article class="box post post-excerpt">
+
+
+<div id="features-wrapper">
+				<section id="features" class="container">
+
+                    
+                    {% assign loopindex_ = 0 %}
+                    {% for post in site.posts %}
+                        {% if post.categories contains 'notes' %}
+                            
+                            {% assign loopindex = loopindex_ | modulo: 3 %}
+                    
+            {% if loopindex == 0 %}
+                    <div class="row">
+                        <div class="4u">
+
+							<!-- Feature -->
+								<section>
+                                    {% if post.img[0] contains "http" %}
+                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" /></a>
+                                    {% else %}
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
+                                    {% endif %}
 									<header>
-										<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-										<div class="fb-like" data-href="{{ post.url }}" data-width="100" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
-                                        
+										<h3>{{post.title}} </h3>
 									</header>
-									<div class="info">
-										<span class="date"><span class="month">{{post.date | date: "%d"}}</span> <span class="day">{{post.date | date: "%b"}}</span><span class="year">{{post.date | date: "%Y"}}</span></span>
-										
-									</div> 
-            <div class="content">
-            <div class="inner">
-                        <div class="ipython">
-    {{post.content |split:'<!--break-->' | first}}
-            {% if post.content contains '<!--break-->' %}
-			 <a href="{{ post.url }}">read more</a>
-		    {% endif %}
-    </div>
-    
-    </div>
-    </div>
+									
+								</section>
+
+						</div>
+            {% elsif loopindex == 1 %}
+                        <div class="4u">
+
+							<!-- Feature -->
+								<section>
+									{% if post.img[0] contains "http" %}
+                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" /></a>
+                                    {% else %}
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
+                                    {% endif %}
+									<header>
+										<h3>{{post.title}}</h3>
+									</header>
+									
+								</section>
+
+						</div>
+            {% elsif loopindex == 2 %}
+                        <div class="4u">
+
+							<!-- Feature -->
+								<section>
+									{% if post.img[0] contains "http" %}
+                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" /></a>
+                                    {% else %}
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
+                                    {% endif %}
+									<header>
+										<h3>{{post.title}}</h3>
+									</header>
+									
+
+						</div>
             
-    	</article>
-            {% endif %}
+                        </div>
+                        
+
         {% endif %}
+                    {% assign loopindex_ = loopindex_ | plus:1 %}
+                        {% endif %}
 	  {% endfor %}
+                        {% if loopindex_ | modulo: 3 != 0%}
+                        </div>
+                    {% endif %}
+	  
+</section></div>
+
+

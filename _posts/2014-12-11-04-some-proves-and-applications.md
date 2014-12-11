@@ -3,8 +3,10 @@ layout: python_note
 title: "04-Some proves and Applications"
 tags: [ipython, convex, blog]
 categories: [optimization_hw]
-date:  2014-12-06
+date:  2014-12-11
 parent: [/optimization,Optimization]
+img: [
+]
 ---
 **In []:**
 

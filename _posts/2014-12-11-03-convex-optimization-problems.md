@@ -3,8 +3,13 @@ layout: python_note
 title: "03-Convex Optimization Problems"
 tags: [ipython, convex, blog]
 categories: [optimization]
-date:  2014-12-05
-parent: [/optimization/,optimization]
+date:  2014-12-11
+parent: [/optimization,Optimization]
+img: [
+2014-12-11-03-convex-optimization-problems_files/2014-12-11-03-convex-optimization-problems_20_1.png,
+2014-12-11-03-convex-optimization-problems_files/2014-12-11-03-convex-optimization-problems_18_1.png,
+2014-12-11-03-convex-optimization-problems_files/2014-12-11-03-convex-optimization-problems_16_0.png,
+]
 ---
 This is the third notebook of the series going through Convex Optimizaion. The
 topics here are following MOOC [Convex
@@ -319,7 +324,7 @@ ax.view_init(elev=30, azim=145)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-03-convex-optimization-problems_files/2014-12-05-03-convex-optimization-problems_16_0.png)
+![png]({{ site.baseurl}}/images/2014-12-11-03-convex-optimization-problems_files/2014-12-11-03-convex-optimization-problems_16_0.png)
 
 
 #### Chebyshev center of polyhedron
@@ -427,7 +432,7 @@ plt.show()
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-03-convex-optimization-problems_files/2014-12-05-03-convex-optimization-problems_18_1.png)
+![png]({{ site.baseurl}}/images/2014-12-11-03-convex-optimization-problems_files/2014-12-11-03-convex-optimization-problems_18_1.png)
 
 
 ### Quadratic Programming
@@ -486,5 +491,5 @@ plt.grid()
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-03-convex-optimization-problems_files/2014-12-05-03-convex-optimization-problems_20_1.png)
+![png]({{ site.baseurl}}/images/2014-12-11-03-convex-optimization-problems_files/2014-12-11-03-convex-optimization-problems_20_1.png)
 
