@@ -1,71 +1,75 @@
 ---
 layout: default
 title: Convex Optimization
+kind: homepage
 ---
 
 <a href="https://github.com/btabibian/optimization"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
-<header>
-                                        
-										<!--
-											Note: Titles and subtitles will wrap automatically when necessary, so don't worry
-											if they get too long. You can also remove the <p> entirely if you don't
-											need a subtitle.
-										-->
-										<h3>Convex Optimization</h3>
-										 
-									</header>
-{% assign sorted_posts = site.posts | sort:"name" %}
-	  {% for post in sorted_posts reversed %}
-        {% if post.categories contains 'optimization' %}
-<article class="box post post-excerpt">
-    
-    
+<div id="features-wrapper">
+				<section id="features" class="container">
+					<header>
+						<h2>Convex Optimization!</h2>
+					</header>
+
+                    {% assign sorted_posts = site.posts | sort:"name" %}
+                    {% assign loopindex_ = 0 %}
+                    {% for post in sorted_posts reversed %}
+                        {% if post.categories contains 'optimization' %}
+                            
+                            {% assign loopindex = loopindex_ | modulo: 3 %}
+                    
+            {% if loopindex == 0 %}
+                    <div class="row">
+                        <div class="4u">
+
+							<!-- Feature -->
+								<section>
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
 									<header>
-										<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-										
-                                        
+										<h3>{{post.title}} </h3>
 									</header>
-									<div class="info">
-										<span class="date"><span class="month">{{post.date | date: "%d"}}</span> <span class="day">{{post.date | date: " %b"}}</span><span class="year">{{post.date | date: " %Y"}}</span></span>
-										
-									</div>
-    
-                            <div id="ipython">
-            {{post.content |split:'<!--break-->' | first}}
-            {% if post.content contains '<!--break-->' %}
-			 <a href="{{ post.url }}">read more</a>
-		    {% endif %}
-                </div>	
-    	</article>
-        {% endif %}
-	  {% endfor %}
-<article class="box post ">
-<p> There are various solved examples in different topics of optimization below. They are not limitted to convex optimization and topics such as linear programming, integer linear programming and Min-Cut are covered.</p>
-</article>
-{% assign sorted_posts = site.posts | sort:"name" %}
-	  {% for post in sorted_posts reversed %}
-        {% if post.categories contains 'optimization_hw' %}
-<article class="box post post-excerpt">
-    
-    
+									
+								</section>
+
+						</div>
+            {% elsif loopindex == 1 %}
+                        <div class="4u">
+
+							<!-- Feature -->
+								<section>
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
 									<header>
-										<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-										
-                                        
+										<h3>{{post.title}} </h3>
 									</header>
-									<div class="info">
-										<span class="date"><span class="month">{{post.date | date: "%d"}}</span> <span class="day">{{post.date | date: " %b"}}</span><span class="year">{{post.date | date: " %Y"}}</span></span>
-										
-									</div>
-    
-                            <div id="ipython">
-            {{post.content |split:'<!--break-->' | first}}
-            {% if post.content contains '<!--break-->' %}
-			 <a href="{{ post.url }}">read more</a>
-		    {% endif %}
-                </div>	
-    	</article>
+									
+								</section>
+
+						</div>
+            {% elsif loopindex == 2 %}
+                        <div class="4u">
+
+							<!-- Feature -->
+								<section>
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
+									<header>
+										<h3>{{post.title}} </h3>
+									</header>
+									
+
+						</div>
+            
+                        </div>
+                        
+
         {% endif %}
+                    {% assign loopindex_ = loopindex_ | plus:1 %}
+                        {% endif %}
 	  {% endfor %}
+                        {% if loopindex_ | modulo: 3 != 0%}
+                        </div>
+                    {% endif %}
+	  
+</section></div>
+
 

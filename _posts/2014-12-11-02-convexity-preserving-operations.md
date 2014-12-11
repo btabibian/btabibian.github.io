@@ -3,8 +3,12 @@ layout: python_note
 title: "02-Convexity Preserving Operations"
 tags: [ipython, convex, blog]
 categories: [optimization]
-date:  2014-12-05
-parent: [/optimization/,optimization]
+date:  2014-12-11
+parent: [/optimization,Optimization]
+img: [
+2014-12-11-02-convexity-preserving-operations_files/2014-12-11-02-convexity-preserving-operations_1_0.png,
+2014-12-11-02-convexity-preserving-operations_files/2014-12-11-02-convexity-preserving-operations_3_1.png,
+]
 ---
 This is the second notebook of the series going through Convex Optimizaion. The
 topics here are following MOOC [Convex
@@ -39,7 +43,7 @@ plt.legend()
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-02-convexity-preserving-operations_files/2014-12-05-02-convexity-preserving-operations_1_0.png)
+![png]({{ site.baseurl}}/images/2014-12-11-02-convexity-preserving-operations_files/2014-12-11-02-convexity-preserving-operations_1_0.png)
 
 
 <!--break-->
@@ -117,19 +121,19 @@ x_{n+1}+(1-\theta)y_{n+1}}\frac{\tilde{x}}{x_{n+1}}+\frac{(1-\theta)
 y_{n+1}}{\theta x_{n+1}+(1-\theta)y_{n+1}}\frac{\tilde{y}}{y_{n+1}}\\
 &=\mu P(x)+(1-\mu)P(y)\\
 \end{align}$$
-where $$\mu=\frac{\theta x_{n+1}}{\theta x_{n+1}+(1-\theta) y_{n+1}} \in [0,1]$$
+where $\mu=\frac{\theta x_{n+1}}{\theta x_{n+1}+(1-\theta) y_{n+1}} \in [0,1]$
 and monotonic.
 
-> This establishes the convexity preserving of $$P$$. If $$C$$ is convex with
-$$C \subseteq \textbf{dom} P$$ from above we have that the line segment
-$$[P(x),P(y)]$$ is in $$P(C)$$.
+> This establishes the convexity preserving of $P$. If $C$ is convex with $C
+\subseteq \textbf{dom} P$ from above we have that the line segment $[P(x),P(y)]$
+is in $P(C)$.
 
 + The inverse image of a convex set under the perspective function is also
 convex:
 
-  if $$C\subseteq R^n$$ is **convex**, then:
+  if $C\subseteq R^n$ is **convex**, then:
 
-  $$P^{-1}(C)=\{(x,t)\in R^{n+1}\mid x/t\in C,t>0\}$$
+  $P^{-1}(C)=\\{(x,t)\in R^{n+1}\mid x/t\in C,t>0\\}$
 
   is **convex**.
 
@@ -138,7 +142,7 @@ convex:
 A linear-fractional function is formed by composing the perspective function
 with and affine function:
 
-suppose $$g:R^n\rightarrow R^{m+1}$$ is affine:
+suppose $g:R^n\rightarrow R^{m+1}$ is affine:
 
 $$\begin{align}
 g(x)=\begin{bmatrix} A\\ c^T \end{bmatrix} x+\begin{bmatrix} b\\ d
@@ -185,7 +189,7 @@ plt.scatter(c_[:,0],c_[:,1],color='b',label='$C\'$')
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-02-convexity-preserving-operations_files/2014-12-05-02-convexity-preserving-operations_3_1.png)
+![png]({{ site.baseurl}}/images/2014-12-11-02-convexity-preserving-operations_files/2014-12-11-02-convexity-preserving-operations_3_1.png)
 
 
 ------

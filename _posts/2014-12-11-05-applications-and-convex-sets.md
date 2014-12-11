@@ -3,8 +3,16 @@ layout: python_note
 title: "05-Applications and Convex Sets"
 tags: [ipython, convex, blog]
 categories: [optimization_hw]
-date:  2014-12-06
+date:  2014-12-11
 parent: [/optimization,Optimization]
+img: [
+2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_15_1.png,
+2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_18_2.png,
+2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_18_1.png,
+2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_12_1.png,
+2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_20_1.png,
+2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_9_1.png,
+]
 ---
 **In [1]:**
 
@@ -249,7 +257,7 @@ plt.gca().add_artist(Wedge((0,0),1,0,180,color='k'))
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-06-05-applications-and-convex-sets_files/2014-12-06-05-applications-and-convex-sets_9_1.png)
+![png]({{ site.baseurl}}/images/2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_9_1.png)
 
 
 + This set **is** *convex*, this is the case because this set is intersection of
@@ -292,7 +300,7 @@ plt.gca().add_artist(plt.Polygon([[0,0],[0,5],[5,0]],color='k'))
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-06-05-applications-and-convex-sets_files/2014-12-06-05-applications-and-convex-sets_12_1.png)
+![png]({{ site.baseurl}}/images/2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_12_1.png)
 
 
 + This set **is** *convex*, this is the case because this set is intersection of
@@ -336,7 +344,7 @@ plt.gca().add_artist(plt.Polygon([[0,0],[0,5],[9,14],[2,0]],color='k'))
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-06-05-applications-and-convex-sets_files/2014-12-06-05-applications-and-convex-sets_15_1.png)
+![png]({{ site.baseurl}}/images/2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_15_1.png)
 
 
 + This set **is** *convex*, this is the case because this set is intersection of
@@ -389,11 +397,11 @@ plt.title('Coni(S)')
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-06-05-applications-and-convex-sets_files/2014-12-06-05-applications-and-convex-sets_18_1.png)
+![png]({{ site.baseurl}}/images/2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_18_1.png)
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-06-05-applications-and-convex-sets_files/2014-12-06-05-applications-and-convex-sets_18_2.png)
+![png]({{ site.baseurl}}/images/2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_18_2.png)
 
 
 ### Q2.14
@@ -442,7 +450,7 @@ plt.text(0,0,"H-",font)
 
 
 
-![png]({{ site.baseurl}}/images/2014-12-06-05-applications-and-convex-sets_files/2014-12-06-05-applications-and-convex-sets_20_1.png)
+![png]({{ site.baseurl}}/images/2014-12-11-05-applications-and-convex-sets_files/2014-12-11-05-applications-and-convex-sets_20_1.png)
 
 
 A set is convex cone with vertex the origin if:

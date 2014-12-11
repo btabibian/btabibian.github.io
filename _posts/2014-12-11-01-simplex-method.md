@@ -3,8 +3,14 @@ layout: python_note
 title: "01-Simplex Method"
 tags: [ipython, convex, blog]
 categories: [optimization_hw]
-date:  2014-12-05
+date:  2014-12-11
 parent: [/optimization,Optimization]
+img: [
+2014-12-11-01-simplex-method_files/2014-12-11-01-simplex-method_4_0.png,
+2014-12-11-01-simplex-method_files/2014-12-11-01-simplex-method_39_0.png,
+2014-12-11-01-simplex-method_files/2014-12-11-01-simplex-method_66_0.png,
+2014-12-11-01-simplex-method_files/2014-12-11-01-simplex-method_22_0.png,
+]
 ---
 **In [2]:**
 
@@ -48,7 +54,7 @@ _=plt.ylim(0,5)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-01-simplex-method_files/2014-12-05-01-simplex-method_4_0.png)
+![png]({{ site.baseurl}}/images/2014-12-11-01-simplex-method_files/2014-12-11-01-simplex-method_4_0.png)
 
 
 It is clear from the plot that the Maximization problem is unbounded and the
@@ -304,7 +310,7 @@ _=plt.ylim(0,10)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-01-simplex-method_files/2014-12-05-01-simplex-method_22_0.png)
+![png]({{ site.baseurl}}/images/2014-12-11-01-simplex-method_files/2014-12-11-01-simplex-method_22_0.png)
 
 
 Matlab Linear Programming solution:
@@ -819,7 +825,7 @@ _=plt.ylim(0,50)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-01-simplex-method_files/2014-12-05-01-simplex-method_39_0.png)
+![png]({{ site.baseurl}}/images/2014-12-11-01-simplex-method_files/2014-12-11-01-simplex-method_39_0.png)
 
 
 Matlab Linear Programming solution:
@@ -1809,7 +1815,7 @@ _=plt.ylim(0,20)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2014-12-05-01-simplex-method_files/2014-12-05-01-simplex-method_66_0.png)
+![png]({{ site.baseurl}}/images/2014-12-11-01-simplex-method_files/2014-12-11-01-simplex-method_66_0.png)
 
 
 Matlab Linear Programming solution:

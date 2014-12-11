@@ -3,6 +3,7 @@ layout: note
 title: Classics of CS - Epsiode 1- The Empror's Old Cloth
 categories: notes
 date: 2012-03-24
+img: ["https://sites.google.com/site/btabibian/_/rsrc/1332542183299/notes/classicsofcs-epsiode1-theemprorsoldcloth/Hoare.jpg"]
 ---
 <div style="display:inline;float:right;margin-top:5px;margin-right:10px;margin-bottom:5px;margin-left:10px">
 <a href="classicsofcs-epsiode1-theemprorsoldcloth/Hoare.jpg?attredirects=0/index.html" imageanchor="1"><img alt="Sir Charles Antony Richard Hoare" border="0" height="320" src="https://sites.google.com/site/btabibian/_/rsrc/1332542183299/notes/classicsofcs-epsiode1-theemprorsoldcloth/Hoare.jpg" width="320"/></a></div>Recently in CACM Opinion blog appeared <a href="http://cacm.acm.org/opinion/articles/147340-reading-cs-classics/abstract" rel="nofollow">an entry</a> which caught my attention. Classics of Computer Science!, Selma Tekir in her post points out 10 CS Classics written by most famous and distinguished researchers in the field of computing. In this note I would like to point out a few of the passages from the first item on the list, <i>The Empror's Old cloth</i> by <a href="http://en.wikipedia.org/wiki/Tony_Hoare" rel="nofollow" target="_blank">C.A.R. Hoare</a>. Quick look at <a href="http://en.wikipedia.org/wiki/Tony_Hoare" rel="nofollow" target="_blank">Sir Charles Antony Richard Hoare</a> at Wikipedia and we will realize his genius and great career, probably the most notable one is development of QuickSort algorithm.
