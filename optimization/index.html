@@ -12,9 +12,9 @@ kind: homepage
 						<h2>Convex Optimization!</h2>
 					</header>
 
-                    {% assign sorted_posts = site.posts | sort:"name" %}
+                    {% assign sorted_posts = site.posts | sort:"title" %}
                     {% assign loopindex_ = 0 %}
-                    {% for post in sorted_posts reversed %}
+                    {% for post in sorted_posts %}
                         {% if post.categories contains 'optimization' %}
                             
                             {% assign loopindex = loopindex_ | modulo: 3 %}
