@@ -14,14 +14,14 @@ img: [
 ---
 **In [2]:**
 
-{% highlight python %}
+{%highlight python%}
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from IPython.display import display
 #import mlabwrap
 #mlab=mlabwrap.init('/Applications/MATLAB_R2013a.app/bin/matlab')
-{% endhighlight %}
+{%endhighlight%}
 
 # Introduction to Linear Programming
 
