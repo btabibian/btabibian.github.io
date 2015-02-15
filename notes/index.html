@@ -4,8 +4,6 @@ title: Notes
 kind: homepage
 ---
 
-
-
 <div id="features-wrapper">
 				<section id="features" class="container">
 
@@ -14,16 +12,16 @@ kind: homepage
                     {% for post in site.posts %}
                         {% if post.categories contains 'notes' %}
                             
-                            {% assign loopindex = loopindex_ | modulo: 3 %}
+                            {% assign loopindex = loopindex_ | modulo: 4 %}
                     
             {% if loopindex == 0 %}
                     <div class="row">
-                        <div class="4u">
+                        <div class="3u">
 
 							<!-- Feature -->
 								<section>
                                     {% if post.img[0] contains "http" %}
-                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" /></a>
+                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" max-height="40px" /></a>
                                     {% else %}
 									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
                                     {% endif %}
@@ -35,12 +33,12 @@ kind: homepage
 
 						</div>
             {% elsif loopindex == 1 %}
-                        <div class="4u">
+                        <div class="3u">
 
 							<!-- Feature -->
 								<section>
 									{% if post.img[0] contains "http" %}
-                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" /></a>
+                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" max-height="40px" /></a>
                                     {% else %}
 									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
                                     {% endif %}
@@ -52,7 +50,24 @@ kind: homepage
 
 						</div>
             {% elsif loopindex == 2 %}
-                        <div class="4u">
+                        <div class="3u">
+
+							<!-- Feature -->
+								<section>
+									{% if post.img[0] contains "http" %}
+                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" max-height="40px"/></a>
+                                    {% else %}
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
+                                    {% endif %}
+									<header>
+										<h3>{{post.title}}</h3>
+									</header>
+									
+
+						</div>
+                            
+                             {% elsif loopindex == 3 %}
+                        <div class="3u">
 
 							<!-- Feature -->
 								<section>
