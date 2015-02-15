@@ -2,6 +2,7 @@ name: Behzad Tabibian
 baseurl: "http://btabibian.github.io"
 highlighter: pygments
 fenced_code_blocks: true
+markdown: kramdown
 kramdown:
   auto_ids: true
   input: GFM
@@ -9,8 +10,3 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   use_coderay: false
 
-markdown: redcarpet
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
-
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
