@@ -44,7 +44,7 @@ plt.legend()
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2015-02-15-02-convexity-preserving-operations_files/2015-02-15-02-convexity-preserving-operations_1_0.png)
+![png]({{ site.baseurl}}/optimization/imges/2015-02-15-02-convexity-preserving-operations_files/2015-02-15-02-convexity-preserving-operations_1_0.png)
 
 
 <!--break-->
@@ -190,7 +190,7 @@ plt.scatter(c_[:,0],c_[:,1],color='b',label='$C\'$')
 
 
 
-![png]({{ site.baseurl}}/images/2015-02-15-02-convexity-preserving-operations_files/2015-02-15-02-convexity-preserving-operations_3_1.png)
+![png]({{ site.baseurl}}/optimization/imges/2015-02-15-02-convexity-preserving-operations_files/2015-02-15-02-convexity-preserving-operations_3_1.png)
 
 
 ------
