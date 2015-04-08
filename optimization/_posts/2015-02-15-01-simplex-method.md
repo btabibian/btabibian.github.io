@@ -54,7 +54,7 @@ _=plt.ylim(0,5)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2015-02-15-01-simplex-method_files/2015-02-15-01-simplex-method_4_0.png)
+![png]({{ site.baseurl}}/optimization/images/2015-02-15-01-simplex-method_files/2015-02-15-01-simplex-method_4_0.png)
 
 
 It is clear from the plot that the Maximization problem is unbounded and the
@@ -310,7 +310,7 @@ _=plt.ylim(0,10)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2015-02-15-01-simplex-method_files/2015-02-15-01-simplex-method_22_0.png)
+![png]({{ site.baseurl}}/optimization/images/2015-02-15-01-simplex-method_files/2015-02-15-01-simplex-method_22_0.png)
 
 
 Matlab Linear Programming solution:
@@ -825,7 +825,7 @@ _=plt.ylim(0,50)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2015-02-15-01-simplex-method_files/2015-02-15-01-simplex-method_39_0.png)
+![png]({{ site.baseurl}}/optimization/images/2015-02-15-01-simplex-method_files/2015-02-15-01-simplex-method_39_0.png)
 
 
 Matlab Linear Programming solution:
@@ -1815,7 +1815,7 @@ _=plt.ylim(0,20)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/images/2015-02-15-01-simplex-method_files/2015-02-15-01-simplex-method_66_0.png)
+![png]({{ site.baseurl}}/optimization/images/2015-02-15-01-simplex-method_files/2015-02-15-01-simplex-method_66_0.png)
 
 
 Matlab Linear Programming solution:
