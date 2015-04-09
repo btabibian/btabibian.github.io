@@ -289,7 +289,7 @@ _=plt.ylim(0,5)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/optimization/images/2015-02-15-02-integer-linear-programming_files/2015-02-15-02-integer-linear-programming_27_0.png)
+![png]({{ site.baseurl}}/notebooks/optimization/images/2015-02-15-02-integer-linear-programming_files/2015-02-15-02-integer-linear-programming_27_0.png)
 
 
 **In [16]:**
@@ -407,7 +407,7 @@ _=plt.ylim(0,5)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/optimization/images/2015-02-15-02-integer-linear-programming_files/2015-02-15-02-integer-linear-programming_31_0.png)
+![png]({{ site.baseurl}}/notebooks/optimization/images/2015-02-15-02-integer-linear-programming_files/2015-02-15-02-integer-linear-programming_31_0.png)
 
 
 **In [20]:**

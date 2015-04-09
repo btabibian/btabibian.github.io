@@ -316,7 +316,7 @@ ax.view_init(elev=30, azim=145)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl}}/optimization/images/2015-02-15-03-convex-optimization-problems_files/2015-02-15-03-convex-optimization-problems_16_0.png)
+![png]({{ site.baseurl}}/notebooks/optimization/images/2015-02-15-03-convex-optimization-problems_files/2015-02-15-03-convex-optimization-problems_16_0.png)
 
 
 #### Chebyshev center of polyhedron
@@ -423,7 +423,7 @@ plt.show()
 
 
 
-![png]({{ site.baseurl}}/optimization/images/2015-02-15-03-convex-optimization-problems_files/2015-02-15-03-convex-optimization-problems_18_1.png)
+![png]({{ site.baseurl}}/notebooks/optimization/images/2015-02-15-03-convex-optimization-problems_files/2015-02-15-03-convex-optimization-problems_18_1.png)
 
 
 ### Quadratic Programming
@@ -482,5 +482,5 @@ plt.grid()
 
 
 
-![png]({{ site.baseurl}}/optimization/images/2015-02-15-03-convex-optimization-problems_files/2015-02-15-03-convex-optimization-problems_20_1.png)
+![png]({{ site.baseurl}}/notebooks/optimization/images/2015-02-15-03-convex-optimization-problems_files/2015-02-15-03-convex-optimization-problems_20_1.png)
 
