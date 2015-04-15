@@ -8,7 +8,7 @@ categories: [
 scientific-computing,
 
 ]
-date:  2015-04-10
+date:  2015-04-15
 parent: "learningPython"
 img: [
 theory-experiment-computation.png,
@@ -19,18 +19,20 @@ github: https://github.com/btabibian/scientific-python-lectures
 ---
 # Introduction to scientific computing with Python
 
-J.R. Johansson (robert@riken.jp) http://dml.riken.jp/~rob/
+Behzad Tabibian (btabibian@tuebingen.mpg.de) [http://btabibian.github.io](http://btabibian@github.io)
 
-The latest version of this [IPython notebook](http://ipython.org/notebook.html) lecture is available at [http://github.com/jrjohansson/scientific-python-lectures](http://github.com/jrjohansson/scientific-python-lectures).
+J.R. Johansson (robert@riken.jp) [http://dml.riken.jp/~rob/](http://dml.riken.jp/~rob/)
 
-The other notebooks in this lecture series are indexed at [http://jrjohansson.github.com](http://jrjohansson.github.com).
+The latest version of this [IPython notebook](http://ipython.org/notebook.html) lecture is available at [http://github.com/btabibian/scientific-python-lectures](http://github.com/btabibian/scientific-python-lectures).
+
+The other notebooks in this lecture series are indexed at [http://btabibian.github.io/notebooks/learnpython/](http://btabibian.github.io/notebooks/learnpython/).
 
 ## The role of computing in science
 
 Science has traditionally been divided into experimental and theoretical disciplines, but during the last several decades computing has emerged as a very important part of science. Scientific computing is often closely related to theory, but it also has many characteristics in common with experimental work. It is therefore often viewed as a new third branch of science. In most fields of science, computational work is an important complement to both experiments and theory, and nowadays a vast majority of both experimental and theoretical papers involve some numerical calculations, simulations or computer modeling.
 
 <center>
-<img src="{{site.baseurl}}/notebooks/learnpython/images/theory-experiment-computation.png" width="300">
+<img src="{{site.baseurl}}/notebooks/learnpython//images/theory-experiment-computation.png" width="300">
 </center>
 
 In experimental and theoretical sciences there are well established codes of conducts for how results and methods are published and made available to other scientists. For example, in theoretical sciences, derivations, proofs and other results are published in full detail, or made available upon request. Likewise, in experimental sciences, the methods used and the results are published, and all experimental data should be available upon request. It is considered unscientific to withhold crucial details in a theoretical proof or experimental method, that would hinder other scientists from replicating and reproducing the results.
@@ -78,14 +80,14 @@ Ensuring replicability and reprodicibility of scientific simulations is a *compl
 
 * Revision Control System (RCS) software. 
     * Good choices include:
-        * git - http://git-scm.com
-        * mercurial - http://mercurial.selenic.com. Also known as `hg`.
-        * subversion - http://subversion.apache.org. Also known as `svn`.
+        * git - [http://git-scm.com](http://git-scm.com)
+        * mercurial - [http://mercurial.selenic.com](http://mercurial.selenic.com). Also known as `hg`.
+        * subversion - [http://subversion.apache.org](http://subversion.apache.org). Also known as `svn`.
 
 * Online repositories for source code. Available as both private and public repositories. 
     * Some good alternatives are
-        * Github - http://www.github.com
-        * Bitbucket - http://www.bitbucket.com
+        * Github - [http://www.github.com](http://www.github.com)
+        * Bitbucket - [http://www.bitbucket.com](http://www.bitbucket.com)
         * Privately hosted repositories on the university's or department's servers.
 
 #### Note
@@ -122,15 +124,16 @@ Repositories are also excellent for version controlling manuscripts, figures, th
 
 ## What makes python suitable for scientific computing?
 
-<img src="{{site.baseurl}}/notebooks/learnpython/images/optimizing-what.png" width="600">
+<img src="{{site.baseurl}}/notebooks/learnpython//images/optimizing-what.png" width="600">
 
 * Python has a strong position in scientific computing: 
     * Large community of users, easy to find help and documentation.
 
 * Extensive ecosystem of scientific libraries and environments
-    * numpy: http://numpy.scipy.org - Numerical Python
-    * scipy: http://www.scipy.org -  Scientific Python
-    * matplotlib: http://www.matplotlib.org - graphics library
+    * numpy: [http://numpy.scipy.org](http://numpy.scipy.org) - Numerical Python
+    * scipy: [http://www.scipy.org](http://www.scipy.org) -  Scientific Python
+    * scikit-learn: [http://scikit-learn.org/stable/](http://scikit-learn.org/stable/) - Machine Learning
+    * matplotlib: [http://www.matplotlib.org](http://www.matplotlib.org) - graphics library
 
 * Great performance due to close integration with time-tested and highly optimized codes written in C and Fortran:
     * blas, altas blas, lapack, arpack, Intel MKL, ...
@@ -146,14 +149,14 @@ Repositories are also excellent for version controlling manuscripts, figures, th
 
 ### The scientific python software stack
 
-<!-- <img src="{{site.baseurl}}/notebooks/learnpython/images/scientific-python-stack.svg" width="300"> -->
-<img src="{{site.baseurl}}/notebooks/learnpython/images/scientific-python-stack.png" width="300">
+<!-- <img src="{{site.baseurl}}/notebooks/learnpython//images/scientific-python-stack.svg" width="300"> -->
+<img src="{{site.baseurl}}/notebooks/learnpython//images/scientific-python-stack.png" width="300">
 
 ### Python environments
 
 Python is not only a programming language, but often also refers to the standard implementation of the interpreter (technically referred to as [CPython](http://en.wikipedia.org/wiki/CPython)) that actually runs the python code on a computer.
 
-There are also many different environments through which the python interpreter can be used. Each environment have different advantages and is suitable for different workflows. One strength of python is that it versatile and can be used in complementary ways, but it can be confusing for beginners so we will start with a brief survey of python environments that are useful for scientific computing.
+There are also many different environments through which the python interpreter can be used. Each environment have different advantages and is suitable for different workflows. One strength of python is that it is versatile and can be used in complementary ways, but it can be confusing for beginners so we will start with a brief survey of python environments that are useful for scientific computing.
 
 ### Python interpreter
 
@@ -165,8 +168,8 @@ For example, to run a file ``my-program.py`` that contains python code from the 
 
 We can also start the interpreter by simply typing ``python`` at the command line, and interactively type python code into the interpreter. 
 
-<!-- <img src="{{site.baseurl}}/notebooks/learnpython/{{site.baseurl}}/notebooks/learnpython/images/python-screenshot.jpg" width="600"> -->
-<img src="{{site.baseurl}}/notebooks/learnpython/images/python-screenshot.jpg" width="600">
+<!-- <img src="{{site.baseurl}}/notebooks/learnpython//{{site.baseurl}}/notebooks/learnpython//images/python-screenshot.jpg" width="600"> -->
+<img src="{{site.baseurl}}/notebooks/learnpython//images/python-screenshot.jpg" width="600">
 
 
 This is often how we want to work when developing scientific applications, or when doing small calculations. But the standard python interpreter is not very convenient for this kind of work, due to a number of limitations.
@@ -175,8 +178,8 @@ This is often how we want to work when developing scientific applications, or wh
 
 IPython is an interactive shell that addresses the limitation of the standard python interpreter, and it is a work-horse for scientific use of python. It provides an interactive prompt to the python interpreter with a greatly improved user-friendliness.
 
-<!-- <img src="{{site.baseurl}}/notebooks/learnpython/{{site.baseurl}}/notebooks/learnpython/images/ipython-screenshot.jpg" width="600"> -->
-<img src="{{site.baseurl}}/notebooks/learnpython/images/ipython-screenshot.jpg" width="600">
+<!-- <img src="{{site.baseurl}}/notebooks/learnpython//{{site.baseurl}}/notebooks/learnpython//images/ipython-screenshot.jpg" width="600"> -->
+<img src="{{site.baseurl}}/notebooks/learnpython//images/ipython-screenshot.jpg" width="600">
 
 Some of the many useful features of IPython includes:
 
@@ -185,14 +188,14 @@ Some of the many useful features of IPython includes:
 * In-line editing of code.
 * Object introspection, and automatic extract of documentation strings from python objects like classes and functions.
 * Good interaction with operating system shell.
-* Support for multiple parallel back-end processes, that can run on computing clusters or cloud services like Amazon EE2.
+* Support for multiple parallel back-end processes, that can run on computing clusters or cloud services like Amazon EC2.
 
-### IPython notebook
+### Jupyter notebook (formerly IPython)
 
-[IPython notebook](http://ipython.org/notebook.html) is an HTML-based notebook environment for Python, similar to Mathematica or Maple. It is based on the IPython shell, but provides a cell-based environment with great interactivity, where calculations can be organized documented in a structured way.
+[Jupyter notebook](http://ipython.org/notebook.html) is an HTML-based notebook environment for Python, similar to Mathematica or Maple. It is based on the IPython shell, but provides a cell-based environment with great interactivity, where calculations can be organized documented in a structured way. The notes you are reading are produced using this tool. You can download these notebooks from [here](https://github.com/btabibian/scientific-python-lectures).
 
-<!-- <img src="{{site.baseurl}}/notebooks/learnpython/{{site.baseurl}}/notebooks/learnpython/images/ipython-notebook-screenshot.jpg" width="800"> -->
-<img src="{{site.baseurl}}/notebooks/learnpython/images/ipython-notebook-screenshot.jpg" width="600">
+<!-- <img src="{{site.baseurl}}/notebooks/learnpython//{{site.baseurl}}/notebooks/learnpython//images/ipython-notebook-screenshot.jpg" width="800"> -->
+<img src="{{site.baseurl}}/notebooks/learnpython//images/ipython-notebook-screenshot.jpg" width="600">
 
 Although using the a web browser as graphical interface, IPython notebooks are usually run locally, from the same computer that run the browser. To start a new IPython notebook session, run the following command:
 
@@ -204,8 +207,8 @@ from a directory where you want the notebooks to be stored. This will open a new
 
 [Spyder](http://code.google.com/p/spyderlib/) is a MATLAB-like IDE for scientific computing with python. It has the many advantages of a traditional IDE environment, for example that everything from code editing, execution and debugging is carried out in a single environment, and work on different calculations can be organized as projects in the IDE environment.
 
-<!-- <img src="{{site.baseurl}}/notebooks/learnpython/{{site.baseurl}}/notebooks/learnpython/images/spyder-screenshot.jpg" width="800"> -->
-<img src="{{site.baseurl}}/notebooks/learnpython/images/spyder-screenshot.jpg" width="800">
+<!-- <img src="{{site.baseurl}}/notebooks/learnpython//{{site.baseurl}}/notebooks/learnpython//images/spyder-screenshot.jpg" width="800"> -->
+<img src="{{site.baseurl}}/notebooks/learnpython//images/spyder-screenshot.jpg" width="800">
 
 Some advantages of Spyder:
 
@@ -228,51 +231,44 @@ To see which version of Python you have, run
 Several versions of Python can be installed in parallel, as shown above.
 
 
+<a name="Installation"></a>
+
 ## Installation
+
+The most convinient way to install necessary packages for this course is to use Annaconda's distribution. This distrubition contains almost all the packages needed for this course.
+
+Visit [http://continuum.io/downloads](http://continuum.io/downloads) to obtain the latest version of this distribution for your platform. 
+You may download and install any version after 2.1 but make sure you are not installing older versions.
 
 ### Linux
 
-In Ubuntu Linux, to installing python and all the requirements run:
+In Ubuntu Linux, download bash script from the download page of annaconda. Run following command from where you downloaded to file:
 
-    $ sudo apt-get install python ipython ipython-notebook
-    $ sudo apt-get install python-numpy python-scipy python-matplotlib python-sympy
-    $ sudo apt-get install spyder
+    $ sudo bash Anaconda-2.2.0-Linux-x86_64 
 
 ### MacOS X
 
-*Macports*
-
-Python is included by default in Mac OS X, but for our purposes it will be useful to install a new python environment using [Macports](http://www.macports.org/), because it makes it much easier to install all the required additional packages. Using Macports, we can install what we need with:
-
-    $ sudo port install py27-ipython +pyside+notebook+parallel+scientific
-    $ sudo port install py27-scipy py27-matplotlib py27-sympy
-    $ sudo port install py27-spyder
-
-These will associate the commands `python` and `ipython` with the versions installed via macports (instead of the one that is shipped with Mac OS X), run the following commands:
-
-    $ sudo port select python python27
-    $ sudo port select ipython ipython27
-
-*Fink*
-
-Or, alternatively, you can use the [Fink](http://www.finkproject.org/) package manager. After installing Fink, use the following command to install python and the packages that we need:
-
-    $ sudo fink install python27 ipython-py27 numpy-py27 matplotlib-py27 scipy-py27 sympy-py27
-    $ sudo fink install spyder-mac-py27
+Annaconda provides a Graphical Installer which provides all neccessary  packages. 
 
 ### Windows
 
-Windows lacks a good packaging system, so the easiest way to setup a Python environment is to install a pre-packaged distribution. Some good alternatives are:
+Similar to Mac, you can download the installer for Windows from Annaconda download page.
 
- * [Enthought Python Distribution](http://www.enthought.com/products/epd.php). EPD is a commercial product but is available free for academic use.
- * [Anaconda CE](http://continuum.io/downloads.html). Anaconda Pro is a commercial product, but Anaconda Community Edition is free.
- * [Python(x,y)](http://code.google.com/p/pythonxy/). Fully open source.
+### Check your installation
 
+After installing one of the above distributions you can check your installation by opening a new terminal window and type following commands:
 
-
-#### Note
-
-EPD and Anaconda CE are also available for Linux and Max OS X.
+    $ ipython --version 
+    
+    3.0.0
+    
+    $ ipython 
+  
+    In [1]: import numpy as np
+  
+    In [2]: import matplotlib.pyplot as plt
+    
+If you obtained a copy of this notebook you can run the notebook by starting an IPython session, discussed above, and run the notebook and compare your environment with the one used to produce the outputs at the end of this notebook.
 
 ## Further reading
 
@@ -310,6 +306,6 @@ Now, to load the extension and produce the version table
 
 
 
-<table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>2.7.5 (default, May 19 2013, 13:26:46) [GCC 4.2.1 Compatible Apple Clang 4.1 ((tags/Apple/clang-421.11.66))]</td></tr><tr><td>IPython</td><td>0.13.2</td></tr><tr><td>OS</td><td>posix [darwin]</td></tr><tr><td>numpy</td><td>1.7.1</td></tr><tr><td>scipy</td><td>0.12.0</td></tr><tr><td>matplotlib</td><td>1.2.1</td></tr><tr><td>sympy</td><td>0.7.2</td></tr><tr><td colspan='2'>Thu Aug 08 11:18:41 2013 JST</td></tr></table>
+<table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>2.7.8 64bit [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]</td></tr><tr><td>IPython</td><td>3.0.0</td></tr><tr><td>OS</td><td>Linux 3.13.0 45 generic x86_64 with debian jessie sid</td></tr><tr><td>numpy</td><td>1.9.1</td></tr><tr><td>scipy</td><td>0.14.0</td></tr><tr><td>matplotlib</td><td>1.3.1</td></tr><tr><td>sympy</td><td>0.7.5</td></tr><tr><td colspan='2'>Mon Apr 13 10:39:11 2015 CEST</td></tr></table>
 
 

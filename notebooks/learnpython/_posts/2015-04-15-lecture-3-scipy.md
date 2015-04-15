@@ -8,7 +8,7 @@ categories: [
 scientific-computing,
 
 ]
-date:  2015-04-10
+date:  2015-04-15
 parent: "learningPython"
 img: [
 scipy.png,
@@ -117,7 +117,7 @@ ax.legend();
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_12_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_12_0.png)
 
 
 
@@ -367,7 +367,7 @@ axes[1].set_xlim([1, -1]);
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_42_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_42_0.png)
 
 
 Simple annimation of the pendulum motion. We will see how to make better animation in Lecture 4.
@@ -403,7 +403,7 @@ for t_idx, tt in enumerate(t[:200]):
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_45_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_45_0.png)
 
 
 #### Example: Damped harmonic oscillator
@@ -470,7 +470,7 @@ ax.legend();
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_52_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_52_0.png)
 
 
 ## Fourier transform
@@ -506,7 +506,7 @@ ax.plot(w, abs(F));
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_58_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_58_0.png)
 
 
 Since the signal is real, the spectrum is symmetric. We therefore only need to plot the part that corresponds to the postive frequencies. To extract that part of the `w` and `F` we can use some of the indexing tricks for NumPy arrays that we saw in Lecture 2:
@@ -526,7 +526,7 @@ ax.set_xlim(0, 5);
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_61_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_61_0.png)
 
 
 As expected, we now see a peak in the spectrum that is centered around 1, which is the frequency we used in the damped oscillator example.
@@ -1009,7 +1009,7 @@ ax.plot(x, f(x));
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_115_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_115_0.png)
 
 
 We can use the `fmin_bfgs` function to find the minima of a function:
@@ -1104,7 +1104,7 @@ ax.set_ylim(-5,5);
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_125_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_125_0.png)
 
 
 
@@ -1184,7 +1184,7 @@ ax.legend(loc=3);
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_134_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_134_0.png)
 
 
 ## Statistics
@@ -1222,7 +1222,7 @@ axes[2].hist(X.rvs(size=1000));
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_139_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_139_0.png)
 
 
 
@@ -1248,7 +1248,7 @@ axes[2].hist(Y.rvs(size=1000), bins=50);
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-3-scipy_files/2015-04-10-lecture-3-scipy_141_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-3-scipy_files/2015-04-15-lecture-3-scipy_141_0.png)
 
 
 Statistics:

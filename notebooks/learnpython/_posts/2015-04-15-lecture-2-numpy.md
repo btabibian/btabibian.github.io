@@ -8,7 +8,7 @@ categories: [
 scientific-computing,
 
 ]
-date:  2015-04-10
+date:  2015-04-15
 parent: "learningPython"
 img: [
 numpy.jpeg,
@@ -204,13 +204,14 @@ M[0,0] = "hello"
 
 
     ---------------------------------------------------------------------------
+
     ValueError                                Traceback (most recent call last)
 
     <ipython-input-12-a09d72434238> in <module>()
     ----> 1 M[0,0] = "hello"
     
 
-    ValueError: invalid literal for int() with base 10: 'hello'
+    ValueError: invalid literal for long() with base 10: 'hello'
 
 
 If we want, we can explicitly define the type of the array data when we create it, using the `dtype` keyword argument: 
@@ -366,11 +367,11 @@ random.rand(5,5)
 
 
 
-    array([[ 0.30550798,  0.91803791,  0.93239421,  0.28751598,  0.04860825],
-           [ 0.45066196,  0.76661561,  0.52674476,  0.8059357 ,  0.1117966 ],
-           [ 0.05369232,  0.48848972,  0.74334693,  0.71935866,  0.35233569],
-           [ 0.13872424,  0.58346613,  0.37483754,  0.59727255,  0.38859949],
-           [ 0.29037136,  0.8360109 ,  0.63105782,  0.58906755,  0.64758577]])
+    array([[ 0.20067261,  0.31903074,  0.50413339,  0.17916857,  0.80098158],
+           [ 0.4605664 ,  0.0889817 ,  0.89913197,  0.65326837,  0.95042471],
+           [ 0.50638764,  0.93865793,  0.27431355,  0.12660373,  0.2375227 ],
+           [ 0.11655293,  0.21264332,  0.1865033 ,  0.58306332,  0.75787615],
+           [ 0.39529707,  0.58368816,  0.86195759,  0.48969116,  0.70358949]])
 
 
 
@@ -383,11 +384,11 @@ random.randn(5,5)
 
 
 
-    array([[ 0.28795069, -0.35938689, -0.31555872,  0.48542156,  0.26751156],
-           [ 2.13568908,  0.85288911, -0.70587016,  0.98492216, -0.99610179],
-           [ 0.49670578, -0.08179433,  0.58322716, -0.21797477, -1.16777687],
-           [-0.3343575 ,  0.20369114, -0.31390896,  0.3598063 ,  0.36981814],
-           [ 0.4876012 ,  1.9979494 ,  0.75177876, -1.80697478,  1.64068423]])
+    array([[-0.38628886, -0.25183044, -0.75108899, -0.24938967,  0.04214111],
+           [ 2.58066361, -1.0318666 ,  0.06503565,  0.09726207,  1.63467302],
+           [ 0.43746396, -1.6740317 ,  0.70424676,  0.48901995, -0.7179185 ],
+           [ 0.6081299 ,  0.15481145,  0.78895533,  0.60471688, -1.05199935],
+           [ 0.49851063,  0.71784166, -1.18752626,  1.03286227,  0.57774408]])
 
 
 
@@ -505,7 +506,7 @@ ax.set_ylabel('temperature (C)');
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-2-numpy_files/2015-04-10-lecture-2-numpy_58_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-2-numpy_files/2015-04-15-lecture-2-numpy_58_0.png)
 
 
 Using `numpy.savetxt` we can store a Numpy array to a file in CSV format:
@@ -520,9 +521,9 @@ M
 
 
 
-    array([[ 0.70506801,  0.54618952,  0.31039856],
-           [ 0.26640475,  0.10358152,  0.73231132],
-           [ 0.07987128,  0.34462854,  0.91114433]])
+    array([[ 0.33005805,  0.83865056,  0.57961497],
+           [ 0.25206785,  0.8369909 ,  0.8509039 ],
+           [ 0.82622818,  0.08387398,  0.73442222]])
 
 
 
@@ -536,9 +537,9 @@ savetxt("random-matrix.csv", M)
 !cat random-matrix.csv
 {% endhighlight %}
 
-    7.050680113576863750e-01 5.461895177867910345e-01 3.103985627238065037e-01
-    2.664047486311884594e-01 1.035815249084012235e-01 7.323113219935466489e-01
-    7.987128326702574999e-02 3.446285401590922781e-01 9.111443300153220237e-01
+    3.300580456122463868e-01 8.386505645635993211e-01 5.796149703411075382e-01
+    2.520678545950313376e-01 8.369908984836819110e-01 8.509038976540077570e-01
+    8.262281797172411624e-01 8.387398055365946625e-02 7.344222208274131525e-01
 
 
 
@@ -548,9 +549,9 @@ savetxt("random-matrix.csv", M, fmt='%.5f') # fmt specifies the format
 !cat random-matrix.csv
 {% endhighlight %}
 
-    0.70507 0.54619 0.31040
-    0.26640 0.10358 0.73231
-    0.07987 0.34463 0.91114
+    0.33006 0.83865 0.57961
+    0.25207 0.83699 0.85090
+    0.82623 0.08387 0.73442
 
 
 ### Numpy's native file format
@@ -575,9 +576,9 @@ load("random-matrix.npy")
 
 
 
-    array([[ 0.70506801,  0.54618952,  0.31039856],
-           [ 0.26640475,  0.10358152,  0.73231132],
-           [ 0.07987128,  0.34462854,  0.91114433]])
+    array([[ 0.33005805,  0.83865056,  0.57961497],
+           [ 0.25206785,  0.8369909 ,  0.8509039 ],
+           [ 0.82622818,  0.08387398,  0.73442222]])
 
 
 
@@ -647,7 +648,7 @@ M[1,1]
 
 
 
-    0.10358152490840122
+    0.83699089848368191
 
 
 
@@ -661,9 +662,9 @@ M
 
 
 
-    array([[ 0.70506801,  0.54618952,  0.31039856],
-           [ 0.26640475,  0.10358152,  0.73231132],
-           [ 0.07987128,  0.34462854,  0.91114433]])
+    array([[ 0.33005805,  0.83865056,  0.57961497],
+           [ 0.25206785,  0.8369909 ,  0.8509039 ],
+           [ 0.82622818,  0.08387398,  0.73442222]])
 
 
 
@@ -675,7 +676,7 @@ M[1]
 
 
 
-    array([ 0.26640475,  0.10358152,  0.73231132])
+    array([ 0.25206785,  0.8369909 ,  0.8509039 ])
 
 
 
@@ -689,7 +690,7 @@ M[1,:] # row 1
 
 
 
-    array([ 0.26640475,  0.10358152,  0.73231132])
+    array([ 0.25206785,  0.8369909 ,  0.8509039 ])
 
 
 
@@ -701,7 +702,7 @@ M[:,1] # column 1
 
 
 
-    array([ 0.54618952,  0.10358152,  0.34462854])
+    array([ 0.83865056,  0.8369909 ,  0.08387398])
 
 
 
@@ -720,9 +721,9 @@ M
 
 
 
-    array([[ 1.        ,  0.54618952,  0.31039856],
-           [ 0.26640475,  0.10358152,  0.73231132],
-           [ 0.07987128,  0.34462854,  0.91114433]])
+    array([[ 1.        ,  0.83865056,  0.57961497],
+           [ 0.25206785,  0.8369909 ,  0.8509039 ],
+           [ 0.82622818,  0.08387398,  0.73442222]])
 
 
 
@@ -741,9 +742,9 @@ M
 
 
 
-    array([[ 1.        ,  0.54618952, -1.        ],
+    array([[ 1.        ,  0.83865056, -1.        ],
            [ 0.        ,  0.        , -1.        ],
-           [ 0.07987128,  0.34462854, -1.        ]])
+           [ 0.82622818,  0.08387398, -1.        ]])
 
 
 
@@ -1041,6 +1042,32 @@ x[mask]
 
 
 
+## Performance
+
+Before going any further let's have a look at how Numpy compares to pure Python lists in terms of performance.
+
+To do this we implement a few examples and compare the execution speed.
+
+
+{% highlight python linenos  %}
+import datetime
+from timeit import Timer
+Nelements = 10000
+Ntimeits = 10000
+
+x = arange(Nelements)
+y = range(Nelements)
+
+t_numpy = Timer("x.sum()", "from __main__ import x")
+t_list = Timer("sum(y)", "from __main__ import y")
+print "numpy: %.3e seconds" % (t_numpy.timeit(Ntimeits)/Ntimeits,)
+print "list:  %.3e seconds" % (t_list.timeit(Ntimeits)/Ntimeits,)
+{% endhighlight %}
+
+    numpy: 5.634e-06 seconds
+    list:  4.472e-05 seconds
+
+
 ## Functions for extracting data from arrays and creating arrays
 
 ### where
@@ -1069,7 +1096,7 @@ x[indices] # this indexing is equivalent to the fancy indexing x[mask]
 
 
 
-    array([ 5.5,  6. ,  6.5,  7. ])
+    array([11, 12, 13, 14])
 
 
 
@@ -1222,15 +1249,14 @@ A * 2, A + 2
 
 
     (array([[ 0,  2,  4,  6,  8],
-           [20, 22, 24, 26, 28],
-           [40, 42, 44, 46, 48],
-           [60, 62, 64, 66, 68],
-           [80, 82, 84, 86, 88]]),
-     array([[ 2,  3,  4,  5,  6],
-           [12, 13, 14, 15, 16],
-           [22, 23, 24, 25, 26],
-           [32, 33, 34, 35, 36],
-           [42, 43, 44, 45, 46]]))
+            [20, 22, 24, 26, 28],
+            [40, 42, 44, 46, 48],
+            [60, 62, 64, 66, 68],
+            [80, 82, 84, 86, 88]]), array([[ 2,  3,  4,  5,  6],
+            [12, 13, 14, 15, 16],
+            [22, 23, 24, 25, 26],
+            [32, 33, 34, 35, 36],
+            [42, 43, 44, 45, 46]]))
 
 
 
@@ -1452,13 +1478,14 @@ M * v
 
 
     ---------------------------------------------------------------------------
+
     ValueError                                Traceback (most recent call last)
 
-    <ipython-input-100-995fb48ad0cc> in <module>()
+    <ipython-input-101-995fb48ad0cc> in <module>()
     ----> 1 M * v
     
 
-    /usr/local/lib/python3.3/dist-packages/numpy/matrixlib/defmatrix.py in __mul__(self, other)
+    /is/ei/btabibian/anaconda/lib/python2.7/site-packages/numpy/matrixlib/defmatrix.pyc in __mul__(self, other)
         339         if isinstance(other, (N.ndarray, list, tuple)) :
         340             # This promotes 1-D vectors to row vectors
     --> 341             return N.dot(self, asmatrix(other))
@@ -1466,7 +1493,7 @@ M * v
         343             return N.dot(self, other)
 
 
-    ValueError: objects are not aligned
+    ValueError: shapes (5,5) and (6,1) not aligned: 5 (dim 1) != 6 (dim 0)
 
 
 See also the related functions: `inner`, `outer`, `cross`, `kron`, `tensordot`. Try for example `help(kron)`.
@@ -1661,7 +1688,7 @@ mean(data[:,3])
 
 
 
-    6.1971096847515925
+    6.1971096847515854
 
 
 
@@ -1677,7 +1704,7 @@ std(data[:,3]), var(data[:,3])
 
 
 
-    (8.2822716213405663, 68.596023209663286)
+    (8.2822716213405734, 68.596023209663414)
 
 
 
@@ -1837,7 +1864,7 @@ mean(data[mask_feb,3])
 
 
 
-    -3.2121095707366085
+    -3.2121095707365961
 
 
 
@@ -1855,7 +1882,7 @@ ax.set_ylabel("Monthly avg. temp.");
 {% endhighlight %}
 
 
-![png]({{site.baseurl}}/notebooks/learnpython/images/2015-04-10-lecture-2-numpy_files/2015-04-10-lecture-2-numpy_215_0.png)
+![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-2-numpy_files/2015-04-15-lecture-2-numpy_218_0.png)
 
 
 ### Calculations with higher-dimensional data
@@ -1871,9 +1898,9 @@ m
 
 
 
-    array([[ 0.09260423,  0.73349712,  0.43306604],
-           [ 0.65890098,  0.4972126 ,  0.83049668],
-           [ 0.80428551,  0.0817173 ,  0.57833117]])
+    array([[ 0.43485521,  0.04517144,  0.15983549],
+           [ 0.06160665,  0.01117206,  0.95997496],
+           [ 0.60084606,  0.62310207,  0.673428  ]])
 
 
 
@@ -1886,7 +1913,7 @@ m.max()
 
 
 
-    0.83049668273782951
+    0.9599749615722134
 
 
 
@@ -1899,7 +1926,7 @@ m.max(axis=0)
 
 
 
-    array([ 0.80428551,  0.73349712,  0.83049668])
+    array([ 0.60084606,  0.62310207,  0.95997496])
 
 
 
@@ -1912,7 +1939,7 @@ m.max(axis=1)
 
 
 
-    array([ 0.73349712,  0.83049668,  0.80428551])
+    array([ 0.43485521,  0.95997496,  0.673428  ])
 
 
 
@@ -2320,10 +2347,10 @@ for row in M:
         print(element)
 {% endhighlight %}
 
-    row [1 2]
+    ('row', array([1, 2]))
     1
     2
-    row [3 4]
+    ('row', array([3, 4]))
     3
     4
 
@@ -2342,12 +2369,12 @@ for row_idx, row in enumerate(M):
         M[row_idx, col_idx] = element ** 2
 {% endhighlight %}
 
-    row_idx 0 row [1 2]
-    col_idx 0 element 1
-    col_idx 1 element 2
-    row_idx 1 row [3 4]
-    col_idx 0 element 3
-    col_idx 1 element 4
+    ('row_idx', 0, 'row', array([1, 2]))
+    ('col_idx', 0, 'element', 1)
+    ('col_idx', 1, 'element', 2)
+    ('row_idx', 1, 'row', array([3, 4]))
+    ('col_idx', 0, 'element', 3)
+    ('col_idx', 1, 'element', 4)
 
 
 
@@ -2387,13 +2414,14 @@ Theta(array([-3,-2,-1,0,1,2,3]))
 
 
     ---------------------------------------------------------------------------
+
     ValueError                                Traceback (most recent call last)
 
-    <ipython-input-165-6658efdd2f22> in <module>()
+    <ipython-input-166-6658efdd2f22> in <module>()
     ----> 1 Theta(array([-3,-2,-1,0,1,2,3]))
     
 
-    <ipython-input-164-9a0cb13d93d4> in Theta(x)
+    <ipython-input-165-9a0cb13d93d4> in Theta(x)
           3     Scalar implemenation of the Heaviside step function.
           4     """
     ----> 5     if x >= 0:
@@ -2576,6 +2604,6 @@ M3
 
 
 
-<table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>3.3.2+ (default, Oct  9 2013, 14:50:09) [GCC 4.8.1]</td></tr><tr><td>IPython</td><td>1.1.0</td></tr><tr><td>OS</td><td>posix [linux]</td></tr><tr><td>numpy</td><td>1.8.0</td></tr><tr><td colspan='2'>Mon Nov 11 15:06:46 2013 KST</td></tr></table>
+<table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>2.7.8 64bit [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]</td></tr><tr><td>IPython</td><td>3.0.0</td></tr><tr><td>OS</td><td>Linux 3.13.0 45 generic x86_64 with debian jessie sid</td></tr><tr><td>numpy</td><td>1.9.1</td></tr><tr><td colspan='2'>Tue Apr 14 12:19:45 2015 CEST</td></tr></table>
 
 

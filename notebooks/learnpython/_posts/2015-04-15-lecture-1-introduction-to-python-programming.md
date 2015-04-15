@@ -8,7 +8,7 @@ categories: [
 scientific-computing,
 
 ]
-date:  2015-04-10
+date:  2015-04-15
 parent: "learningPython"
 img: [
 python_logo.png,
@@ -17,11 +17,13 @@ python_logo.png,
 ---
 # Introduction to Python programming
 
-J.R. Johansson (robert@riken.jp) http://dml.riken.jp/~rob/
+Behzad Tabibian (btabibian@tuebingen.mpg.de) [http://btabibian.github.io](http://btabibian@github.io)
 
-The latest version of this [IPython notebook](http://ipython.org/notebook.html) lecture is available at [http://github.com/jrjohansson/scientific-python-lectures](http://github.com/jrjohansson/scientific-python-lectures).
+J.R. Johansson (robert@riken.jp) [http://dml.riken.jp/~rob/](http://dml.riken.jp/~rob/)
 
-The other notebooks in this lecture series are indexed at [http://jrjohansson.github.com](http://jrjohansson.github.com).
+The latest version of this [IPython notebook](http://ipython.org/notebook.html) lecture is available at [http://github.com/btabibian/scientific-python-lectures](http://github.com/btabibian/scientific-python-lectures).
+
+The other notebooks in this lecture series are indexed at [http://btabibian.github.io/notebooks/learnpython/](http://btabibian.github.io/notebooks/learnpython/).
 
 ## Python program files
 
@@ -53,7 +55,7 @@ The other notebooks in this lecture series are indexed at [http://jrjohansson.gi
 ls scripts/hello-world*.py
 {% endhighlight %}
 
-    scripts/hello-world-in-swedish.py  scripts/hello-world.py
+    [0m[93mscripts/hello-world-in-swedish.py[0m  [93mscripts/hello-world.py[0m
 
 
 
@@ -167,6 +169,17 @@ print(x)
     1.0
 
 
+Finally, one standard practice in the scientific community using Python is to shorten namespaces. This usually works my specifiying two characters or three characters *nicknames*.
+
+
+{% highlight python linenos  %}
+import numpy as np
+import scipy as sp
+import matplotlib.pyplot as plt
+{% endhighlight %}
+
+> In many code examples you may find on Internet, the author is using these de facto standard nicknames.
+
 ### Looking at what a module contains, and its documentation
 
 Once a module is imported, we can list the symbols it provides using the `dir` function:
@@ -178,7 +191,7 @@ import math
 print(dir(math))
 {% endhighlight %}
 
-    ['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'hypot', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
+    ['__doc__', '__file__', '__name__', '__package__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'hypot', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
 
 
 And using the function `help` we can get a description of each function (almost .. not all functions have docstrings, as they are technically called, but the vast majority of functions are documented this way). 
@@ -303,9 +316,10 @@ print(y)
 
 
     ---------------------------------------------------------------------------
+
     NameError                                 Traceback (most recent call last)
 
-    <ipython-input-18-36b2093251cd> in <module>()
+    <ipython-input-19-36b2093251cd> in <module>()
     ----> 1 print(y)
     
 
@@ -385,7 +399,7 @@ print(x)
 print(x.real, x.imag)
 {% endhighlight %}
 
-    1.0 -1.0
+    (1.0, -1.0)
 
 
 ### Type utility functions
@@ -401,7 +415,7 @@ import types
 print(dir(types))
 {% endhighlight %}
 
-    ['BuiltinFunctionType', 'BuiltinMethodType', 'CodeType', 'DynamicClassAttribute', 'FrameType', 'FunctionType', 'GeneratorType', 'GetSetDescriptorType', 'LambdaType', 'MappingProxyType', 'MemberDescriptorType', 'MethodType', 'ModuleType', 'SimpleNamespace', 'TracebackType', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_calculate_meta', 'new_class', 'prepare_class']
+    ['BooleanType', 'BufferType', 'BuiltinFunctionType', 'BuiltinMethodType', 'ClassType', 'CodeType', 'ComplexType', 'DictProxyType', 'DictType', 'DictionaryType', 'EllipsisType', 'FileType', 'FloatType', 'FrameType', 'FunctionType', 'GeneratorType', 'GetSetDescriptorType', 'InstanceType', 'IntType', 'LambdaType', 'ListType', 'LongType', 'MemberDescriptorType', 'MethodType', 'ModuleType', 'NoneType', 'NotImplementedType', 'ObjectType', 'SliceType', 'StringType', 'StringTypes', 'TracebackType', 'TupleType', 'TypeType', 'UnboundMethodType', 'UnicodeType', 'XRangeType', '__builtins__', '__doc__', '__file__', '__name__', '__package__']
 
 
 
@@ -455,7 +469,7 @@ x = 1.5
 print(x, type(x))
 {% endhighlight %}
 
-    1.5 <class 'float'>
+    (1.5, <type 'float'>)
 
 
 
@@ -465,7 +479,7 @@ x = int(x)
 print(x, type(x))
 {% endhighlight %}
 
-    1 <class 'int'>
+    (1, <type 'int'>)
 
 
 
@@ -475,7 +489,7 @@ z = complex(x)
 print(z, type(z))
 {% endhighlight %}
 
-    (1+0j) <class 'complex'>
+    ((1+0j), <type 'complex'>)
 
 
 
@@ -485,9 +499,10 @@ x = float(z)
 
 
     ---------------------------------------------------------------------------
+
     TypeError                                 Traceback (most recent call last)
 
-    <ipython-input-32-e719cc7b3e96> in <module>()
+    <ipython-input-33-e719cc7b3e96> in <module>()
     ----> 1 x = float(z)
     
 
@@ -507,8 +522,8 @@ y = bool(z.imag)
 print(z.imag, " -> ", y, type(y))
 {% endhighlight %}
 
-    1.0  ->  True <class 'bool'>
-    0.0  ->  False <class 'bool'>
+    (1.0, ' -> ', True, <type 'bool'>)
+    (0.0, ' -> ', False, <type 'bool'>)
 
 
 ## Operators and comparisons
@@ -526,7 +541,7 @@ Most operators and comparisons in Python work as one would expect:
 
 
 
-    (3, -1, 2, 0.5)
+    (3, -1, 2, 0)
 
 
 
@@ -728,7 +743,7 @@ s[0]
 
 
 
-**Heads up MATLAB users:** Indexing start at 0!
+> **Heads up MATLAB users:** Indexing start at 0!
 
 We can extract a part of a string using the syntax `[start:stop]`, which extracts characters between index `start` and `stop`:
 
@@ -819,7 +834,7 @@ Python has a very rich set of functions for text processing. See for example htt
 print("str1", "str2", "str3")  # The print statement concatenates strings with a space
 {% endhighlight %}
 
-    str1 str2 str3
+    ('str1', 'str2', 'str3')
 
 
 
@@ -827,7 +842,7 @@ print("str1", "str2", "str3")  # The print statement concatenates strings with a
 print("str1", 1.0, False, -1j)  # The print statements converts all arguments to strings
 {% endhighlight %}
 
-    str1 1.0 False (-0-1j)
+    ('str1', 1.0, False, -1j)
 
 
 
@@ -882,7 +897,7 @@ print(type(l))
 print(l)
 {% endhighlight %}
 
-    <class 'list'>
+    <type 'list'>
     [1, 2, 3, 4]
 
 
@@ -958,7 +973,7 @@ range(start, stop, step)
 
 
 
-    range(10, 30, 2)
+    [10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
 
 
 
@@ -1124,7 +1139,7 @@ point = (10, 20)
 print(point, type(point))
 {% endhighlight %}
 
-    (10, 20) <class 'tuple'>
+    ((10, 20), <type 'tuple'>)
 
 
 
@@ -1134,7 +1149,7 @@ point = 10, 20
 print(point, type(point))
 {% endhighlight %}
 
-    (10, 20) <class 'tuple'>
+    ((10, 20), <type 'tuple'>)
 
 
 We can unpack a tuple by assigning it to a comma-separated list of variables:
@@ -1147,8 +1162,8 @@ print("x =", x)
 print("y =", y)
 {% endhighlight %}
 
-    x = 10
-    y = 20
+    ('x =', 10)
+    ('y =', 20)
 
 
 If we try to assign a new value to an element in a tuple we get an error:
@@ -1160,9 +1175,10 @@ point[0] = 20
 
 
     ---------------------------------------------------------------------------
+
     TypeError                                 Traceback (most recent call last)
 
-    <ipython-input-82-ac1c641a5dca> in <module>()
+    <ipython-input-83-ac1c641a5dca> in <module>()
     ----> 1 point[0] = 20
     
 
@@ -1183,8 +1199,8 @@ print(type(params))
 print(params)
 {% endhighlight %}
 
-    <class 'dict'>
-    {'parameter3': 3.0, 'parameter1': 1.0, 'parameter2': 2.0}
+    <type 'dict'>
+    {'parameter1': 1.0, 'parameter3': 3.0, 'parameter2': 2.0}
 
 
 
@@ -1287,7 +1303,7 @@ if statement1:
 {% endhighlight %}
 
 
-      File "<ipython-input-88-78979cdecf37>", line 4
+      File "<ipython-input-90-78979cdecf37>", line 4
         print("both statement1 and statement2 are True")  # this line is not properly indented
             ^
     IndentationError: expected an indented block
@@ -1382,9 +1398,9 @@ for key, value in params.items():
     print(key + " = " + str(value))
 {% endhighlight %}
 
-    parameter3 = 3.0
-    parameter1 = A
     parameter4 = D
+    parameter1 = A
+    parameter3 = 3.0
     parameter2 = B
 
 
@@ -1396,12 +1412,12 @@ for idx, x in enumerate(range(-3,3)):
     print(idx, x)
 {% endhighlight %}
 
-    0 -3
-    1 -2
-    2 -1
-    3 0
-    4 1
-    5 2
+    (0, -3)
+    (1, -2)
+    (2, -1)
+    (3, 0)
+    (4, 1)
+    (5, 2)
 
 
 ### List comprehensions: Creating lists using `for` loops:
@@ -1643,7 +1659,7 @@ map(lambda x: x**2, range(-3,4))
 
 
 
-    <map at 0x7f8bfc051160>
+    [9, 4, 1, 0, 1, 4, 9]
 
 
 
@@ -1777,7 +1793,7 @@ class MyClass:
         return self.variable
 {% endhighlight %}
 
-    Overwriting mymodule.py
+    Writing mymodule.py
 
 
 We can import the module `mymodule` into our Python program using `import`:
@@ -1799,15 +1815,17 @@ help(mymodule)
     NAME
         mymodule
     
+    FILE
+        /is/ei/btabibian/Documents/scientific-python-lectures/mymodule.py
+    
     DESCRIPTION
         Example of a python module. Contains a variable called my_variable,
         a function called my_function, and a class called MyClass.
     
     CLASSES
-        builtins.object
-            MyClass
+        MyClass
         
-        class MyClass(builtins.object)
+        class MyClass
          |  Example class.
          |  
          |  Methods defined here:
@@ -1818,15 +1836,6 @@ help(mymodule)
          |  
          |  set_variable(self, new_value)
          |      Set self.variable to a new value
-         |  
-         |  ----------------------------------------------------------------------
-         |  Data descriptors defined here:
-         |  
-         |  __dict__
-         |      dictionary for instance variables (if defined)
-         |  
-         |  __weakref__
-         |      list of weak references to the object (if defined)
     
     FUNCTIONS
         my_function()
@@ -1834,9 +1843,6 @@ help(mymodule)
     
     DATA
         my_variable = 0
-    
-    FILE
-        /home/rob/Desktop/scientific-python-lectures/mymodule.py
     
     
 
@@ -1886,6 +1892,13 @@ If we make changes to the code in `mymodule.py`, we need to reload it using `rel
 reload(mymodule)  # works only in python 2
 {% endhighlight %}
 
+
+
+
+    <module 'mymodule' from 'mymodule.pyc'>
+
+
+
 ## Exceptions
 
 In Python errors are managed with a special language construct called "Exceptions". When errors occur exceptions can be raised, which interrupts the normal program flow and fallback to somewhere else in the code where the closest try-except statement is defined.
@@ -1899,9 +1912,10 @@ raise Exception("description of the error")
 
 
     ---------------------------------------------------------------------------
+
     Exception                                 Traceback (most recent call last)
 
-    <ipython-input-127-8f47ba831d5a> in <module>()
+    <ipython-input-129-8f47ba831d5a> in <module>()
     ----> 1 raise Exception("description of the error")
     
 
@@ -1979,6 +1993,6 @@ except Exception as e:
 
 
 
-<table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>3.4.0 64bit [GCC 4.8.2]</td></tr><tr><td>IPython</td><td>2.3.0</td></tr><tr><td>OS</td><td>Linux 3.16.0 24 generic x86_64 with Ubuntu 14.10 utopic</td></tr><tr><td colspan='2'>Fri Nov 07 10:18:21 2014 JST</td></tr></table>
+<table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>2.7.8 64bit [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]</td></tr><tr><td>IPython</td><td>3.0.0</td></tr><tr><td>OS</td><td>Linux 3.13.0 45 generic x86_64 with debian jessie sid</td></tr><tr><td colspan='2'>Mon Apr 13 12:00:31 2015 CEST</td></tr></table>
 
 
