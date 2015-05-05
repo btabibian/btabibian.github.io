@@ -14,7 +14,7 @@ img: [
 numpy.jpeg,
 ]
 
-github: https://github.com/btabibian/scientific-python-lectures
+github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-2-Numpy.ipynb
 
 ---
 # Numpy -  multidimensional data arrays

@@ -14,7 +14,7 @@ img: [
 theory-experiment-computation.png,
 ]
 
-github: https://github.com/btabibian/scientific-python-lectures
+github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-0-Scientific-Computing-with-Python.ipynb
 
 ---
 # Introduction to scientific computing with Python

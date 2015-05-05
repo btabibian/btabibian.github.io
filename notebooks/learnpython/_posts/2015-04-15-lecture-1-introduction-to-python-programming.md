@@ -14,6 +14,8 @@ img: [
 python_logo.png,
 ]
 
+github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-1-Introduction-to-Python-Programming.ipynb
+
 ---
 # Introduction to Python programming
 
