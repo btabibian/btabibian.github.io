@@ -58,7 +58,10 @@
 		.image
 		{
 		}
-			
+			.image.right
+			{
+				width: 40%;
+			}
 			.image.left
 			{
 				width: 40%;
