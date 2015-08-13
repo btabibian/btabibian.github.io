@@ -3,6 +3,8 @@ baseurl: "http://btabibian.github.io"
 highlighter: pygments
 fenced_code_blocks: true
 markdown: kramdown
+gem:
+  - jekyll-redirect-from
 kramdown:
   auto_ids: true
   input: GFM
