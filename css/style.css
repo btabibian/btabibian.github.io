@@ -677,7 +677,7 @@ blockquote p {
 		overflow: hidden;
 		background: #fff;
 		text-align: center;
-        margin: 2em 2em 0em 2em;
+        margin: 0em 2em 0em 2em;
 	}
 	
 		#features-wrapper p
