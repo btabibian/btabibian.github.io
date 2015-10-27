@@ -23,7 +23,7 @@ kind: homepage
                                     {% if post.img[0] contains "http" %}
                                     <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" max-height="40px" /></a>
                                     {% else %}
-									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/{{ post.img[0]}}" alt="" /></a>
                                     {% endif %}
 									<header>
 										<h3>{{post.title}} </h3>
@@ -40,7 +40,7 @@ kind: homepage
 									{% if post.img[0] contains "http" %}
                                     <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" max-height="40px" /></a>
                                     {% else %}
-									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/{{ post.img[0]}}" alt="" /></a>
                                     {% endif %}
 									<header>
 										<h3>{{post.title}}</h3>
@@ -57,7 +57,7 @@ kind: homepage
 									{% if post.img[0] contains "http" %}
                                     <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" max-height="40px"/></a>
                                     {% else %}
-									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/{{ post.img[0]}}" alt="" /></a>
                                     {% endif %}
 									<header>
 										<h3>{{post.title}}</h3>
@@ -74,7 +74,7 @@ kind: homepage
 									{% if post.img[0] contains "http" %}
                                     <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" /></a>
                                     {% else %}
-									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/images/{{ post.img[0]}}" alt="" /></a>
+									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/{{ post.img[0]}}" alt="" /></a>
                                     {% endif %}
 									<header>
 										<h3>{{post.title}}</h3>
