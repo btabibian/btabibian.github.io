@@ -28,29 +28,37 @@
 
 	</script>
         <!-- custom stuff -->
-        <script src="/js/custom.js"></script>
+  <script src="/js/custom.js"></script>
 
 
-		<noscript>
-			<link rel="stylesheet" href="/css/skel.css" />
-			<link rel="stylesheet" href="/css/style.css" />
-			<link rel="stylesheet" href="/css/style-desktop.css" />
-		</noscript>
-        <link rel="stylesheet" href="/css/pygments.css">
+	<noscript>
+		<link rel="stylesheet" href="/css/skel.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/style-desktop.css" />
+	</noscript>
+  <link rel="stylesheet" href="/css/pygments.css">
 
-        <link rel=stylesheet type=text/css href=/css/pure-min.css>
-        <link rel=stylesheet type=text/css href=/css/font-awesome/css/font-awesome.min.css>
+  <link rel=stylesheet type=text/css href=/css/pure-min.css>
+  <link rel=stylesheet type=text/css href=/css/font-awesome/css/font-awesome.min.css>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+
+		<!-- og tags -->
+
+	  <meta property="og:type"   content="article" />
+	  <meta property="og:url"    content=http://btabibian.com/{{page.url}} />
+	  <meta property="og:title"  content={{page.title}} />
+	  <meta property="og:image"  content=http://btabibian.com/{{page.img[0]}} />
+
 	</head>
 	<body class="{{page.kind}}">
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=1381214945440313&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=1381214945440313&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 		<!-- Header -->
 			<div id="header-wrapper">
 				<div id="header" class="container">
