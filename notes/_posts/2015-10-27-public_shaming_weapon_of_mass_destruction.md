@@ -21,7 +21,7 @@ Something has changed though. The power of communication has made what was previ
 
 This morning when I was ridding the bus to work I opened Twitter as usual and scrolled through all the tweets that came in since last time I opened the app, and believe me it was not very long before then. One particular tweet startled me though and I took an screen-shot to reproduce it here.<br>
 
-<img src="{{site.baseurl}}/notes/images/pub_sham.png" align="middle" class="image featured">
+<img src="{{site.baseurl}}/notes/images/pub_sham.png" align="middle" class="image left">
 
 The group [Ananymous](https://en.wikipedia.org/wiki/Anonymous_%28group%29) has asked its followers whether they should release Social Security number of a person or that person and his spouse and as you can see the question came in the form of a poll with only two buttons! I don't know the targets in this tweet and to be honest I rather not know because I believe it may cloud my judgement. There has been a lot of debate over public shaming recently. Monika Lewinski's [The price of shame](https://www.ted.com/talks/monica_lewinsky_the_price_of_shame?language=en) and Jon Ronson's [When online shaming spirals out of control](https://www.ted.com/talks/jon_ronson_what_happens_when_online_shaming_spirals_out_of_control?language=en) are probably among the best descriptions of consequences of public shaming and I invite you to listen to their accounts for better undrestanding of this phenomenan.
 
