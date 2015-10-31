@@ -47,7 +47,11 @@
 	  <meta property="og:type"   content="article" />
 	  <meta property="og:url"    content=http://btabibian.com/{{page.url}} />
 	  <meta property="og:title"  content={{page.title}} />
-	  <meta property="og:image"  content=http://btabibian.com/{{page.img[0]}} />
+		{% if page.img[0] == null  %}
+	  <meta property="og:image"  content=http://btabibian.com/images/tunnel.JPG />
+		{% else %}
+		<meta property="og:image"  content=http://btabibian.com/{{page.img[0]}} />
+		{% endif %}
 
 	</head>
 	<body class="{{page.kind}}">
