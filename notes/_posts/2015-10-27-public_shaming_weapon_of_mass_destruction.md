@@ -41,3 +41,7 @@ This sort of philosophical dilemma is not new to humanity, since the dawn of civ
   Mohammad -Kitab al-Kafi, vol. 2, p. 146
 
 Our recent advances in science and technology pose new challenges for us. That has been the case since technology started to take a major role in our societies and I don't believe there is any way other than tackling these challenges so that we enjoy the fruits of our efforts. This is not the first time we are trying to address problems like this and they are not in anyways impossible to address. However this time we may have a chance to use the same technology to control these negative side effects and turn them around before it costs us a lot like before. <br>I personally hope we will be able to address these challenges before some law suppresses these issues only to resurface somewhere else in a new form and in the mean time take away whatever good we could hopefully get out of this environment called Internet.
+
+----
+
+1. The story is related to [Spring Valley High School incident](http://www.slate.com/articles/news_and_politics/politics/2015/10/spring_valley_high_school_resource_officer_ben_field_s_violent_arrest_of.html).
