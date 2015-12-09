@@ -100,19 +100,46 @@
 		</div>
 
 		<!-- Main -->
-        {{content}}
+    {{content}}
 
 		<!-- Footer -->
 
 				<div id="footer" class="container">
-					<ul class="icons">
-					{% for post in site.posts offset:0 limit:2 %}
-						<li class="icon fa-newspaper-o">
-							<a href={{post.url}}>{{post.title}}</a>
-						</li>
-					{% endfor %}
-						</ul>
-				<div id="copyright" class="container">
+			    <header>
+									<h2>Latest</h2>
+					</header>
+  				{% assign loopindex_ = 0 %}
+					<ul>
+			    {% for post in site.posts offset:0 limit:2 %}
+			            {% assign loopindex = loopindex_ | modulo: 2 %}
+			            {% if loopindex == 0 %}
+
+			              <div class="row">
+			                <div class="6u">
+
+									        <li class="icon fa-newspaper-o">
+										     <a href={{post.url}}>{{post.title}}</a>
+									       </li>
+
+			               </div>
+
+			           {%endif%}
+								 {% if loopindex == 1 %}
+										 <div class="6u">
+
+												 <li class="icon fa-newspaper-o">
+												<a href={{post.url}}>{{post.title}}</a>
+												</li>
+
+										</div>
+								</div>
+								{%endif%}
+			           {% assign loopindex_ = loopindex_ | plus:1 %}
+			    {% endfor %}
+					</ul>
+					</article>
+			</div>
+									<div id="copyright" class="container">
 					<ul class="links">
 						<li>&copy; Behzad Tabibian. All rights reserved.</li>
                         <li><a class="icon fa-facebook" href="https://www.facebook.com/btabibian"></a></li>
