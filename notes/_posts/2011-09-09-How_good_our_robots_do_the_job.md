@@ -3,6 +3,7 @@ layout: note
 title: How good our robots do the job?
 categories: notes
 date: 2011-09-09
+published: false
 ---
 This is a short draft paper about RoboCup discussing different trends in comparing performance of teams of robots in accomplishing certain tasks.
 
