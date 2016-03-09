@@ -1,6 +1,6 @@
 name: Behzad Tabibian
 baseurl: "http://btabibian.github.io"
-highlighter: pygments
+highlighter: rouge
 fenced_code_blocks: true
 markdown: kramdown
 gems:
