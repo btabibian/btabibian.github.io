@@ -2,7 +2,7 @@
 layout: python_note
 title: "03-Convex-Optimization-Problems"
 tags: [ipython, convex, blog]
-categories: [optimization]
+categories: [optimization_]
 date:  2015-02-15
 parent: [/optimization,Optimization]
 img: [

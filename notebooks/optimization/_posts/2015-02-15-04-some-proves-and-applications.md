@@ -2,10 +2,11 @@
 layout: python_note
 title: "04-Some-proves-and-Applications"
 tags: [ipython, convex, blog]
-categories: [optimization]
+categories: [optimization_]
 date:  2015-02-15
 parent: [/optimization,Optimization]
 img: [
+2015-02-15-02-convexity-preserving-operations_files/2015-02-15-02-convexity-preserving-operations_1_0.png
 ]
 ---
 **In []:**
