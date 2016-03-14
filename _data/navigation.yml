@@ -1,0 +1,23 @@
+# Site navigation links
+- title:
+  url: /
+  class : icon fa-home
+
+- title:
+  url: /about/
+  class: icon fa-male
+
+- title: Projects
+  url: /projects/
+
+- title: Notes
+  url: /notes/
+
+- title: Optimization
+  url: /notebooks/optimization/
+
+- title: Python
+  url: /notebooks/learnpython/
+
+- title: Search
+  url: /search/
