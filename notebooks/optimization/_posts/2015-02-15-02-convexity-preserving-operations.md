@@ -1,5 +1,5 @@
 ---
-layout: python_note
+layout: post
 title: "02-Convexity-Preserving-Operations"
 tags: [ipython, convex, blog]
 categories: [optimization_]
@@ -9,6 +9,7 @@ img: [
 2015-02-15-02-convexity-preserving-operations_files/2015-02-15-02-convexity-preserving-operations_1_0.png,
 2015-02-15-02-convexity-preserving-operations_files/2015-02-15-02-convexity-preserving-operations_3_1.png,
 ]
+author: "behzad_tabibian"
 ---
 This is the second notebook of the series going through Convex Optimizaion. The
 topics here are following MOOC [Convex
@@ -239,4 +240,3 @@ x\prec_K y \iff y-x\in \textbf{int }K.
 + $x\in S$ is the *minimal element* of $S$ with respect to $\preceq_k$ if:
 
     $y\in S, y \preceq_k x \Rightarrow x = y$.
-

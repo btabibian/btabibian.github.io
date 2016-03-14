@@ -1,8 +1,8 @@
 ---
-layout: python_note
+layout: post
 title: "Tutorial: Variational Bayes on Bayesian Gaussian density estimation"
 subtitle: ""
-tags: [u'Bayesian', u'stats']
+tags: [Bayesian, stats]
 categories: [
 
 ]
@@ -10,7 +10,7 @@ date:  2015-10-27
 parent: "./misc"
 img: [
 ]
-
+author: "behzad_tabibian"
 ---
 **This notebook is based on description of variational Bayes entry on wikipedia.**
 
@@ -77,7 +77,7 @@ $$\begin{align}
 
 In the above derivation, $C$, $C_2$ and $C_3$ refer to values that are constant with respect to $\mu$.  Note that the term $\operatorname{E}_{\tau}[\ln p(\tau)]$ is not a function of $\mu$ and will have the same value regardless of the value of $\mu$.  Hence in line 3 we can absorb it into the constant term at the end.  We do the same thing in line 7.
 
-The last line is simply a quadratic polynomial in $\mu$.  Since this is the logarithm of $q_\mu^+(\mu)$, we can see that $q_\mu^+(\mu)$ itself is a Gaussian distribution. 
+The last line is simply a quadratic polynomial in $\mu$.  Since this is the logarithm of $q_\mu^+(\mu)$, we can see that $q_\mu^+(\mu)$ itself is a Gaussian distribution.
 
 With a certain amount of tedious math (expanding the squares inside of the braces, separating out and grouping the terms involving $\mu$ and $\mu^2$ and completing the square over $\mu$), we can derive the parameters of the Gaussian distribution:
 
@@ -276,4 +276,3 @@ for i in range(5):
 
 
 ![png]({{site.baseurl}}/misc/images/2015-10-27-variationalbayes_files/2015-10-27-variationalbayes_9_1.png)
-

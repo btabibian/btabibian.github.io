@@ -1,5 +1,5 @@
 ---
-layout: python_note
+layout: post
 title: "03-Convex-Optimization-Problems"
 tags: [ipython, convex, blog]
 categories: [optimization_]
@@ -10,6 +10,7 @@ img: [
 2015-02-15-03-convex-optimization-problems_files/2015-02-15-03-convex-optimization-problems_18_1.png,
 2015-02-15-03-convex-optimization-problems_files/2015-02-15-03-convex-optimization-problems_16_0.png,
 ]
+author: "behzad_tabibian"
 ---
 This is the third notebook of the series going through Convex Optimizaion. The
 topics here are following MOOC [Convex
@@ -267,7 +268,7 @@ print 'optimal point:\n',x.value
     [ 2.00e+00]
     [ 5.40e-07]
     [ 3.00e+00]
-    
+
 
 
 **In [8]:**
@@ -419,7 +420,7 @@ plt.show()
     0.447213535807
     [-9.50e-08]
     [-6.87e-18]
-    
+
 
 
 
@@ -469,7 +470,7 @@ print 'Optimal Point:\n',xx.value
 plt.scatter(x,y)
 var=np.sqrt(np.var(y.reshape(x.shape[0],1)-np.dot(A,xx.value)))
 
-plt.fill_between(x,np.dot(A,xx.value)[:,0]+var,y2=np.dot(A,xx.value)[:,0]-var 
+plt.fill_between(x,np.dot(A,xx.value)[:,0]+var,y2=np.dot(A,xx.value)[:,0]-var
                  , facecolor='grey', alpha=0.2)
 plt.plot(x,np.dot(A,xx.value))
 plt.grid()
@@ -478,9 +479,8 @@ plt.grid()
     Optimal Point:
     [ 4.92e+00]
     [ 2.71e+00]
-    
+
 
 
 
 ![png]({{ site.baseurl}}/notebooks/optimization/images/2015-02-15-03-convex-optimization-problems_files/2015-02-15-03-convex-optimization-problems_20_1.png)
-

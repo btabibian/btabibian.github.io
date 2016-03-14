@@ -1,9 +1,10 @@
 ---
-layout: note
+layout: post
 title: Respect privacy, do not judge by IP Address
 categories: notes
 date: 2011-09-09
 img: ["https://sites.google.com/site/btabibian/_/rsrc/1315596994308/notes/respectprivacydonotjudgebyipaddress/Human%20Rights%20Logo.jpg"]
+author: "behzad_tabibian"
 ---
 <div style="display:inline;float:left;margin-top:5px;margin-right:10px;margin-bottom:0px;margin-left:0px"><font face="arial, sans-serif" size="2"><a href="../../notes/respectprivacydonotjudgebyipaddress/Human%20Rights%20Logo.jpg?attredirects=0/index.html" imageanchor="1"><img border="0" height="200" src="https://sites.google.com/site/btabibian/_/rsrc/1315596994308/notes/respectprivacydonotjudgebyipaddress/Human%20Rights%20Logo.jpg" width="200"/></a></font></div><font face="arial, sans-serif" size="2">Human rights and freedom
 of speech are one of the corner-stones of Internet technology. Within last few decades a huge progress has been made in technology, enabling people from all over

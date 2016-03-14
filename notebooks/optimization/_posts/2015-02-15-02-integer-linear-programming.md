@@ -1,5 +1,5 @@
 ---
-layout: python_note
+layout: post
 title: "02-Integer-Linear-Programming"
 tags: [ipython, convex, blog]
 categories: [optimization_hw]
@@ -9,6 +9,7 @@ img: [
 2015-02-15-02-integer-linear-programming_files/2015-02-15-02-integer-linear-programming_31_0.png,
 2015-02-15-02-integer-linear-programming_files/2015-02-15-02-integer-linear-programming_27_0.png,
 ]
+author: "behzad_tabibian"
 ---
 **In [1]:**
 
@@ -23,17 +24,17 @@ mlab=mlabwrap.init('/Applications/MATLAB_R2013a.app/bin/matlab')
 {% endhighlight %}
 
     Found version: 2013a at /Applications/MATLAB_R2013a.app/bin/matlab
-    
+
                                 < M A T L A B (R) >
                       Copyright 1984-2013 The MathWorks, Inc.
                          R2013a (8.1.0.604) 64-bit (maci64)
                                  February 15, 2013
-    
-     
+
+
     To get started, type one of these: helpwin, helpdesk, or demo.
     For product information, visit www.mathworks.com.
-     
-    >> 
+
+    >>
 
 # Introduction to Optimization
 
@@ -225,7 +226,7 @@ for i in [0,1]:
     var_set = ['x_1', 'x_2', 'x_3']
     # create a dictionary of pulp variables with keys from ingredients
     # the default lower bound is -inf
-    
+
     x = pulp.LpVariable.dict('%s', var_set, lowBound =0, cat=pulp.LpInteger if i else pulp.LpContinuous)
     cost = dict(zip(var_set, [4,3, 3]))
     model += sum( [cost[i] * x[i] for i in var_set])
@@ -241,7 +242,7 @@ for i in [0,1]:
     model += sum([c_1[i]*x[i] for i in var_set]) <= 10.0
     model += sum([c_2[i]*x[i] for i in var_set]) <= 14.0
     model += sum([c_3[i]*x[i] for i in var_set]) <= 7.0
-    
+
     %timeit model.solve()
     for i in var_set:
         print '%s: %s'%(i,x[i].value())
@@ -549,16 +550,16 @@ np.dot([4,3,3],vals)
     4*x_1 + 3*x_2 + 1*x_3 + 0
     SUBJECT TO
     _C1: 4 x_1 + 2 x_2 + x_3 <= 10
-    
+
     _C2: 3 x_1 + 4 x_2 + 2 x_3 <= 14
-    
+
     _C3: 2 x_1 + x_2 + 3 x_3 <= 7
-    
+
     VARIABLES
     0 <= x_1 Integer
     0 <= x_2 Integer
     0 <= x_3 Integer
-    
+
     x_1: 2.0
     x_2: 1.0
     x_3: 0.0
@@ -923,4 +924,3 @@ print 'z: ', R.dot(res)
 
     [ 1.  0.  0.  1.  1.  0.]
     z:  486.0
-

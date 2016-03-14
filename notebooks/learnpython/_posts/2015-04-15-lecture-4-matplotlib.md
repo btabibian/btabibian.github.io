@@ -1,8 +1,8 @@
 ---
-layout: python_note
+layout: post
 title: "Lecture 4"
 subtitle: "Matplotlib"
-tags: [u'learning', u'python']
+tags: [learning, python]
 categories: [
 
 scientific-computing,
@@ -15,7 +15,7 @@ matplotlib.png,
 ]
 
 github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
-
+author: "behzad_tabibian"
 ---
 # matplotlib - 2D and 3D plotting in Python
 
@@ -27,8 +27,8 @@ The other notebooks in this lecture series are indexed at [http://jrjohansson.gi
 
 
 {% highlight python linenos  %}
-# This line configures matplotlib to show figures embedded in the notebook, 
-# instead of opening a new window for each figure. More about that later. 
+# This line configures matplotlib to show figures embedded in the notebook,
+# instead of opening a new window for each figure. More about that later.
 # If you are using an old version of IPython, try using '%pylab inline' instead.
 %matplotlib inline
 {% endhighlight %}
@@ -39,11 +39,11 @@ Matplotlib is an excellent 2D and 3D graphics library for generating scientific 
 
 * Easy to get started
 * Support for $\LaTeX$ formatted labels and texts
-* Great control of every element in a figure, including figure size and DPI. 
+* Great control of every element in a figure, including figure size and DPI.
 * High-quality output in many formats, including PNG, PDF, SVG, EPS, and PGF.
 * GUI for interactively exploring figures *and* support for headless generation of figure files (useful for batch jobs).
 
-One of the of the key features of matplotlib that I would like to emphasize, and that I think makes matplotlib highly suitable for generating figures for scientific publications is that all aspects of the figure can be controlled *programmatically*. This is important for reproducibility and convenient when one needs to regenerate the figure with updated data or change its appearance. 
+One of the of the key features of matplotlib that I would like to emphasize, and that I think makes matplotlib highly suitable for generating figures for scientific publications is that all aspects of the figure can be controlled *programmatically*. This is important for reproducibility and convenient when one needs to regenerate the figure with updated data or change its appearance.
 
 More information at the Matplotlib web page: http://matplotlib.org/
 
@@ -63,11 +63,11 @@ import matplotlib.pyplot as plt
 
 ## MATLAB-like API
 
-The easiest way to get started with plotting using matplotlib is often to use the MATLAB-like API provided by matplotlib. 
+The easiest way to get started with plotting using matplotlib is often to use the MATLAB-like API provided by matplotlib.
 
 It is designed to be compatible with MATLAB's plotting functions, so it is easy to get started with if you are familiar with MATLAB.
 
-To use this API from matplotlib, we need to include the symbols in the `pylab` module: 
+To use this API from matplotlib, we need to include the symbols in the `pylab` module:
 
 
 {% highlight python linenos  %}
@@ -112,15 +112,15 @@ plot(y, x, 'g*-');
 ![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-4-matplotlib_files/2015-04-15-lecture-4-matplotlib_17_0.png)
 
 
-The good thing about the pylab MATLAB-style API is that it is easy to get started with if you are familiar with MATLAB, and it has a minumum of coding overhead for simple plots. 
+The good thing about the pylab MATLAB-style API is that it is easy to get started with if you are familiar with MATLAB, and it has a minumum of coding overhead for simple plots.
 
 However, I'd encourrage not using the MATLAB compatible API for anything but the simplest figures.
 
-Instead, I recommend learning and using matplotlib's object-oriented plotting API. It is remarkably powerful. For advanced figures with subplots, insets and other components it is very nice to work with. 
+Instead, I recommend learning and using matplotlib's object-oriented plotting API. It is remarkably powerful. For advanced figures with subplots, insets and other components it is very nice to work with.
 
 ## The matplotlib object-oriented API
 
-The main idea with object-oriented programming is to have objects that one can apply functions and actions on, and no object or program states should be global (such as the MATLAB-like API). The real advantage of this approach becomes apparent when more than one figure is created, or when a figure contains more than one subplot. 
+The main idea with object-oriented programming is to have objects that one can apply functions and actions on, and no object or program states should be global (such as the MATLAB-like API). The real advantage of this approach becomes apparent when more than one figure is created, or when a figure contains more than one subplot.
 
 To use the object-oriented API we start out very much like in the previous example, but instead of creating a new global figure instance we store a reference to the newly created figure instance in the `fig` variable, and from it we create a new axis instance `axes` using the `add_axes` method in the `Figure` class instance `fig`:
 
@@ -211,7 +211,7 @@ for ax in axes:
     ax.set_xlabel('x')
     ax.set_ylabel('y')
     ax.set_title('title')
-    
+
 fig.tight_layout()
 {% endhighlight %}
 
@@ -221,7 +221,7 @@ fig.tight_layout()
 
 ### Figure size, aspect ratio and DPI
 
-Matplotlib allows the aspect ratio, DPI and figure size to be specified when the `Figure` object is created, using the `figsize` and `dpi` keyword arguments. `figsize` is a tuple of the width and height of the figure in inches, and `dpi` is the dots-per-inch (pixel per inch). To create an 800x400 pixel, 100 dots-per-inch figure, we can do: 
+Matplotlib allows the aspect ratio, DPI and figure size to be specified when the `Figure` object is created, using the `figsize` and `dpi` keyword arguments. `figsize` is a tuple of the width and height of the figure in inches, and `dpi` is the dots-per-inch (pixel per inch). To create an 800x400 pixel, 100 dots-per-inch figure, we can do:
 
 
 {% highlight python linenos  %}
@@ -302,7 +302,7 @@ ax.legend(["curve1", "curve2", "curve3"]);
 
 The method described above follows the MATLAB API. It is somewhat prone to errors and unflexible if curves are added to or removed from the figure (resulting in a wrongly labelled curve).
 
-A better method is to use the `label="label text"` keyword argument when plots or other objects are added to the figure, and then using the `legend` method without arguments to add the legend to the figure: 
+A better method is to use the `label="label text"` keyword argument when plots or other objects are added to the figure, and then using the `legend` method without arguments to add the legend to the figure:
 
 
 {% highlight python linenos  %}
@@ -398,7 +398,7 @@ ax.set_title('title');
 ![png]({{site.baseurl}}/notebooks/learnpython//images/2015-04-15-lecture-4-matplotlib_files/2015-04-15-lecture-4-matplotlib_60_0.png)
 
 
-A good choice of global fonts are the STIX fonts: 
+A good choice of global fonts are the STIX fonts:
 
 
 {% highlight python linenos  %}
@@ -459,7 +459,7 @@ With matplotlib, we can define the colors of lines and other graphical elements 
 
 
 {% highlight python linenos  %}
-# MATLAB style line color and style 
+# MATLAB style line color and style
 ax.plot(x, x**2, 'b.-') # blue line with dots
 ax.plot(x, x**3, 'g--') # green dashed line
 {% endhighlight %}
@@ -525,7 +525,7 @@ ax.plot(x, x+12, color="green", lw=2, ls='*', marker='1')
 ax.plot(x, x+13, color="purple", lw=1, ls='-', marker='o', markersize=2)
 ax.plot(x, x+14, color="purple", lw=1, ls='-', marker='o', markersize=4)
 ax.plot(x, x+15, color="purple", lw=1, ls='-', marker='o', markersize=8, markerfacecolor="red")
-ax.plot(x, x+16, color="purple", lw=1, ls='-', marker='s', markersize=8, 
+ax.plot(x, x+16, color="purple", lw=1, ls='-', marker='s', markersize=8,
         markerfacecolor="yellow", markeredgewidth=2, markeredgecolor="blue");
 {% endhighlight %}
 
@@ -569,7 +569,7 @@ It is also possible to set a logarithmic scale for one or both axes. This functi
 
 {% highlight python linenos  %}
 fig, axes = plt.subplots(1, 2, figsize=(10,4))
-      
+
 axes[0].plot(x, x**2, x, exp(x))
 axes[0].set_title("Normal scale")
 
@@ -623,7 +623,7 @@ With large numbers on axes, it is often better use scientific notation:
 
 {% highlight python linenos  %}
 fig, ax = plt.subplots(1, 1)
-      
+
 ax.plot(x, x**2, x, exp(x))
 ax.set_title("scientific notation")
 
@@ -631,9 +631,9 @@ ax.set_yticks([0, 50, 100, 150])
 
 from matplotlib import ticker
 formatter = ticker.ScalarFormatter(useMathText=True)
-formatter.set_scientific(True) 
-formatter.set_powerlimits((-1,1)) 
-ax.yaxis.set_major_formatter(formatter) 
+formatter.set_scientific(True)
+formatter.set_powerlimits((-1,1))
+ax.yaxis.set_major_formatter(formatter)
 {% endhighlight %}
 
 
@@ -649,7 +649,7 @@ rcParams['xtick.major.pad'] = 5
 rcParams['ytick.major.pad'] = 5
 
 fig, ax = plt.subplots(1, 1)
-      
+
 ax.plot(x, x**2, x, exp(x))
 ax.set_yticks([0, 50, 100, 150])
 
@@ -681,7 +681,7 @@ Unfortunately, when saving figures the labels are sometimes clipped, and it can 
 
 {% highlight python linenos  %}
 fig, ax = plt.subplots(1, 1)
-      
+
 ax.plot(x, x**2, x, exp(x))
 ax.set_yticks([0, 50, 100, 150])
 
@@ -752,7 +752,7 @@ ax1.plot(x, x**2, lw=2, color="blue")
 ax1.set_ylabel(r"area $(m^2)$", fontsize=18, color="blue")
 for label in ax1.get_yticklabels():
     label.set_color("blue")
-    
+
 ax2 = ax1.twinx()
 ax2.plot(x, x**3, lw=2, color="red")
 ax2.set_ylabel(r"volume $(m^3)$", fontsize=18, color="red")
@@ -914,7 +914,7 @@ fig = plt.figure()
 gs = gridspec.GridSpec(2, 3, height_ratios=[2,1], width_ratios=[1,2,1])
 for g in gs:
     ax = fig.add_subplot(g)
-    
+
 fig.tight_layout()
 {% endhighlight %}
 
@@ -1137,7 +1137,7 @@ g = 9.82; L = 0.5; m = 0.1
 
 def dx(x, t):
     x1, x2, x3, x4 = x[0], x[1], x[2], x[3]
-    
+
     dx1 = 6.0/(m*L**2) * (2 * x3 - 3 * cos(x1-x2) * x4)/(16 - 9 * cos(x1-x2)**2)
     dx2 = 6.0/(m*L**2) * (8 * x4 - 3 * cos(x1-x2) * x3)/(16 - 9 * cos(x1-x2)**2)
     dx3 = -0.5 * m * L**2 * ( dx1 * dx2 * sin(x1-x2) + 3 * (g/L) * sin(x1))
@@ -1165,14 +1165,14 @@ def init():
     pendulum1.set_data([], [])
     pendulum2.set_data([], [])
 
-def update(n): 
+def update(n):
     # n = frame counter
     # calculate the positions of the pendulums
     x1 = + L * sin(x[n, 0])
     y1 = - L * cos(x[n, 0])
     x2 = x1 + L * sin(x[n, 1])
     y2 = y1 - L * cos(x[n, 1])
-    
+
     # update the line data
     pendulum1.set_data([0 ,x1], [0 ,y1])
     pendulum2.set_data([x1,x2], [y1,y2])
@@ -1197,7 +1197,7 @@ or (newer versions)
 
     $ sudo apt-get install libav-tools
 
-On MacOSX, try: 
+On MacOSX, try:
 
     $ sudo port install ffmpeg
 
@@ -3124,7 +3124,7 @@ ACOpdG9vAAAAG2RhdGEAAAABAAAAAExhdmY1NC4yMC4z
 
 ### Backends
 
-Matplotlib has a number of "backends" which are responsible for rendering graphs. The different backends are able to generate graphics with different formats and display/event loops. There is a distinction between noninteractive backends (such as 'agg', 'svg', 'pdf', etc.) that are only used to generate image files (e.g. with the `savefig` function), and interactive backends (such as Qt4Agg, GTK, MaxOSX) that can display a GUI window for interactively exploring figures. 
+Matplotlib has a number of "backends" which are responsible for rendering graphs. The different backends are able to generate graphics with different formats and display/event loops. There is a distinction between noninteractive backends (such as 'agg', 'svg', 'pdf', etc.) that are only used to generate image files (e.g. with the `savefig` function), and interactive backends (such as Qt4Agg, GTK, MaxOSX) that can display a GUI window for interactively exploring figures.
 
 A list of available backends are:
 
@@ -3138,7 +3138,7 @@ print(matplotlib.rcsetup.all_backends)
 
 The default backend, called `agg`, is based on a library for raster graphics which is great for generating raster formats like PNG.
 
-Normally we don't need to bother with changing the default backend; but sometimes it can be useful to switch to, for example, PDF or GTKCairo (if you are using Linux) to produce high-quality vector graphics instead of raster based graphics. 
+Normally we don't need to bother with changing the default backend; but sometimes it can be useful to switch to, for example, PDF or GTKCairo (if you are using Linux) to produce high-quality vector graphics instead of raster based graphics.
 
 #### Generating SVG with the svg backend
 
@@ -3147,7 +3147,7 @@ Normally we don't need to bother with changing the default backend; but sometime
 #
 # RESTART THE NOTEBOOK: the matplotlib backend can only be selected before pylab is imported!
 # (e.g. Kernel > Restart)
-# 
+#
 import matplotlib
 matplotlib.use('svg')
 import matplotlib.pylab as plt
@@ -3169,7 +3169,7 @@ plt.savefig("test.svg")
 
 {% highlight python linenos  %}
 #
-# Show the produced SVG file. 
+# Show the produced SVG file.
 #
 SVG(filename="test.svg")
 {% endhighlight %}
@@ -3200,11 +3200,11 @@ The difference is that `%pylab inline` imports a number of packages into the glo
 The inline backend has a number of configuration options that can be set by using the IPython magic command `%config` to update settings in `InlineBackend`. For example, we can switch to SVG figures or higher resolution figures with either:
 
     %config InlineBackend.figure_format='svg'
-     
+
 or:
 
     %config InlineBackend.figure_format='retina'
-    
+
 For more information, type:
 
     %config InlineBackend
@@ -3240,7 +3240,7 @@ plt.savefig("test.svg")
 #
 # RESTART THE NOTEBOOK: the matplotlib backend can only be selected before pylab is imported!
 # (e.g. Kernel > Restart)
-# 
+#
 import matplotlib
 matplotlib.use('Qt4Agg') # or for example MacOSX
 import matplotlib.pylab as plt
@@ -3262,7 +3262,7 @@ Note that when we use an interactive backend, we must call `plt.show()` to make 
 
 * http://www.matplotlib.org - The project web page for matplotlib.
 * https://github.com/matplotlib/matplotlib - The source code for matplotlib.
-* http://matplotlib.org/gallery.html - A large gallery showcaseing various types of plots matplotlib can create. Highly recommended! 
+* http://matplotlib.org/gallery.html - A large gallery showcaseing various types of plots matplotlib can create. Highly recommended!
 * http://www.loria.fr/~rougier/teaching/matplotlib - A good matplotlib tutorial.
 * http://scipy-lectures.github.io/matplotlib/matplotlib.html - Another good matplotlib reference.
 
@@ -3282,5 +3282,3 @@ Note that when we use an interactive backend, we must call `plt.show()` to make 
 
 
 <table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>2.7.5+ (default, Feb 27 2014, 19:37:08) [GCC 4.8.1]</td></tr><tr><td>IPython</td><td>2.0.0</td></tr><tr><td>OS</td><td>posix [linux2]</td></tr><tr><td>numpy</td><td>1.8.1</td></tr><tr><td>scipy</td><td>0.13.3</td></tr><tr><td>matplotlib</td><td>1.3.1</td></tr><tr><td colspan='2'>Tue Apr 22 10:44:44 2014 JST</td></tr></table>
-
-

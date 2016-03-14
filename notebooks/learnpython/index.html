@@ -1,90 +1,23 @@
 ---
-layout: default
+layout: page
 title: Introduction to Scientific Programming
 kind: homepage
 redirect_from: "/notebooks/learnpython/scientific-computing/2015/04/15/lecture-0-scientific-computing-with-python.html"
+search_omit: true
+no_logo: true
 ---
 
 <a href="https://github.com/btabibian/scientific-python-lectures"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
-<div id="features-wrapper">
-				<section id="features" class="container">
-					<header>
-						<h2>Scientific Computing with Python</h2>
-					</header>
 
-                    {% assign sorted_posts = site.posts | sort:"title" %}
-                    {% assign loopindex_ = 0 %}
-                    {% for post in sorted_posts %}
-                        {% if post.categories contains 'scientific-computing' %}
-                            
-                            {% assign loopindex = loopindex_ | modulo: 3 %}
-                    
-            {% if loopindex == 0 %}
-                    <div class="row">
-                        <div class="4u">
+{% assign sorted_posts = site.posts | sort:"title" %}
+<ul class="post-list">
+{% for post in sorted_posts %}
+{% if post.categories contains 'scientific-computing' %}
+<li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d,     %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt" max-height="inherit"><p class="pull-left"><figure class="pull-left-third"><a href="{{ site.url }}{{ post.url }}">  <img src="{{baseurl}}/notebooks/learnpython/images/{{ post.img[0]}}" alt=""/></a></figure></p>{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape    _once }}
+</span>{% endif %}
 
-							<!-- Feature -->
-								<section>
-                    {% if inpost.img[0].startswith("http:") %}
-                                                                      <a href="http://nbviewer.ipython.org/github/{{post.github | replace:'https://github.com/',''}}" class="image featured"><img src="{{ post.img[0]}}" alt="" /></a>
-                    {% else %}
-									<a href="http://nbviewer.ipython.org/github/{{post.github | replace:'https://github.com/',''}}" class="image featured"><img src="{{baseurl}}/notebooks/learnpython/images/{{ post.img[0]}}" alt="" /></a>
-                    {% endif %}
-									<header>
-										<h3>{{post.title}}</br>{{post.subtitle}} </h3>
-									</header>
-									
-								</section>
-
-						</div>
-            {% elsif loopindex == 1 %}
-                        <div class="4u">
-
-							<!-- Feature -->
-								<section>
-						{% if inpost.img[0].startswith("http:") %}
-                                                                  <a href="http://nbviewer.ipython.org/github/{{post.github | replace:'https://github.com/',''}}" class="image featured"><img src="{{ post.img[0]}}" alt="" /></a>
-                     {% else %} 
-									 <a href="http://nbviewer.ipython.org/github/{{post.github | replace:'https://github.com/',''}}" class="image featured"><img src="{{baseurl}}/notebooks/learnpython/images/{{ post.img[0]}}" alt="" /></a>
-                     {% endif %}
-
-									<header>
-										<h3>{{post.title}}</br>{{post.subtitle}} </h3>
-									</header>
-									
-								</section>
-
-						</div>
-            {% elsif loopindex == 2 %}
-                        <div class="4u">
-
-							<!-- Feature -->
-								<section>
-                    {% if inpost.img[0].startswith("http:") %}
-                                                                      <a href="http://nbviewer.ipython.org/github/{{post.github | replace:'https://github.com/',''}}" class="image featured"><img src="{{ post.img[0]}}" alt="" /></a>
-                    {% else %}
-									<a href="http://nbviewer.ipython.org/github/{{post.github | replace:'https://github.com/',''}}" class="image featured"><img src="{{baseurl}}/notebooks/learnpython/images/{{ post.img[0]}}" alt="" /></a>
-                    {% endif %}
-
-									<header>
-										<h3>{{post.title}}</br>{{post.subtitle}} </h3>
-									</header>
-									
-
-						</div>
-            
-                        </div>
-                        
-
-        {% endif %}
-                    {% assign loopindex_ = loopindex_ | plus:1 %}
-                        {% endif %}
-	  {% endfor %}
-                        {% if loopindex_ | modulo: 3 != 0%}
-                        </div>
-                    {% endif %}
-	  
-</section></div>
-
-
+</a></article></li>
+{% endif %}
+{% endfor %}
+</ul>

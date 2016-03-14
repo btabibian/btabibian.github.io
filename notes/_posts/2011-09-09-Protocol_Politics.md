@@ -1,12 +1,12 @@
 ---
-layout: note
+layout: post
 title: Protocol Politics
 categories: notes
 date: 2011-09-09
 img: [
 "https://sites.google.com/site/btabibian/_/rsrc/1315596994306/notes/protocolpolitics/9780262042574-f30.jpg",
 ]
-
+author: "behzad_tabibian"
 ---
 
 <div>

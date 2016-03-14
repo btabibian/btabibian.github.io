@@ -1,8 +1,8 @@
 ---
-layout: python_note
+layout: post
 title: "Lecture 5"
 subtitle: "Sympy"
-tags: [u'learning', u'python']
+tags: [learning, python]
 categories: [
 
 scientific-computing,
@@ -15,7 +15,7 @@ Sympy.png,
 ]
 
 github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-5-Sympy.ipynb
-
+author: "behzad_tabibian"
 ---
 # Sympy - Symbolic algebra in Python
 
@@ -30,7 +30,7 @@ The other notebooks in this lecture series are indexed at [http://jrjohansson.gi
 %pylab inline
 {% endhighlight %}
 
-    
+
     Welcome to pylab, a matplotlib-based Python environment [backend: module://IPython.kernel.zmq.pylab.backend_inline].
     For more information, type 'help(pylab)'.
 
@@ -39,10 +39,10 @@ The other notebooks in this lecture series are indexed at [http://jrjohansson.gi
 
 There are two notable Computer Algebra Systems (CAS) for Python:
 
-* [SymPy](http://sympy.org/en/index.html) - A python module that can be used in any Python program, or in an IPython session, that provides powerful CAS features. 
+* [SymPy](http://sympy.org/en/index.html) - A python module that can be used in any Python program, or in an IPython session, that provides powerful CAS features.
 * [Sage](http://www.sagemath.org/) - Sage is a full-featured and very powerful CAS enviroment that aims to provide an open source system that competes with Mathematica and Maple. Sage is not a regular Python module, but rather a CAS environment that uses Python as its programming language.
 
-Sage is in some aspects more powerful than SymPy, but both offer very comprehensive CAS functionality. The advantage of SymPy is that it is a regular Python module and integrates well with the IPython notebook. 
+Sage is in some aspects more powerful than SymPy, but both offer very comprehensive CAS functionality. The advantage of SymPy is that it is a regular Python module and integrates well with the IPython notebook.
 
 In this lecture we will therefore look at how to use SymPy with IPython notebooks. If you are interested in an open source CAS environment I also recommend to read more about Sage.
 
@@ -142,7 +142,7 @@ $$True$$
 
 ### Complex numbers
 
-The imaginary unit is denoted `I` in Sympy. 
+The imaginary unit is denoted `I` in Sympy.
 
 
 {% highlight python linenos  %}
@@ -182,7 +182,7 @@ $$\left(i x + 1\right)^{2}$$
 
 ### Rational numbers
 
-There are three different numerical types in SymPy: `Real`, `Rational`, `Integer`: 
+There are three different numerical types in SymPy: `Real`, `Rational`, `Integer`:
 
 
 {% highlight python linenos  %}
@@ -369,7 +369,7 @@ One of the main uses of an CAS is to perform algebraic manipulations of expressi
 
 ### Expand and factor
 
-The first steps in an algebraic manipulation 
+The first steps in an algebraic manipulation
 
 
 {% highlight python linenos  %}
@@ -423,7 +423,7 @@ $$\sin{\left (a \right )} \cos{\left (b \right )} + \sin{\left (b \right )} \cos
 
 See `help(expand)` for a detailed explanation of the various types of expansions the `expand` functions can perform.
 
-The opposite a product expansion is of course factoring. The factor an expression in SymPy use the `factor` function: 
+The opposite a product expansion is of course factoring. The factor an expression in SymPy use the `factor` function:
 
 
 {% highlight python linenos  %}
@@ -439,7 +439,7 @@ $$\left(x + 1\right) \left(x + 2\right) \left(x + 3\right)$$
 
 ### Simplify
 
-The `simplify` tries to simplify an expression into a nice looking expression, using various techniques. More specific alternatives to the `simplify` functions also exists: `trigsimp`, `powsimp`, `logcombine`, etc. 
+The `simplify` tries to simplify an expression into a nice looking expression, using various techniques. More specific alternatives to the `simplify` functions also exists: `trigsimp`, `powsimp`, `logcombine`, etc.
 
 The basic usages of these functions are as follows:
 
@@ -543,7 +543,7 @@ $$\frac{2 a + 5}{\left(a + 2\right) \left(a + 3\right)}$$
 
 
 
-Simplify usually combines fractions but does not factor: 
+Simplify usually combines fractions but does not factor:
 
 
 {% highlight python linenos  %}
@@ -760,7 +760,7 @@ $$\prod_{n=1}^{10} n$$
 
 ## Limits
 
-Limits can be evaluated using the `limit` function. For example, 
+Limits can be evaluated using the `limit` function. For example,
 
 
 {% highlight python linenos  %}
@@ -1387,7 +1387,7 @@ $[x,p]=i$
 
 is a directly related to
 
-$[A, A^\dagger]=1$ 
+$[A, A^\dagger]=1$
 
 (which SymPy does not know about, and does not simplify).
 
@@ -1415,5 +1415,3 @@ For more details on the quantum module in SymPy, see:
 
 
 <table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>3.3.2+ (default, Feb 28 2014, 00:52:16) [GCC 4.8.1]</td></tr><tr><td>IPython</td><td>2.2.0</td></tr><tr><td>OS</td><td>posix [linux]</td></tr><tr><td>numpy</td><td>1.8.2</td></tr><tr><td>sympy</td><td>0.7.5</td></tr><tr><td colspan='2'>Tue Aug 26 22:57:37 2014 JST</td></tr></table>
-
-

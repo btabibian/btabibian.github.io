@@ -1,8 +1,8 @@
 ---
-layout: python_note
+layout: post
 title: "Lecture 1"
 subtitle: "Python"
-tags: [u'learning', u'python']
+tags: [learning,python]
 categories: [
 
 scientific-computing,
@@ -15,7 +15,7 @@ python_logo.png,
 ]
 
 github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-1-Introduction-to-Python-Programming.ipynb
-
+author: "behzad_tabibian"
 ---
 # Introduction to Python programming
 
@@ -33,7 +33,7 @@ The other notebooks in this lecture series are indexed at [http://btabibian.gith
 
         myprogram.py
 
-* Every line in a Python program file is assumed to be a Python statement, or part thereof. 
+* Every line in a Python program file is assumed to be a Python statement, or part thereof.
 
     * The only exception is comment lines, which start with the character `#` (optionally preceded by an arbitrary number of white-space characters, i.e., tabs or spaces). Comment lines are usually ignored by the Python interpreter.
 
@@ -66,7 +66,7 @@ cat scripts/hello-world.py
 {% endhighlight %}
 
     #!/usr/bin/env python
-    
+
     print("Hello world!")
 
 
@@ -93,7 +93,7 @@ cat scripts/hello-world-in-swedish.py
 
     #!/usr/bin/env python
     # -*- coding: UTF-8 -*-
-    
+
     print("Hej världen!")
 
 
@@ -105,7 +105,7 @@ cat scripts/hello-world-in-swedish.py
     Hej världen!
 
 
-Other than these two *optional* lines in the beginning of a Python code file, no additional code is required for initializing a program. 
+Other than these two *optional* lines in the beginning of a Python code file, no additional code is required for initializing a program.
 
 ## IPython notebooks
 
@@ -196,7 +196,7 @@ print(dir(math))
     ['__doc__', '__file__', '__name__', '__package__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'hypot', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
 
 
-And using the function `help` we can get a description of each function (almost .. not all functions have docstrings, as they are technically called, but the vast majority of functions are documented this way). 
+And using the function `help` we can get a description of each function (almost .. not all functions have docstrings, as they are technically called, but the vast majority of functions are documented this way).
 
 
 {% highlight python linenos  %}
@@ -204,13 +204,13 @@ help(math.log)
 {% endhighlight %}
 
     Help on built-in function log in module math:
-    
+
     log(...)
         log(x[, base])
-        
+
         Return the logarithm of x to the given base.
         If the base not specified, returns the natural logarithm (base e) of x.
-    
+
 
 
 
@@ -239,23 +239,23 @@ log(10, 2)
 
 We can also use the `help` function directly on modules: Try
 
-    help(math) 
+    help(math)
 
-Some very useful modules form the Python standard library are `os`, `sys`, `math`, `shutil`, `re`, `subprocess`, `multiprocessing`, `threading`. 
+Some very useful modules form the Python standard library are `os`, `sys`, `math`, `shutil`, `re`, `subprocess`, `multiprocessing`, `threading`.
 
 A complete lists of standard modules for Python 2 and Python 3 are available at http://docs.python.org/2/library/ and http://docs.python.org/3/library/, respectively.
 
 ## Variables and types
 
-### Symbol names 
+### Symbol names
 
-Variable names in Python can contain alphanumerical characters `a-z`, `A-Z`, `0-9` and some special characters such as `_`. Normal variable names must start with a letter. 
+Variable names in Python can contain alphanumerical characters `a-z`, `A-Z`, `0-9` and some special characters such as `_`. Normal variable names must start with a letter.
 
-By convension, variable names start with a lower-case letter, and Class names start with a capital letter. 
+By convension, variable names start with a lower-case letter, and Class names start with a capital letter.
 
 In addition, there are a number of Python keywords that cannot be used as variable names. These keywords are:
 
-    and, as, assert, break, class, continue, def, del, elif, else, except, 
+    and, as, assert, break, class, continue, def, del, elif, else, except,
     exec, finally, for, from, global, if, import, in, is, lambda, not, or,
     pass, print, raise, return, try, while, with, yield
 
@@ -323,7 +323,7 @@ print(y)
 
     <ipython-input-19-36b2093251cd> in <module>()
     ----> 1 print(y)
-    
+
 
     NameError: name 'y' is not defined
 
@@ -506,7 +506,7 @@ x = float(z)
 
     <ipython-input-33-e719cc7b3e96> in <module>()
     ----> 1 x = float(z)
-    
+
 
     TypeError: can't convert complex to float
 
@@ -585,7 +585,7 @@ Most operators and comparisons in Python work as one would expect:
 
 
 
-* The boolean operators are spelled out as words `and`, `not`, `or`. 
+* The boolean operators are spelled out as words `and`, `not`, `or`.
 
 
 {% highlight python linenos  %}
@@ -693,7 +693,7 @@ l1 is l2
 
 ### Strings
 
-Strings are the variable type that is used for storing text messages. 
+Strings are the variable type that is used for storing text messages.
 
 
 {% highlight python linenos  %}
@@ -876,7 +876,7 @@ print(s2)
 
 
 {% highlight python linenos  %}
-# alternative, more intuitive way of formatting a string 
+# alternative, more intuitive way of formatting a string
 s3 = 'value1 = {0}, value2 = {1}'.format(3.1415, 1.5)
 
 print(s3)
@@ -1126,11 +1126,11 @@ print(l)
     ['i', 'n', 's', 'e', 'r', 't']
 
 
-See `help(list)` for more details, or read the online documentation 
+See `help(list)` for more details, or read the online documentation
 
 ### Tuples
 
-Tuples are like lists, except that they cannot be modified once created, that is they are *immutable*. 
+Tuples are like lists, except that they cannot be modified once created, that is they are *immutable*.
 
 In Python, tuples are created using the syntax `(..., ..., ...)`, or even `..., ...`:
 
@@ -1182,7 +1182,7 @@ point[0] = 20
 
     <ipython-input-83-ac1c641a5dca> in <module>()
     ----> 1 point[0] = 20
-    
+
 
     TypeError: 'tuple' object does not support item assignment
 
@@ -1250,10 +1250,10 @@ statement2 = False
 
 if statement1:
     print("statement1 is True")
-    
+
 elif statement2:
     print("statement2 is True")
-    
+
 else:
     print("statement1 and statement2 are False")
 {% endhighlight %}
@@ -1261,7 +1261,7 @@ else:
     statement1 and statement2 are False
 
 
-For the first time, here we encounted a peculiar and unusual aspect of the Python programming language: Program blocks are defined by their indentation level. 
+For the first time, here we encounted a peculiar and unusual aspect of the Python programming language: Program blocks are defined by their indentation level.
 
 Compare to the equivalent C code:
 
@@ -1278,9 +1278,9 @@ Compare to the equivalent C code:
         printf("statement1 and statement2 are False\n");
     }
 
-In C blocks are defined by the enclosing curly brakets `{` and `}`. And the level of indentation (white space before the code statements) does not matter (completely optional). 
+In C blocks are defined by the enclosing curly brakets `{` and `}`. And the level of indentation (white space before the code statements) does not matter (completely optional).
 
-But in Python, the extent of a code block is defined by the indentation level (usually a tab or say four white spaces). This means that we have to be careful to indent our code correctly, or else we will get syntax errors. 
+But in Python, the extent of a code block is defined by the indentation level (usually a tab or say four white spaces). This means that we have to be careful to indent our code correctly, or else we will get syntax errors.
 
 #### Examples:
 
@@ -1314,11 +1314,11 @@ if statement1:
 
 
 {% highlight python linenos  %}
-statement1 = False 
+statement1 = False
 
 if statement1:
     print("printed if statement1 is True")
-    
+
     print("still inside the if block")
 {% endhighlight %}
 
@@ -1326,7 +1326,7 @@ if statement1:
 {% highlight python linenos  %}
 if statement1:
     print("printed if statement1 is True")
-    
+
 print("now outside the if block")
 {% endhighlight %}
 
@@ -1444,9 +1444,9 @@ i = 0
 
 while i < 5:
     print(i)
-    
+
     i = i + 1
-    
+
 print("done")
 {% endhighlight %}
 
@@ -1486,7 +1486,7 @@ def func1(s):
     """
     Print a string 's' and tell how many characters it has    
     """
-    
+
     print(s + " has " + str(len(s)) + " characters")
 {% endhighlight %}
 
@@ -1496,10 +1496,10 @@ help(func1)
 {% endhighlight %}
 
     Help on function func1 in module __main__:
-    
+
     func1(s)
         Print a string 's' and tell how many characters it has
-    
+
 
 
 
@@ -1631,8 +1631,8 @@ In Python we can also create unnamed functions, using the `lambda` keyword:
 
 {% highlight python linenos  %}
 f1 = lambda x: x**2
-    
-# is equivalent to 
+
+# is equivalent to
 
 def f2(x):
     return x**2
@@ -1680,7 +1680,7 @@ list(map(lambda x: x**2, range(-3,4)))
 
 ## Classes
 
-Classes are the key features of object-oriented programming. A class is a structure for representing an object and the operations that can be performed on the object. 
+Classes are the key features of object-oriented programming. A class is a structure for representing an object and the operations that can be performed on the object.
 
 In Python a class can contain *attributes* (variables) and *methods* (functions).
 
@@ -1700,21 +1700,21 @@ class Point:
     """
     Simple class for representing a point in a Cartesian coordinate system.
     """
-    
+
     def __init__(self, x, y):
         """
         Create a new Point at x, y.
         """
         self.x = x
         self.y = y
-        
+
     def translate(self, dx, dy):
         """
         Translate the point by dx and dy in the x and y direction.
         """
         self.x += dx
         self.y += dy
-        
+
     def __str__(self):
         return("Point at [%f, %f]" % (self.x, self.y))
 {% endhighlight %}
@@ -1749,15 +1749,15 @@ print(p2)
 
 Note that calling class methods can modifiy the state of that particular class instance, but does not effect other class instances or any global variables.
 
-That is one of the nice things about object-oriented design: code such as functions and related variables are grouped in separate and independent entities. 
+That is one of the nice things about object-oriented design: code such as functions and related variables are grouped in separate and independent entities.
 
 ## Modules
 
 One of the most important concepts in good programming is to reuse code and avoid repetitions.
 
-The idea is to write functions and classes with a well-defined purpose and scope, and reuse these instead of repeating similar code in different part of a program (modular programming). The result is usually that readability and maintainability of a program is greatly improved. What this means in practice is that our programs have fewer bugs, are easier to extend and debug/troubleshoot. 
+The idea is to write functions and classes with a well-defined purpose and scope, and reuse these instead of repeating similar code in different part of a program (modular programming). The result is usually that readability and maintainability of a program is greatly improved. What this means in practice is that our programs have fewer bugs, are easier to extend and debug/troubleshoot.
 
-Python supports modular programming at different levels. Functions and classes are examples of tools for low-level modular programming. Python modules are a higher-level modular programming construct, where we can collect related variables, functions and classes in a module. A python module is defined in a python file (with file-ending `.py`), and it can be made accessible to other Python modules and programs using the `import` statement. 
+Python supports modular programming at different levels. Functions and classes are examples of tools for low-level modular programming. Python modules are a higher-level modular programming construct, where we can collect related variables, functions and classes in a module. A python module is defined in a python file (with file-ending `.py`), and it can be made accessible to other Python modules and programs using the `import` statement.
 
 Consider the following example: the file `mymodule.py` contains simple example implementations of a variable, function and a class:
 
@@ -1776,7 +1776,7 @@ def my_function():
     Example function
     """
     return my_variable
-    
+
 class MyClass:
     """
     Example class.
@@ -1784,13 +1784,13 @@ class MyClass:
 
     def __init__(self):
         self.variable = my_variable
-        
+
     def set_variable(self, new_value):
         """
         Set self.variable to a new value
         """
         self.variable = new_value
-        
+
     def get_variable(self):
         return self.variable
 {% endhighlight %}
@@ -1813,20 +1813,20 @@ help(mymodule)
 {% endhighlight %}
 
     Help on module mymodule:
-    
+
     NAME
         mymodule
-    
+
     FILE
         /is/ei/btabibian/Documents/scientific-python-lectures/mymodule.py
-    
+
     DESCRIPTION
         Example of a python module. Contains a variable called my_variable,
         a function called my_function, and a class called MyClass.
-    
+
     CLASSES
         MyClass
-        
+
         class MyClass
          |  Example class.
          |  
@@ -1838,15 +1838,15 @@ help(mymodule)
          |  
          |  set_variable(self, new_value)
          |      Set self.variable to a new value
-    
+
     FUNCTIONS
         my_function()
             Example function
-    
+
     DATA
         my_variable = 0
-    
-    
+
+
 
 
 
@@ -1863,7 +1863,7 @@ mymodule.my_variable
 
 
 {% highlight python linenos  %}
-mymodule.my_function() 
+mymodule.my_function()
 {% endhighlight %}
 
 
@@ -1875,7 +1875,7 @@ mymodule.my_function()
 
 
 {% highlight python linenos  %}
-my_class = mymodule.MyClass() 
+my_class = mymodule.MyClass()
 my_class.set_variable(10)
 my_class.get_variable()
 {% endhighlight %}
@@ -1905,7 +1905,7 @@ reload(mymodule)  # works only in python 2
 
 In Python errors are managed with a special language construct called "Exceptions". When errors occur exceptions can be raised, which interrupts the normal program flow and fallback to somewhere else in the code where the closest try-except statement is defined.
 
-To generate an exception we can use the `raise` statement, which takes an argument that must be an instance of the class `BaseException` or a class derived from it. 
+To generate an exception we can use the `raise` statement, which takes an argument that must be an instance of the class `BaseException` or a class derived from it.
 
 
 {% highlight python linenos  %}
@@ -1919,7 +1919,7 @@ raise Exception("description of the error")
 
     <ipython-input-129-8f47ba831d5a> in <module>()
     ----> 1 raise Exception("description of the error")
-    
+
 
     Exception: description of the error
 
@@ -1927,10 +1927,10 @@ raise Exception("description of the error")
 A typical use of exceptions is to abort functions when some error condition occurs, for example:
 
     def my_function(arguments):
-    
+
         if not verify(arguments):
             raise Exception("Invalid arguments")
-        
+
         # rest of the code goes here
 
 To gracefully catch errors that are generated by functions and class methods, or by the Python interpreter itself, use the `try` and  `except` statements:
@@ -1979,7 +1979,7 @@ except Exception as e:
 ## Further reading
 
 * http://www.python.org - The official web page of the Python programming language.
-* http://www.python.org/dev/peps/pep-0008 - Style guide for Python programming. Highly recommended. 
+* http://www.python.org/dev/peps/pep-0008 - Style guide for Python programming. Highly recommended.
 * http://www.greenteapress.com/thinkpython/ - A free book on Python programming.
 * [Python Essential Reference](http://www.amazon.com/Python-Essential-Reference-4th-Edition/dp/0672329786) - A good reference book on Python programming.
 
@@ -1996,5 +1996,3 @@ except Exception as e:
 
 
 <table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>2.7.8 64bit [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]</td></tr><tr><td>IPython</td><td>3.0.0</td></tr><tr><td>OS</td><td>Linux 3.13.0 45 generic x86_64 with debian jessie sid</td></tr><tr><td colspan='2'>Mon Apr 13 12:00:31 2015 CEST</td></tr></table>
-
-

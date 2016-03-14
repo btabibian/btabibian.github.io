@@ -1,99 +1,15 @@
 ---
-layout: default
+layout: page
 title: Notes
 kind: homepage
+search_omit: true
+no_logo: true
 ---
+<ul class="post-list">
+{% for post in site.categories.notes %}
+<li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d,     %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt" max-height="inherit"><p class="pull-left"><figure class="pull-left-third"><a href="{{ site.url }}{{ post.url }}">  <img src="{{ post.img[0]}}" alt=""/></a></figure></p>{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape    _once }}
+</span>{% endif %}
 
-<div id="features-wrapper">
-				<section id="features" class="container">
-
-                    
-                    {% assign loopindex_ = 0 %}
-                    {% for post in site.posts %}
-                        {% if post.categories contains 'notes' %}
-                            
-                            {% assign loopindex = loopindex_ | modulo: 4 %}
-                    
-            {% if loopindex == 0 %}
-                    <div class="row">
-                        <div class="3u">
-
-							<!-- Feature -->
-								<section>
-                                    {% if post.img[0] contains "http" %}
-                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" max-height="40px" /></a>
-                                    {% else %}
-									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/{{ post.img[0]}}" alt="" /></a>
-                                    {% endif %}
-									<header>
-										<h3>{{post.title}} </h3>
-									</header>
-									
-								</section>
-
-						</div>
-            {% elsif loopindex == 1 %}
-                        <div class="3u">
-
-							<!-- Feature -->
-								<section>
-									{% if post.img[0] contains "http" %}
-                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" max-height="40px" /></a>
-                                    {% else %}
-									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/{{ post.img[0]}}" alt="" /></a>
-                                    {% endif %}
-									<header>
-										<h3>{{post.title}}</h3>
-									</header>
-									
-								</section>
-
-						</div>
-            {% elsif loopindex == 2 %}
-                        <div class="3u">
-
-							<!-- Feature -->
-								<section>
-									{% if post.img[0] contains "http" %}
-                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" max-height="40px"/></a>
-                                    {% else %}
-									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/{{ post.img[0]}}" alt="" /></a>
-                                    {% endif %}
-									<header>
-										<h3>{{post.title}}</h3>
-									</header>
-									
-
-						</div>
-                            
-                             {% elsif loopindex == 3 %}
-                        <div class="3u">
-
-							<!-- Feature -->
-								<section>
-									{% if post.img[0] contains "http" %}
-                                    <a href="{{post.url}}" class="image featured"><img src="{{ post.img[0]}}" alt="" /></a>
-                                    {% else %}
-									<a href="{{post.url}}" class="image featured"><img src="{{baseurl}}/{{ post.img[0]}}" alt="" /></a>
-                                    {% endif %}
-									<header>
-										<h3>{{post.title}}</h3>
-									</header>
-									
-
-						</div>
-            
-                        </div>
-                        
-
-        {% endif %}
-                    {% assign loopindex_ = loopindex_ | plus:1 %}
-                        {% endif %}
-	  {% endfor %}
-                        {% if loopindex_ | modulo: 3 != 0%}
-                        </div>
-                    {% endif %}
-	  
-</section></div>
-
-
+</a></article></li>
+{% endfor %}
+</ul>

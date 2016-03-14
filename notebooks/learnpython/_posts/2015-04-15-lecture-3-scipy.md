@@ -1,8 +1,8 @@
 ---
-layout: python_note
+layout: post
 title: "Lecture 3"
 subtitle: "Scipy"
-tags: [u'learning', u'python']
+tags: [learning, python]
 categories: [
 
 scientific-computing,
@@ -15,7 +15,7 @@ scipy.png,
 ]
 
 github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-3-Scipy.ipynb
-
+author: "behzad_tabibian"
 ---
 # SciPy - Library of scientific algorithms for Python
 
@@ -32,7 +32,7 @@ The other notebooks in this lecture series are indexed at [http://jrjohansson.gi
 from IPython.display import Image
 {% endhighlight %}
 
-    
+
     Welcome to pylab, a matplotlib-based Python environment [backend: module://IPython.zmq.pylab.backend_inline].
     For more information, type 'help(pylab)'.
 
@@ -73,7 +73,7 @@ import scipy.linalg as la
 
 ## Special functions
 
-A large number of mathematical special functions are important for many computional physics problems. SciPy provides implementations of a very extensive set of special functions. For details, see the list of functions in the reference documention at http://docs.scipy.org/doc/scipy/reference/special.html#module-scipy.special. 
+A large number of mathematical special functions are important for many computional physics problems. SciPy provides implementations of a very extensive set of special functions. For details, see the list of functions in the reference documention at http://docs.scipy.org/doc/scipy/reference/special.html#module-scipy.special.
 
 To demonstrate the typical usage of special functions we will look in more detail at the Bessel functions:
 
@@ -81,8 +81,8 @@ To demonstrate the typical usage of special functions we will look in more detai
 {% highlight python linenos  %}
 #
 # The scipy.special module includes a large number of Bessel-functions
-# Here we will use the functions jn and yn, which are the Bessel functions 
-# of the first and second kind and real-valued order. We also include the 
+# Here we will use the functions jn and yn, which are the Bessel functions
+# of the first and second kind and real-valued order. We also include the
 # function jn_zeros and yn_zeros that gives the zeroes of the functions jn
 # and yn.
 #
@@ -170,7 +170,7 @@ x_upper = 1 # the upper limit of x
 
 val, abserr = quad(f, x_lower, x_upper)
 
-print "integral value =", val, ", absolute error =", abserr 
+print "integral value =", val, ", absolute error =", abserr
 {% endhighlight %}
 
     integral value = 0.5 , absolute error = 5.55111512313e-15
@@ -182,7 +182,7 @@ If we need to pass extra arguments to integrand function we can use the `args` k
 {% highlight python linenos  %}
 def integrand(x, n):
     """
-    Bessel function of first kind and order n. 
+    Bessel function of first kind and order n.
     """
     return jn(n, x)
 
@@ -192,7 +192,7 @@ x_upper = 10 # the upper limit of x
 
 val, abserr = quad(integrand, x_lower, x_upper, args=(3,))
 
-print val, abserr 
+print val, abserr
 {% endhighlight %}
 
     0.736675137081 9.38925687719e-13
@@ -230,7 +230,7 @@ y_upper = 10
 
 val, abserr = dblquad(integrand, x_lower, x_upper, lambda x : y_lower, lambda x: y_upper)
 
-print val, abserr 
+print val, abserr
 {% endhighlight %}
 
     0.785398163397 1.63822994214e-13
@@ -255,9 +255,9 @@ A system of ODEs are usually formulated on standard form before it is attacked n
 
 $y' = f(y, t)$
 
-where 
+where
 
-$y = [y_1(t), y_2(t), ..., y_n(t)]$ 
+$y = [y_1(t), y_2(t), ..., y_n(t)]$
 
 and $f$ is some function that gives the derivatives of the function $y_i(t)$. To solve an ODE we need to know the function $f$ and an initial condition, $y(0)$.
 
@@ -267,7 +267,7 @@ Once we have defined the Python function `f` and array `y_0` (that is $f$ and $y
 
     y_t = odeint(f, y_0, t)
 
-where `t` is and array with time-coordinates for which to solve the ODE problem. `y_t` is an array with one row for each point in time in `t`, where each column corresponds to a solution `y_i(t)` at that point in time. 
+where `t` is and array with time-coordinates for which to solve the ODE problem. `y_t` is an array with one row for each point in time in `t`, where each column corresponds to a solution `y_i(t)` at that point in time.
 
 We will see how we can implement `f` and `y_0` in Python code in the examples below.
 
@@ -318,12 +318,12 @@ def dx(x, t):
     The right-hand side of the pendulum ODE
     """
     x1, x2, x3, x4 = x[0], x[1], x[2], x[3]
-    
+
     dx1 = 6.0/(m*L**2) * (2 * x3 - 3 * cos(x1-x2) * x4)/(16 - 9 * cos(x1-x2)**2)
     dx2 = 6.0/(m*L**2) * (8 * x4 - 3 * cos(x1-x2) * x3)/(16 - 9 * cos(x1-x2)**2)
     dx3 = -0.5 * m * L**2 * ( dx1 * dx2 * sin(x1-x2) + 3 * (g/L) * sin(x1))
     dx4 = -0.5 * m * L**2 * (-dx1 * dx2 * sin(x1-x2) + (g/L) * sin(x2))
-    
+
     return [dx1, dx2, dx3, dx4]
 {% endhighlight %}
 
@@ -359,7 +359,7 @@ y1 = - L * cos(x[:, 0])
 
 x2 = x1 + L * sin(x[:, 1])
 y2 = y1 - L * cos(x[:, 1])
-    
+
 axes[1].plot(x1, y1, 'r', label="pendulum1")
 axes[1].plot(x2, y2, 'b', label="pendulum2")
 axes[1].set_ylim([-1, 0])
@@ -389,7 +389,7 @@ for t_idx, tt in enumerate(t[:200]):
 
     x2 = x1 + L * sin(x[t_idx, 1])
     y2 = y1 - L * cos(x[t_idx, 1])
-    
+
     ax.cla()    
     ax.plot([0, x1], [0, y1], 'r.-')
     ax.plot([x1, x2], [y1, y2], 'b.-')
@@ -398,7 +398,7 @@ for t_idx, tt in enumerate(t[:200]):
 
     display(fig)
     clear_output()
-    
+
     time.sleep(0.1)
 {% endhighlight %}
 
@@ -429,7 +429,7 @@ def dy(y, t, zeta, w0):
     The right-hand side of the damped oscillator ODE
     """
     x, p = y[0], y[1]
-    
+
     dx = p
     dp = -2 * zeta * w0 * p - w0**2 * x
 
@@ -438,7 +438,7 @@ def dy(y, t, zeta, w0):
 
 
 {% highlight python linenos  %}
-# initial state: 
+# initial state:
 y0 = [1.0, 0.0]
 {% endhighlight %}
 
@@ -493,7 +493,7 @@ dt = t[1]-t[0]
 
 # calculate the fast fourier transform
 # y2 is the solution to the under-damped oscillator from the previous section
-F = fft(y2[:,0]) 
+F = fft(y2[:,0])
 
 # calculate the frequencies for the components in F
 w = fftfreq(N, dt)
@@ -533,7 +533,7 @@ As expected, we now see a peak in the spectrum that is centered around 1, which 
 
 ## Linear algebra
 
-The linear algebra module contains a lot of matrix related functions, including linear equation solving, eigenvalue solvers, matrix functions (for example matrix-exponentiation), a number of different decompositions (SVD, LU, cholesky), etc. 
+The linear algebra module contains a lot of matrix related functions, including linear equation solving, eigenvalue solvers, matrix functions (for example matrix-exponentiation), a number of different decompositions (SVD, LU, cholesky), etc.
 
 Detailed documetation is available at: http://docs.scipy.org/doc/scipy/reference/linalg.html
 
@@ -704,7 +704,7 @@ norm(dot(A, evecs[:,n]) - evals[n] * evecs[:,n])
 
 
 
-There are also more specialized eigensolvers, like the `eigh` for Hermitian matrices. 
+There are also more specialized eigensolvers, like the `eigh` for Hermitian matrices.
 
 ### Matrix operations
 
@@ -757,7 +757,7 @@ There are many possible strategies for storing sparse matrices in an efficient w
 
 For more information about these sparse formats, see e.g. http://en.wikipedia.org/wiki/Sparse_matrix
 
-When we create a sparse matrix we have to choose which format it should be stored in. For example, 
+When we create a sparse matrix we have to choose which format it should be stored in. For example,
 
 
 {% highlight python linenos  %}
@@ -1017,7 +1017,7 @@ We can use the `fmin_bfgs` function to find the minima of a function:
 
 {% highlight python linenos  %}
 x_min = optimize.fmin_bfgs(f, -2)
-x_min 
+x_min
 {% endhighlight %}
 
     Optimization terminated successfully.
@@ -1036,7 +1036,7 @@ x_min
 
 
 {% highlight python linenos  %}
-optimize.fmin_bfgs(f, 0.5) 
+optimize.fmin_bfgs(f, 0.5)
 {% endhighlight %}
 
     Optimization terminated successfully.
@@ -1053,7 +1053,7 @@ optimize.fmin_bfgs(f, 0.5)
 
 
 
-We can also use the `brent` or `fminbound` functions. They have a bit different syntax and use different algorithms. 
+We can also use the `brent` or `fminbound` functions. They have a bit different syntax and use different algorithms.
 
 
 {% highlight python linenos  %}
@@ -1081,7 +1081,7 @@ optimize.fminbound(f, -4, 2)
 
 ### Finding a solution to a function
 
-To find the root for a function of the form $f(x) = 0$ we can use the `fsolve` function. It requires an initial guess: 
+To find the root for a function of the form $f(x) = 0$ we can use the `fsolve` function. It requires an initial guess:
 
 
 {% highlight python linenos  %}
@@ -1338,8 +1338,8 @@ stats.ttest_1samp(Y.rvs(size=1000), Y.mean())
 ## Further reading
 
 * http://www.scipy.org - The official web page for the SciPy project.
-* http://docs.scipy.org/doc/scipy/reference/tutorial/index.html - A tutorial on how to get started using SciPy. 
-* https://github.com/scipy/scipy/ - The SciPy source code. 
+* http://docs.scipy.org/doc/scipy/reference/tutorial/index.html - A tutorial on how to get started using SciPy.
+* https://github.com/scipy/scipy/ - The SciPy source code.
 
 ## Versions
 
@@ -1354,5 +1354,3 @@ stats.ttest_1samp(Y.rvs(size=1000), Y.mean())
 
 
 <table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>3.3.2+ (default, Feb 28 2014, 00:52:16) [GCC 4.8.1]</td></tr><tr><td>IPython</td><td>2.2.0</td></tr><tr><td>OS</td><td>posix [linux]</td></tr><tr><td>numpy</td><td>1.8.2</td></tr><tr><td>scipy</td><td>0.14.0</td></tr><tr><td colspan='2'>Tue Aug 26 22:45:19 2014 JST</td></tr></table>
-
-

@@ -1,8 +1,8 @@
 ---
-layout: python_note
+layout: post
 title: "Lecture 2"
 subtitle: "Numpy"
-tags: [u'learning', u'python']
+tags: [learning, python]
 categories: [
 
 scientific-computing,
@@ -15,7 +15,7 @@ numpy.jpeg,
 ]
 
 github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-2-Numpy.ipynb
-
+author: "behzad_tabibian"
 ---
 # Numpy -  multidimensional data arrays
 
@@ -36,7 +36,7 @@ The other notebooks in this lecture series are indexed at [http://jrjohansson.gi
 
 ## Introduction
 
-The `numpy` package (module) is used in almost all numerical computation using Python. It is a package that provide high-performance vector, matrix and higher-dimensional data structures for Python. It is implemented in C and Fortran so when calculations are vectorized (formulated with vectors and matrices), performance is very good. 
+The `numpy` package (module) is used in almost all numerical computation using Python. It is a package that provide high-performance vector, matrix and higher-dimensional data structures for Python. It is implemented in C and Fortran so when calculations are vectorized (formulated with vectors and matrices), performance is very good.
 
 To use `numpy` need to import the module it using of example:
 
@@ -45,7 +45,7 @@ To use `numpy` need to import the module it using of example:
 from numpy import *
 {% endhighlight %}
 
-In the `numpy` package the terminology used for vectors, matrices and higher-dimensional data sets is *array*. 
+In the `numpy` package the terminology used for vectors, matrices and higher-dimensional data sets is *array*.
 
 
 
@@ -172,7 +172,7 @@ size(M)
 
 
 
-So far the `numpy.ndarray` looks awefully much like a Python list (or nested list). Why not simply use Python lists for computations instead of creating a new array type? 
+So far the `numpy.ndarray` looks awefully much like a Python list (or nested list). Why not simply use Python lists for computations instead of creating a new array type?
 
 There are several reasons:
 
@@ -209,12 +209,12 @@ M[0,0] = "hello"
 
     <ipython-input-12-a09d72434238> in <module>()
     ----> 1 M[0,0] = "hello"
-    
+
 
     ValueError: invalid literal for long() with base 10: 'hello'
 
 
-If we want, we can explicitly define the type of the array data when we create it, using the `dtype` keyword argument: 
+If we want, we can explicitly define the type of the array data when we create it, using the `dtype` keyword argument:
 
 
 {% highlight python linenos  %}
@@ -412,7 +412,7 @@ diag([1,2,3])
 
 {% highlight python linenos  %}
 # diagonal with offset from the main diagonal
-diag([1,2,3], k=1) 
+diag([1,2,3], k=1)
 {% endhighlight %}
 
 
@@ -459,7 +459,7 @@ ones((3,3))
 
 ### Comma-separated values (CSV)
 
-A very common file format for data files are the comma-separated values (CSV), or related format such as TSV (tab-separated values). To read data from such file into Numpy arrays we can use the `numpy.genfromtxt` function. For example, 
+A very common file format for data files are the comma-separated values (CSV), or related format such as TSV (tab-separated values). To read data from such file into Numpy arrays we can use the `numpy.genfromtxt` function. For example,
 
 
 {% highlight python linenos  %}
@@ -641,7 +641,7 @@ v[0]
 
 
 {% highlight python linenos  %}
-# M is a matrix, or a 2 dimensional array, taking two indices 
+# M is a matrix, or a 2 dimensional array, taking two indices
 M[1,1]
 {% endhighlight %}
 
@@ -652,7 +652,7 @@ M[1,1]
 
 
 
-If we omit an index of a multidimensional array it returns the whole row (or, in general, a N-1 dimensional array) 
+If we omit an index of a multidimensional array it returns the whole row (or, in general, a N-1 dimensional array)
 
 
 {% highlight python linenos  %}
@@ -680,7 +680,7 @@ M[1]
 
 
 
-The same thing can be achieved with using `:` instead of an index: 
+The same thing can be achieved with using `:` instead of an index:
 
 
 {% highlight python linenos  %}
@@ -926,7 +926,7 @@ A[::2, ::2]
 
 ### Fancy indexing
 
-Fancy indexing is the name for when an array or list is used in-place of an index: 
+Fancy indexing is the name for when an array or list is used in-place of an index:
 
 
 {% highlight python linenos  %}
@@ -956,7 +956,7 @@ A[row_indices, col_indices]
 
 
 
-We can also index masks: If the index mask is an Numpy array of with data type `bool`, then an element is selected (True) or not (False) depending on the value of the index mask at the position each element: 
+We can also index masks: If the index mask is an Numpy array of with data type `bool`, then an element is selected (True) or not (False) depending on the value of the index mask at the position each element:
 
 
 {% highlight python linenos  %}
@@ -1324,7 +1324,7 @@ A * v1
 
 ### Matrix algebra
 
-What about matrix mutiplication? There are two ways. We can either use the `dot` function, which applies a matrix-matrix, matrix-vector, or inner vector multiplication to its two arguments: 
+What about matrix mutiplication? There are two ways. We can either use the `dot` function, which applies a matrix-matrix, matrix-vector, or inner vector multiplication to its two arguments:
 
 
 {% highlight python linenos  %}
@@ -1483,7 +1483,7 @@ M * v
 
     <ipython-input-101-995fb48ad0cc> in <module>()
     ----> 1 M * v
-    
+
 
     /is/ei/btabibian/anaconda/lib/python2.7/site-packages/numpy/matrixlib/defmatrix.pyc in __mul__(self, other)
         339         if isinstance(other, (N.ndarray, list, tuple)) :
@@ -1500,7 +1500,7 @@ See also the related functions: `inner`, `outer`, `cross`, `kron`, `tensordot`. 
 
 ### Array/Matrix transformations
 
-Above we have used the `.T` to transpose the matrix object `v`. We could also have used the `transpose` function to accomplish the same thing. 
+Above we have used the `.T` to transpose the matrix object `v`. We could also have used the `transpose` function to accomplish the same thing.
 
 Other mathematical functions that transforms matrix objects are:
 
@@ -1608,7 +1608,7 @@ abs(C)
 
 
 {% highlight python linenos  %}
-inv(C) # equivalent to C.I 
+inv(C) # equivalent to C.I
 {% endhighlight %}
 
 
@@ -1660,7 +1660,7 @@ det(C.I)
 
 ### Data processing
 
-Often it is useful to store datasets in Numpy arrays. Numpy provides a number of functions to calculate statistics of datasets in arrays. 
+Often it is useful to store datasets in Numpy arrays. Numpy provides a number of functions to calculate statistics of datasets in arrays.
 
 For example, let's calculate some properties data from the Stockholm temperature dataset used above.
 
@@ -1868,7 +1868,7 @@ mean(data[mask_feb,3])
 
 
 
-With these tools we have very powerful data processing capabilities at our disposal. For example, to extract the average monthly average temperatures for each month of the year only takes a few lines of code: 
+With these tools we have very powerful data processing capabilities at our disposal. For example, to extract the average monthly average temperatures for each month of the year only takes a few lines of code:
 
 
 {% highlight python linenos  %}
@@ -1887,7 +1887,7 @@ ax.set_ylabel("Monthly avg. temp.");
 
 ### Calculations with higher-dimensional data
 
-When functions such as `min`, `max`, etc., is applied to a multidimensional arrays, it is sometimes useful to apply the calculation to the entire array, and sometimes only on a row or column basis. Using the `axis` argument we can specify how these functions should behave: 
+When functions such as `min`, `max`, etc., is applied to a multidimensional arrays, it is sometimes useful to apply the calculation to the entire array, and sometimes only on a row or column basis. Using the `axis` argument we can specify how these functions should behave:
 
 
 {% highlight python linenos  %}
@@ -2151,7 +2151,7 @@ repeat(a, 3)
 
 
 {% highlight python linenos  %}
-# tile the matrix 3 times 
+# tile the matrix 3 times
 tile(a, 3)
 {% endhighlight %}
 
@@ -2228,7 +2228,7 @@ hstack((a,b.T))
 
 ## Copy and "deep copy"
 
-To achieve high performance, assignments in Python usually do not copy the underlaying objects. This is important for example when objects are passed between functions, to avoid an excessive amount of memory copying when it is not necessary (techincal term: pass by reference). 
+To achieve high performance, assignments in Python usually do not copy the underlaying objects. This is important for example when objects are passed between functions, to avoid an excessive amount of memory copying when it is not necessary (techincal term: pass by reference).
 
 
 {% highlight python linenos  %}
@@ -2247,8 +2247,8 @@ A
 
 
 {% highlight python linenos  %}
-# now B is referring to the same array data as A 
-B = A 
+# now B is referring to the same array data as A
+B = A
 {% endhighlight %}
 
 
@@ -2318,7 +2318,7 @@ A
 
 ## Iterating over array elements
 
-Generally, we want to avoid iterating over the elements of arrays whenever we can (at all costs). The reason is that in a interpreted language like Python (or MATLAB), iterations are really slow compared to vectorized operations. 
+Generally, we want to avoid iterating over the elements of arrays whenever we can (at all costs). The reason is that in a interpreted language like Python (or MATLAB), iterations are really slow compared to vectorized operations.
 
 However, sometimes iterations are unavoidable. For such cases, the Python `for` loop is the most convenient way to iterate over an array:
 
@@ -2342,7 +2342,7 @@ M = array([[1,2], [3,4]])
 
 for row in M:
     print("row", row)
-    
+
     for element in row:
         print(element)
 {% endhighlight %}
@@ -2355,16 +2355,16 @@ for row in M:
     4
 
 
-When we need to iterate over each element of an array and modify its elements, it is convenient to use the `enumerate` function to obtain both the element and its index in the `for` loop: 
+When we need to iterate over each element of an array and modify its elements, it is convenient to use the `enumerate` function to obtain both the element and its index in the `for` loop:
 
 
 {% highlight python linenos  %}
 for row_idx, row in enumerate(M):
     print("row_idx", row_idx, "row", row)
-    
+
     for col_idx, element in enumerate(row):
         print("col_idx", col_idx, "element", element)
-       
+
         # update the matrix M: square each element
         M[row_idx, col_idx] = element ** 2
 {% endhighlight %}
@@ -2419,7 +2419,7 @@ Theta(array([-3,-2,-1,0,1,2,3]))
 
     <ipython-input-166-6658efdd2f22> in <module>()
     ----> 1 Theta(array([-3,-2,-1,0,1,2,3]))
-    
+
 
     <ipython-input-165-9a0cb13d93d4> in Theta(x)
           3     Scalar implemenation of the Heaviside step function.
@@ -2432,7 +2432,7 @@ Theta(array([-3,-2,-1,0,1,2,3]))
     ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
 
 
-OK, that didn't work because we didn't write the `Theta` function so that it can handle with vector input... 
+OK, that didn't work because we didn't write the `Theta` function so that it can handle with vector input...
 
 To get a vectorized version of Theta we can use the Numpy function `vectorize`. In many cases it can automatically vectorize a function:
 
@@ -2605,5 +2605,3 @@ M3
 
 
 <table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>2.7.8 64bit [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]</td></tr><tr><td>IPython</td><td>3.0.0</td></tr><tr><td>OS</td><td>Linux 3.13.0 45 generic x86_64 with debian jessie sid</td></tr><tr><td>numpy</td><td>1.9.1</td></tr><tr><td colspan='2'>Tue Apr 14 12:19:45 2015 CEST</td></tr></table>
-
-

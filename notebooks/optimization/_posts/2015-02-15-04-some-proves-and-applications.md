@@ -1,5 +1,5 @@
 ---
-layout: python_note
+layout: post
 title: "04-Some-proves-and-Applications"
 tags: [ipython, convex, blog]
 categories: [optimization_]
@@ -8,6 +8,7 @@ parent: [/optimization,Optimization]
 img: [
 2015-02-15-02-convexity-preserving-operations_files/2015-02-15-02-convexity-preserving-operations_1_0.png
 ]
+author: "behzad_tabibian"
 ---
 **In []:**
 

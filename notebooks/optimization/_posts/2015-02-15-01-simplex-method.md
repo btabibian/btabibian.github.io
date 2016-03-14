@@ -1,5 +1,5 @@
 ---
-layout: python_note
+layout: post
 title: "01-Simplex-Method"
 tags: [ipython, convex, blog]
 categories: [optimization_hw]
@@ -11,7 +11,12 @@ img: [
 2015-02-15-01-simplex-method_files/2015-02-15-01-simplex-method_66_0.png,
 2015-02-15-01-simplex-method_files/2015-02-15-01-simplex-method_22_0.png,
 ]
+author: "behzad_tabibian"
 ---
+
+* TOC$
+ {:toc}
+
 **In [2]:**
 
 {% highlight python linenos  %}

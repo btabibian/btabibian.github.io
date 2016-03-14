@@ -1,17 +1,16 @@
 ---
-layout: python_note
+layout: post
 title: "Public shaming, Weapon of mass destruction"
 subtitle: ""
-tags: [u'public shaming', u'blog']
+tags: ['public shaming', 'blog']
 categories: [
 
 ]
 date:  2015-10-27
 parent: "./misc"
-img: [
-notes/images/pub_sham.png,
-]
-
+author: "behzad_tabibian"
+img: ["/notes/images/pub_sham.png"]
+author: "behzad_tabibian"
 ---
 *Internet is very dear to me!* That may sound strange but I come from a generation where I understand the difference between Internet and no Internet. I can still remember boring hours on taxi where I looked out the window in search of something interesting that would make me excited (of course taxis in Tehran where I grew up is considered a common method of transportation like buses with 4,5 people crammed into a car). That time has long been passed. My mobile phone is the source of all the interesting things I would look for and now I look out the window while I am on my morning commute to get some peace and maybe plan for the day ahead of me.
 
@@ -33,7 +32,7 @@ This sort of philosophical dilemma is not new to humanity, since the dawn of civ
 
 > You shall not take vengeance or bear a grudge against your kinsfolk. Love your neighbor as yourself: I am the LORD.
  - Leviticus 19:18
-> 
+>
 > Do to no one what you yourself dislike."
  - Tobit 4:15
 >
