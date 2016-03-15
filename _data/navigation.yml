@@ -1,11 +1,9 @@
 # Site navigation links
-- title:
+- title: Home
   url: /
-  class : icon fa-home
 
-- title:
+- title: About me
   url: /about/
-  class: icon fa-male
 
 - title: Projects
   url: /projects/
