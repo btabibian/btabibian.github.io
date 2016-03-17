@@ -1,5 +1,8 @@
+User-agent: Googlebot
+Disallow:
+
 User-agent: *
 Disallow: /
 
-User-agent: Googlebot
-Disallow: 
+Sitemap: http://www.btabibian.com/sitemap.xml
+
