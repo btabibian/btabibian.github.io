@@ -1,0 +1,78 @@
+- title: Towards a Cognitively-Based Analytic Model of Human Control of Swarms
+  authors: Tabibian et al.
+  link: "https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjiyYHGzYzPAhVMcBoKHTlcD4QQFggjMAA&url=https%3A%2F%2Fwww.aaai.org%2Focs%2Findex.php%2FSSS%2FSSS14%2Fpaper%2Fdownload%2F7764%2F7761&usg=AFQjCNEC1CLr1uUpDc_jLZupWfGcESlcuQ&sig2=_kZlBg9NXZiOOmRblPIpTg"
+  date: 22-03-2014
+  abstract: "Robotic swarms are nonlinear dynamical systems that benefit
+from the presence of human operators in realistic missions
+with changing goals and constraints. There has been
+recent interest in safe operations of robotic swarms under human
+control. Verification and validation techniques for these
+human-machine systems could be deployed to provide formal
+guarantees of safe performance. A current limitation that
+hinders practical significant applications of verification to
+human-machine systems is the lack of analytic models of the
+human operator that include realistic cognitive constraints.
+Our research aims to develop high fidelity analytic human
+models via abstraction of cognitive models based on ACTR.
+In this paper, we report on results from the first step in
+this process. We designed a 2-choice control task of a robotic
+swarm, obtained data from human operators and compared
+the fit of these data to two analytic models and an ACT-R
+based cognitive model. We present the experimental results
+and discuss our future plans on how the analytic model will
+be derived from the cognitive model so that the whole humanswarm
+system could be amenable to verification techniques."
+  image: "https://bytebucket.org/btabibian/user_design/raw/mturk/documents/paper/imgs/ACT_R-discussion.png"
+  link: "http://www.aaai.org/ocs/index.php/SSS/SSS14/schedConf/presentations"
+  venue: AAAI Spring Symposium 2014.
+
+- title: Design and Implementation of an Inverse Dynamics Controller for Uncertain Nonholonomic Robotic Systems
+  authors: Khoshnam Shojaei, Alireza Mohammad Shahri, Behzad Tabibian
+  date: 12 August 2012
+  abstract: "This paper addresses the trajectory tracking control problem of nonholonomic robotic systems in the presence of modeling uncertainties. A tracking controller is proposed such that it combines the inverse dynamics control technique and an adaptive robust PID control strategy to preserve robustness to both parametric and nonparametric uncertainties. A SPR-Lypunov stability analysis demonstrates that tracking errors are uniformly ultimately bounded (UUB) and exponentially converge to a small ball containing the origin. The proposed inverse dynamics tracking controller is successfully applied to a nonholonomic wheeled mobile robot (WMR) and experimental results are presented to validate the effectiveness of the proposed controller."
+  image: "https://9d4vkq.bn1302.livefilestore.com/y3pXvshL3ij2PRFC0Wk2SoKx6tbQ3JyQ3-dO6tdy9vzz6PmITHNPi-m7UpfFROP5ZtnqUtVhpvnXuX-10N6F3Rt3B9Jvi1cOUzGd6HA0ObsARzty487GnXNv77uIjTyP41HOYK2B_YYhSQfIgIKVXOgBWJbFZUK6PxHEEoBbfQRWNg/robot_design.png?psid=1"
+  link: "http://link.springer.com/article/10.1007/s10846-012-9762-x"
+  venue:
+
+
+- title: Team Edinferno, Description Paper for RoboCup 2011 SPL
+  authors: Subramanian Ramamoorthy, Aris Valtazanos, Efstathios Vafeias, Christopher Towell, Majd Hawasly, Ioannis Havoutis, Thomas McGuire, Seyed Behzad Tabibian, Sethu Vijayakumar, Taku Komura
+  date: 4 July 2011
+  abstract: "This paper summarizes progress made by our robotic soccer team,
+Team Edinferno, towards our participation in the 2013 RoboCup Standard Platform
+League competition held in Eindhoven, The Netherlands. Our team made
+its RoboCup debut in the 2011 world cup held in Istanbul, Turkey, where we
+entered both in the Standard Platform League and the 2D Simulation League.
+In our debut at the SPL, where we entered a mostly homegrown team, we were
+eliminated after the first round. We returned to the 2012 Mexico City RoboCup
+competition, where our team reached the quarterfinals, losing to the defending
+champions and eventual finalists, B-Human. This version of our code leveraged
+the publicly available B-Human framework to provide us a software base and
+modules for walking and low-level vision. We implemented and improved on
+all other modules including robot behaviour, optimised kicks and goalkeeper behaviour,
+team level coordination/communication and probabilistic localisation.
+For the 2013 competition, we will retain the same base software framework,
+allowing us to implement our recent advances in vision, self-localisation, and
+behaviour algorithms. As a team, our primary research interests are centered on
+issues of robot learning, especially for effective autonomous decision making and
+strategic behaviour in continually changing worlds."
+  link: "http://www.ipab.inf.ed.ac.uk/robocup/pubs/EdinfernoTDDoc.pdf"
+  image: "https://l5odpq.bn1302.livefilestore.com/y3p-4kyILuSW8e32dFZTos-aXrn5hFARSt4CrgrnDYWymMJ7xSOXQ_pAcxLakHbr60eptseJwCP54SmT2hw2supayjzm3xZm2_LYNZgJy7-qwm3srUwtiu_NZkI-TjnPWJZGSSlfApdMoC0glkdf9EKEjTnTlEbAs13Yu5nRqXtIbo/robupTDP.png?psid=1"
+  venue: Robocup 2011, Istanbul
+
+
+- title: Adaptive trajectory tracking control of a differential drive wheeled mobile robot
+  authors: Khoshnam Shojaei, Alireza Mohammad Shahri, Ahmadreza Tarakameh and Behzad Tabibian
+  date: 3 June 2010
+  abstract: "This paper presents an adaptive trajectory tracking controller for a non-holonomic wheeled mobile robot (WMR) in the presence of parametric uncertainty in the kinematic and dynamic models of the WMR and actuator dynamics. The adaptive non-linear control law is designed based on input–output feedback linearization technique to get asymptotically exact cancellation for the uncertainty in the given system parameters. In order to evaluate the performance of the proposed controller, a non-adaptive controller is compared with the adaptive controller via computer simulation results. The results show satisfactory trajectory tracking performance by virtue of SPR-Lyapunov design approach. In order to verify the simulation results, a set of experiments have been carried out on a commercial mobile robot. The experimental results also show the effectiveness of the proposed controller."
+  image: "https://vqxg4w.bn1302.livefilestore.com/y3pjA_imdR8OAo7zn8F0dSx7VUBbetdEN0Yzv8owLiTwQm9Xfe-UcXi37URsU4LVciHOmcfOkLxcS5j_Tci-cG7T_SaV6U1JlS73_MqcLBi2c1CnAYypEnP5xDvf4jmxUwskI2QmWBJw7nRNz9isw_yu-dc4fK97YWJLtyIr6aGd3Q/controller.png?psid=1"
+  link: "https://www.cambridge.org/core/journals/robotica/article/adaptive-trajectory-tracking-control-of-a-differential-drive-wheeled-mobile-robot/9564B0ED9ACC0905B6C93C5738B32909"
+  venue: Robotica
+
+- title: Analysis and experimental study of non-holonomic mobile manipulator in presence of obstacles for moving boundary condition
+  authors: M.H. Korayem, , V. Azimirad, B. Tabibian, M. Abolhasani
+  date: 1 June 2010
+  abstract: "In this paper a general formulation as well as experimental studies for finding Maximum Allowable Dynamic Load (MADL) of non-holonomic Wheeled Mobile Manipulator (WMM) in presence of obstacle and moving boundary condition is presented. Full dynamic model of wheeled mobile base and mounted manipulator is considered with respect to the dynamic of non-holonomic constraint and optimality conditions for carrying maximum payload between start point and moving end boundary in an environment including obstacle is derived. Obstacle avoidance is presented in terms of distance between colliding parts. The problem is formulated using Pontryagin’s minimum principle which leads to a two-point boundary value problem. An iterative algorithm is proposed by considering motor restrictions in terms of torque and jerk along the trajectory. The latest term ensures that the resulting trajectory is smooth enough. Also we proposed an algorithm for finding the maximum allowable dynamic load in moving boundary condition. It is a set of points which have no superiority on each other. This can be used for conditions in which robot is cooperating with conveyer belt. Simulation tests on a two-link planner non-holonomic WMM are done. To verify the effectiveness of the algorithm, the proposed approaches are illustrated using simulations and experimental studies of a two-link Scout WMM."
+  image: "https://kfpxyw.bn1302.livefilestore.com/y3p_-5zDHdy7NlLKYzsnKghCmeUNvSF4cnZrJy2EmJA0_N9bZHPYan9kByWLZEpkGG7B4VSd3gYIcm-jZhl-SoNs7CnX6YckGdSJhkoXWrdQENgmtxSJhNJsmjtHIrt0YtXGZVCnzhP5VV5dkg7gaSvptrrVY5gfQsmvQOcWOJh58w/1-s2.0-S0094576510001657-gr8.jpg?psid=1"
+  link: "http://link.springer.com/article/10.1007/s10846-012-9762-x"
+  venue: Acta Astronautica
