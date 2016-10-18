@@ -1,0 +1,32 @@
+---
+layout: page
+title: "Distilling Information Reliability \n and Source Trustworthiness from Digital Traces"
+categories: projects
+date: 2016-10-17
+author: "behzad_tabibian"
+no_logo: true
+search_omit: true
+---
+
+|   |   |   |
+| :------------- |:-------------:| -------------:|
+| Behzad Tabibian       | Isabel Valera | Mehrdad Farajtabar |
+| Le Song      | Bernhard Schölkopf     |   Manuel Gomez-Rodriguez  |
+
+<div class="notice .text-justify">
+<p>
+Online knowledge repositories typically rely on their users or dedicated editors to evaluate the reliability of their contents. These <i>explicit</i> feedback mechanisms can be viewed as noisy measurements of both information reliability and information source trustworthiness. Can we leverage these noisy measurements, often biased, to distill a robust, unbiased and interpretable measure of both notions?
+</p>
+<p>
+In this paper, we argue that the large volume of digital traces left by the users within knowledge repositories also reflect information reliability and source trustworthiness. In particular, we propose a temporal point process modeling framework which links the <i>temporal</i> behavior of the users to information reliability and source
+trustworthiness.
+</p>
+<p>
+Furthermore, we develop an efficient convex optimization procedure to learn the parameters of the model from historical traces of the evaluations provided by these users. Experiments on real-world data gathered from <i>Wikipedia</i> and <i>Stack Overflow</i> show that our modeling framework accurately predicts evaluation events, provides an interpretable 
+measure of information reliability and source trustworthiness, and yields interesting insights about real-world events.
+</p>
+</div>
+
+|   |   |   |
+| :------------- |:-------------:| -------------:|
+| [<i class="fa fa-github-square fa-2x"></i>](#link){: .btn .btn--success}  | [<i class="fa fa-file-pdf-o fa-2x"></i>](#link){: .btn .btn--success}  | [<i class="fa fa-table fa-2x"></i>](#link){: .btn .btn--success} |
