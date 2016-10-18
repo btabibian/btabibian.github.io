@@ -8,11 +8,16 @@ no_logo: true
 search_omit: true
 ---
 
+-----
+
+
 |   |   |   |
 | :------------- |:-------------:| -------------:|
 | Behzad Tabibian       | Isabel Valera | Mehrdad Farajtabar |
 | Le Song      | Bernhard Schölkopf     |   Manuel Gomez-Rodriguez  |
 
+
+-----
 <div class="notice .text-justify">
 <p>
 Online knowledge repositories typically rely on their users or dedicated editors to evaluate the reliability of their contents. These <i>explicit</i> feedback mechanisms can be viewed as noisy measurements of both information reliability and information source trustworthiness. Can we leverage these noisy measurements, often biased, to distill a robust, unbiased and interpretable measure of both notions?
@@ -27,6 +32,19 @@ measure of information reliability and source trustworthiness, and yields intere
 </p>
 </div>
 
+-----
+
 |   |   |   |
 | :------------- |:-------------:| -------------:|
 | [<i class="fa fa-github-square fa-2x"></i>](#link){: .btn .btn--success}  | [<i class="fa fa-file-pdf-o fa-2x"></i>](#link){: .btn .btn--success}  | [<i class="fa fa-table fa-2x"></i>](#link){: .btn .btn--success} |
+
+-----
+
+<figure class="half">
+	<img src="images/Doc-Barack_Obama.png" alt="Barack Obama Wikipedia page Reliability">
+	<img src="images/Doc-George_W._Bush.png" alt="image">
+	<figcaption>Left: Reliability of Wikipedia entry for Barack Obama.<br>
+	            Right: Reliability of Wikipedia entry for George W. Bush</figcaption>
+</figure>
+
+-----
