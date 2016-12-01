@@ -22,8 +22,8 @@ My name is <b>Behzad Tabibian</b>,  I am a PhD student at Max Planck Institute, 
 <h4 id="heading-4">Recent News</h4>
 <ul class="post-list">
 {% for event in site.data.news %}
-<li><article><a href="{{event.link}}"><h5 id="heading-5">{{event.title }}</h5> <span class="entry-date"><time datetime="{{ event.date | date_to_xmlschema }}">{{ event.date | date: "%B %d,  %Y" }}</time></span> <span class="excerpt" max-height="inherit"><p class="pull-left"><figure class="pull-left-third"><a href="{{event.link}}">  <img src="{{ event.image}}" alt=""/></a></figure>{{ event.abstract }}
-</p></span>
+<li><article><a href="{{event.link}}"><h5 id="heading-5">{{event.title }}</h5> <span class="entry-date"><time datetime="{{ event.date | date_to_xmlschema }}">{{ event.date | date: "%B %d,  %Y" }}</time></span> <span class="excerpt" max-height="inherit"><p class="pull-left"><figure class="pull-left-third"><a href="{{event.link}}">  <img src="{{ event.image}}" alt=""/></a></figure></p>{{ event.abstract }}
+</span>
 </a></article></li>
 {% endfor %}
 </ul>
