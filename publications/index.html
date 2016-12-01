@@ -7,7 +7,7 @@ no_logo: true
 ---
 <ul class="post-list">
 {% for paper in site.data.papers %}
-<li><article><a href="{{paper.link}}"><h5 id="heading-5">{{paper.title }}</h5> <span class="entry-date"><time datetime="{{ paper.date | date_to_xmlschema }}">{{ paper.date | date: "%B %d,     %Y" }}</time></span> <span class="excerpt" max-height="inherit"><p class="pull-left"><figure class="pull-left-third"><a href="{{paper.link}}">  <img src="{{ paper.image}}" alt=""/></a></figure></p>{{ paper.abstract | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape    _once }}
+<li><article><a href="{{paper.link}}"><h5 id="heading-5">{{paper.title }}</h5> <span class="entry-date"><time datetime="{{ paper.date | date_to_xmlschema }}">{{ paper.date | date: "%B %d,     %Y" }}</time></span> <span class="excerpt" max-height="inherit"><p class="pull-left"><figure class="pull-left-third"><a href="{{paper.link}}">  <img src="{{ paper.image}}" alt=""/></a></figure></p><p>{{ paper.abstract | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape    _once }}</p>
 </span>
 
 </a></article></li>
