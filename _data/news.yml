@@ -1,12 +1,12 @@
-- title: NIPS 2016
-  date: 5 December 2016
-  abstract: Krikamol Muandat and I were NIPS workflow team members in 2016, read NIPS blog post <a href="http://www.tml.cs.uni-tuebingen.de/team/luxburg/misc/nips2016/index.php">here</a>. Exhibition of rejects are published <a href="http://users.cecs.anu.edu.au/~williams/sdr16.html">here</a>. More information will be published soon!
-  image: "/images/review_2016.png"
-  link: "http://www.tml.cs.uni-tuebingen.de/team/luxburg/misc/nips2016/index.php"
-#
 - title: Distilling Information Reliability and Source Trustworthiness from Digital Traces
   date: 20 Dec 2016
   abstract: Our paper on Information Reliability and Source Trustworthiness has been accepted at <a href="http://www.www2017.com.au/">WWW 2017</a>, preprint available on  <a href="https://arxiv.org/abs/1610.07472">Arxiv</a>.
   image: "/images/Distill_reliability.png"
   link: "https://arxiv.org/abs/1610.07472"
- #"
+
+- title: NIPS 2016
+  date: 5 December 2016
+  abstract: Krikamol Muandat and I were NIPS workflow team members in 2016, read NIPS blog post <a href="http://www.tml.cs.uni-tuebingen.de/team/luxburg/misc/nips2016/index.php">here</a>. Exhibition of rejects are published <a href="http://users.cecs.anu.edu.au/~williams/sdr16.html">here</a>. More information will be published soon!
+  image: "/images/review_2016.png"
+  link: "http://www.tml.cs.uni-tuebingen.de/team/luxburg/misc/nips2016/index.php"
+
