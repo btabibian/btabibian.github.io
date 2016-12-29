@@ -29,7 +29,9 @@
   .entry-date {
     @include font-size(14,no);
     text-transform: uppercase;
+    padding-left: 4%;
     display: none;
+    text-decoration: underline;
     @include media($medium) {
       display: inline;
     }
