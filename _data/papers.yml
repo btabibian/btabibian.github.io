@@ -5,7 +5,7 @@
   abstract: "Online knowledge repositories typically rely on their users or dedicated editors to evaluate the reliability of their contents. These <i>explicit</i> feedback mechanisms can be viewed as noisy measurements of both information reliability and information source trustworthiness. Can we leverage these noisy measurements, often biased, to distill a robust, unbiased and interpretable measure of both notions? <br>
   In this paper, we argue that the large volume of digital traces left by the users within knowledge repositories also reflect information reliability and source trustworthiness. In particular, we propose a temporal point process modeling framework which links the <i>temporal</i> behavior of the users to information reliability and source trustworthiness. <br> Furthermore, we develop an efficient convex optimization procedure to learn the parameters of the model from historical traces of the evaluations provided by these users. Experiments on real-world data gathered from <i>Wikipedia</i> and <i>Stack Overflow</i> show that our modeling framework accurately predicts evaluation events, provides an interpretable measure of information reliability and source trustworthiness, and yields interesting insights about real-world events."
   image: "/images/Distill_reliability.png"
-  venue: World Wide Web conference 2017
+  venue: 2017 World Wide Web conference
 
 - title: Towards a Cognitively-Based Analytic Model of Human Control of Swarms
   authors: Tabibian et al.
@@ -33,7 +33,7 @@ be derived from the cognitive model so that the whole humanswarm
 system could be amenable to verification techniques."
   image: "https://bytebucket.org/btabibian/user_design/raw/mturk/documents/paper/imgs/ACT_R-discussion.png"
   link: "http://www.aaai.org/ocs/index.php/SSS/SSS14/schedConf/presentations"
-  venue: AAAI Spring Symposium 2014
+  venue: 2014 AAAI Spring Symposium
 
 - title: Design and Implementation of an Inverse Dynamics Controller for Uncertain Nonholonomic Robotic Systems
   authors: Khoshnam Shojaei, Alireza Mohammad Shahri, Behzad Tabibian
@@ -67,7 +67,7 @@ issues of robot learning, especially for effective autonomous decision making an
 strategic behaviour in continually changing worlds."
   link: "http://www.ipab.inf.ed.ac.uk/robocup/pubs/EdinfernoTDDoc.pdf"
   image: "https://nzou8q.bn1302.livefilestore.com/y3m2Rt9jOd0VpNICFjk1EbVFfsqq79vKzwA8iSPpm_EXKZbpUouzCUYTPx8DRiHOM6XpukF5Hm2G6_kI-tfYdOSu5cWdf1IsOS53E2Php5UowTRi_FQE7fFgbevyXI715VjZhCfSNV9AgocOcHVuF7E0_XQPz-LcawrSvOJg9YVrKE?width=768&height=637&cropmode=none"
-  venue: Robocup 2011, Istanbul
+  venue: 2011 Robocup, Istanbul
 
 
 - title: Adaptive trajectory tracking control of a differential drive wheeled mobile robot
