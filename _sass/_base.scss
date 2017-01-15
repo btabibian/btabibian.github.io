@@ -44,7 +44,7 @@ body {
 
 p {
 	@include font-size(18,yes,28);
-   align: justify;
+   text-align: justify;
 }
 
 li {
