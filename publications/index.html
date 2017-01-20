@@ -8,9 +8,21 @@ no_logo: true
 <ul class="post-list">
 {% for paper in site.data.papers %}
 <li><article><a href="{{paper.link}}"><h5 id="heading-5">
-{{paper.title }}</h5> <span class="entry-date"><time datetime="{{ paper.date | date_to_xmlschema }}">{{ paper.date | date: "%B %d,     %Y" }}</time></span><span class="excerpt" max-height="inherit"><p class="pull-left"><figure class="pull-left-third"><a href="{{paper.link}}">  <img src="{{ paper.image}}" alt=""/></a></figure></p><p align="justify">{{ paper.abstract  }}</p><h6 id="heading-6"><i class="fa fa-at"></i> {{paper.venue}}</h6>
+{{paper.title }}</h5>
+<span class="entry-date"><time datetime="{{ paper.date | date_to_xmlschema }}">{{ paper.date | date: "%B %d,     %Y" }}</time></span>
+<span class="excerpt" max-height="inherit"><p class="pull-left"><figure class="pull-left-third"><a href="{{paper.link}}">  <img src="{{ paper.image}}" alt=""/></a></figure></p><p align="justify">{{ paper.abstract  }}</p>
 </span>
-
+<div class="social-icons">
+{% if paper.venue %}
+<a href="{{paper.venue_link}}" title="Venue" target="_blank"><i class="fa fa-map-marker"></i>   {{paper.venue}}</a>
+{% if paper.bib %}
+<a href="./bibfiles/{{paper.bib}}" title="bibtex"><i class="fa fa-bars"></i>   Bibtex</a>
+{% endif%}
+{% endif%}
+{% if paper.page %}
+<a href="{{paper.page}}" title="Webpage"><i class="fa fa-link"></i>   Webpage</a>
+{% endif%}
+</div>
 </a></article></li>
 {% endfor %}
 </ul>

@@ -5,7 +5,10 @@
   abstract: "Online knowledge repositories typically rely on their users or dedicated editors to evaluate the reliability of their contents. These <i>explicit</i> feedback mechanisms can be viewed as noisy measurements of both information reliability and information source trustworthiness. Can we leverage these noisy measurements, often biased, to distill a robust, unbiased and interpretable measure of both notions? <br>
   In this paper, we argue that the large volume of digital traces left by the users within knowledge repositories also reflect information reliability and source trustworthiness. In particular, we propose a temporal point process modeling framework which links the <i>temporal</i> behavior of the users to information reliability and source trustworthiness. <br> Furthermore, we develop an efficient convex optimization procedure to learn the parameters of the model from historical traces of the evaluations provided by these users. Experiments on real-world data gathered from <i>Wikipedia</i> and <i>Stack Overflow</i> show that our modeling framework accurately predicts evaluation events, provides an interpretable measure of information reliability and source trustworthiness, and yields interesting insights about real-world events."
   image: "/images/Reliability_icon.png"
+  page: "/projects/reliability"
   venue: 2017 World Wide Web conference
+  venue_link: "http://www.www2017.com.au/"
+  bib: reliability2017.bib
 
 - title: Towards a Cognitively-Based Analytic Model of Human Control of Swarms
   authors: Tabibian et al.
@@ -34,6 +37,8 @@ system could be amenable to verification techniques."
   image: "https://bytebucket.org/btabibian/user_design/raw/mturk/documents/paper/imgs/ACT_R-discussion.png"
   link: "http://www.aaai.org/ocs/index.php/SSS/SSS14/schedConf/presentations"
   venue: 2014 AAAI Spring Symposium
+  venue_link: "http://www.aaai.org/Symposia/Spring/sss14.php"
+  bib: human_swarm2014.bib
 
 - title: Design and Implementation of an Inverse Dynamics Controller for Uncertain Nonholonomic Robotic Systems
   authors: Khoshnam Shojaei, Alireza Mohammad Shahri, Behzad Tabibian
@@ -42,7 +47,8 @@ system could be amenable to verification techniques."
   image: "https://9d4vkq.bn1302.livefilestore.com/y3mBGWRRLRTBZjISA_HGCWPugG4iWli5g9M0CHeKX-spOvhtefaiN4UuoLoXdevX1oipjxumJPc6WmLNt-eAXBI_MAEIMNdivO-kQL0OtK52V4XNviWUY6bR8IrWxl6q5bLGwbmeqtTrblCPKSpWJ7d5TdA5flBJJyaYsimjNIhvt0?width=324&height=255&cropmode=none"
   link: "http://link.springer.com/article/10.1007/s10846-012-9762-x"
   venue: Journal of Intelligent & Robotic Systems (2013)
-
+  venue_link: "http://www.springer.com/engineering/robotics/journal/10846"
+  bib: robotic_systems2012
 
 - title: Team Edinferno, Description Paper for RoboCup 2011 SPL
   authors: Subramanian Ramamoorthy, Aris Valtazanos, Efstathios Vafeias, Christopher Towell, Majd Hawasly, Ioannis Havoutis, Thomas McGuire, Seyed Behzad Tabibian, Sethu Vijayakumar, Taku Komura
@@ -68,7 +74,8 @@ strategic behaviour in continually changing worlds."
   link: "http://www.ipab.inf.ed.ac.uk/robocup/pubs/EdinfernoTDDoc.pdf"
   image: "https://nzou8q.bn1302.livefilestore.com/y3m2Rt9jOd0VpNICFjk1EbVFfsqq79vKzwA8iSPpm_EXKZbpUouzCUYTPx8DRiHOM6XpukF5Hm2G6_kI-tfYdOSu5cWdf1IsOS53E2Php5UowTRi_FQE7fFgbevyXI715VjZhCfSNV9AgocOcHVuF7E0_XQPz-LcawrSvOJg9YVrKE?width=768&height=637&cropmode=none"
   venue: 2011 Robocup, Istanbul
-
+  page: "http://wcms.inf.ed.ac.uk/ipab/robocup"
+  venue_link: "http://www.robocup2011.org/en/"
 
 - title: Adaptive trajectory tracking control of a differential drive wheeled mobile robot
   authors: Khoshnam Shojaei, Alireza Mohammad Shahri, Ahmadreza Tarakameh and Behzad Tabibian
@@ -77,11 +84,14 @@ strategic behaviour in continually changing worlds."
   image: "https://vqxg4w.bn1302.livefilestore.com/y3mQNLjt9J-1HBvEn2BTYlhLa6lO7SN_gu6awodyN1xDoOONecovqEIKAdMmyIpBRYZGspAZAcy0pFHZRjrMqyO7DAz2_s4egCKm8zkZgI3pueh182HpUIW8hbPSJFP3dBNM1VTKSw36sNcdZZmBQ4CfA3bBt85zwTr7HsNAtnJTf4?width=719&height=261&cropmode=none"
   link: "https://www.cambridge.org/core/journals/robotica/article/adaptive-trajectory-tracking-control-of-a-differential-drive-wheeled-mobile-robot/9564B0ED9ACC0905B6C93C5738B32909"
   venue: Robotica (2011)
+  venue_link: "https://www.cambridge.org/core/journals/robotica"
+  bib: adaptive_mobile2011.bib
 
-- title: Analysis and experimental study of non-holonomic mobile manipulator in presence of obstacles for moving boundary condition
-  authors: M.H. Korayem, , V. Azimirad, B. Tabibian, M. Abolhasani
-  date: 1 June 2010
-  abstract: "In this paper a general formulation as well as experimental studies for finding Maximum Allowable Dynamic Load (MADL) of non-holonomic Wheeled Mobile Manipulator (WMM) in presence of obstacle and moving boundary condition is presented. Full dynamic model of wheeled mobile base and mounted manipulator is considered with respect to the dynamic of non-holonomic constraint and optimality conditions for carrying maximum payload between start point and moving end boundary in an environment including obstacle is derived. Obstacle avoidance is presented in terms of distance between colliding parts. The problem is formulated using Pontryagin’s minimum principle which leads to a two-point boundary value problem. An iterative algorithm is proposed by considering motor restrictions in terms of torque and jerk along the trajectory. The latest term ensures that the resulting trajectory is smooth enough. Also we proposed an algorithm for finding the maximum allowable dynamic load in moving boundary condition. It is a set of points which have no superiority on each other. This can be used for conditions in which robot is cooperating with conveyer belt. Simulation tests on a two-link planner non-holonomic WMM are done. To verify the effectiveness of the algorithm, the proposed approaches are illustrated using simulations and experimental studies of a two-link Scout WMM."
-  image: "https://wmqihg.bn1302.livefilestore.com/y3m5w0-QQTNN87moJi0miSNXEpYIVUtJt4XFJCFsl8b0ilGX4I5_Sj4GDZ-po1O4RyLo7bNGcC2llOQrJ_vu6usjC0mnSZycG28d_D8C5YqNdOcWRnqsQmi0kHnsznEzSZI2H_ZWscSTeYBaxYY8gYY2s4-8ed7vK-q6Ievgz1i-1U?width=482&height=264&cropmode=none"
-  link: "http://www.sciencedirect.com/science/article/pii/S0094576510001657"
-  venue: Acta Astronautica (2010)
+#- title: Analysis and experimental study of non-holonomic mobile manipulator in presence of obstacles for moving boundary condition
+#  authors: M.H. Korayem, , V. Azimirad, B. Tabibian, M. Abolhasani
+#  date: 1 June 2010
+#  abstract: "In this paper a general formulation as well as experimental studies for finding Maximum Allowable Dynamic Load (MADL) of non-holonomic Wheeled Mobile Manipulator (WMM) in presence of obstacle and moving boundary condition is presented. Full dynamic model of wheeled mobile base and mounted manipulator is considered with respect to the dynamic of non-holonomic constraint and optimality conditions for carrying maximum payload between start point and moving end boundary in an environment including obstacle is derived. Obstacle avoidance is presented in terms of distance between colliding parts. The problem is formulated using Pontryagin’s minimum principle which leads to a two-point boundary value problem. An iterative algorithm is proposed by considering motor restrictions in terms of torque and jerk along the trajectory. The latest term ensures that the resulting trajectory is smooth enough. Also we proposed an algorithm for finding the maximum allowable dynamic load in moving boundary condition. It is a set of points which have no superiority on each other. This can be used for conditions in which robot is cooperating with conveyer belt. Simulation tests on a two-link planner non-holonomic WMM are done. To verify the effectiveness of the algorithm, the proposed approaches are illustrated using simulations and experimental studies of a two-link Scout WMM."
+#  image: "https://wmqihg.bn1302.livefilestore.com/y3m5w0-QQTNN87moJi0miSNXEpYIVUtJt4XFJCFsl8b0ilGX4I5_Sj4GDZ-po1O4RyLo7bNGcC2llOQrJ_vu6usjC0mnSZycG28d_D8C5YqNdOcWRnqsQmi0kHnsznEzSZI2H_ZWscSTeYBaxYY8gYY2s4-8ed7vK-q6Ievgz1i-1U?width=482&height=264&cropmode=none"
+#  link: "http://www.sciencedirect.com/science/article/pii/S0094576510001657"
+#  venue: Acta Astronautica (2010)
+#  venue_link: "https://www.journals.elsevier.com/acta-astronautica/"
