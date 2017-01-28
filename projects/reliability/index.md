@@ -6,6 +6,8 @@ date: 2016-10-17
 author: "behzad_tabibian"
 no_logo: true
 search_omit: true
+redirect_from:
+  - /distill_reliable_knowledge/
 ---
 
 -----
@@ -27,7 +29,7 @@ In this paper, we argue that the large volume of digital traces left by the user
 trustworthiness.
 </p>
 <p>
-Furthermore, we develop an efficient convex optimization procedure to learn the parameters of the model from historical traces of the evaluations provided by these users. Experiments on real-world data gathered from <i>Wikipedia</i> and <i>Stack Overflow</i> show that our modeling framework accurately predicts evaluation events, provides an interpretable 
+Furthermore, we develop an efficient convex optimization procedure to learn the parameters of the model from historical traces of the evaluations provided by these users. Experiments on real-world data gathered from <i>Wikipedia</i> and <i>Stack Overflow</i> show that our modeling framework accurately predicts evaluation events, provides an interpretable
 measure of information reliability and source trustworthiness, and yields interesting insights about real-world events.
 </p>
 </div>
