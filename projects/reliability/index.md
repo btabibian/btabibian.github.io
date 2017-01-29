@@ -7,7 +7,7 @@ author: "behzad_tabibian"
 no_logo: true
 search_omit: true
 redirect_from:
-  - /distill_reliable_knowledge/
+  - /distil_reliable_knowledge/
 ---
 
 -----
