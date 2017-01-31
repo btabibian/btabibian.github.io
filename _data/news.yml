@@ -1,7 +1,7 @@
 - title: Applied ML Days @ EPFL
   date: 24 January 2017
   abstract: I will be attending ML Days conference at EPFL in Lausanne, Switzerland. I will also present a <a href="https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21106073&authkey=AFxUOQa4pDDVNsk">poster</a> on our latest project on <a href="/projects/reliability">Information Reliability and Source Trustworthiness</a>.
-  image: 
+  image: "https://ogqaqw.bn1302.livefilestore.com/y3m6-fTR5xyCKdaJQp3bPwYKvFexJ5iua5QUyUr0KE5SoNrzLpUl6_QWg5R_UU2BhnW4FErluk37jW13_9iM9bjINX10FwODeJDi_VknbxZ2LNzt21Q-P5feY2ydi1ae1-L4mrnLcuxDr-Dy4l9nWoSsl7fEvSeyLqSukMZCdn3I_c?width=660&height=495&cropmode=none" 
   link: "https://www.appliedmldays.org"
 
 - title: Distilling Information Reliability and Source Trustworthiness from Digital Traces
