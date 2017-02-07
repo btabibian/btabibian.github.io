@@ -1,5 +1,8 @@
 function showWikiArticle(evt){
   var activeElement = chart.getElementAtEvent(evt);
+  if (activeElement.length==0){
+    return;
+  }
   date_ = xticks[activeElement[0]._index]
   link = "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&titles="+Title+"&rvlimit=1&rvprop=ids&rvdir=newer&rvstart="+date_.toISOString();
 
