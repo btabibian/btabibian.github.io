@@ -44,7 +44,7 @@ measure of information reliability and source trustworthiness, and yields intere
 
 ## Wikipedia Demo
 <p>
-In this section you can explore parameters of the model for different articles on Wikipedia. 
+Explore parameters of the model trained on Wikipedia corpus by typing title of an entry on Wikipedia in following text box. 
 </p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="./js/chart.js"></script>
