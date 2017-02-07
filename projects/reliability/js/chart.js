@@ -119,4 +119,5 @@ for (i = 0; i<data_removal['payload'].length; i++){
   params['data']['datasets'][1]['data'].push(data_removal['payload'][i].value_)
 }
 chart = new Chart(ctx, params);
+$('#canvasContainer').append('<p>Select a bar to view corresponding revision of <b>'+Title+'</b>\'s article on Wikipedia.</p>');
 }

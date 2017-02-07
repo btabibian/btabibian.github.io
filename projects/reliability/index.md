@@ -41,6 +41,11 @@ measure of information reliability and source trustworthiness, and yields intere
 | [<i class="fa fa-github-square fa-2x"></i>](https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21105187&authkey=AOSpfWbzkkFlVek){: .btn .btn--success}  | [<i class="fa fa-file-pdf-o fa-2x"></i>](http://arxiv.org/abs/1610.07472){: .btn .btn--success}  | [<i class="fa fa-table fa-2x"></i>](https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21105188&authkey=AIRYm2WFwWq7lCI){: .btn .btn--success} |
 
 -----
+
+## Wikipedia Demo
+<p>
+In this section you can explore parameters of the model for different articles on Wikipedia. 
+</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="./js/chart.js"></script>
 <script src="./js/requests.js"></script>
