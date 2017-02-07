@@ -1,7 +1,26 @@
-function plot(data_arrival,data_removal){
+function plot(data_arrival,data_removal,ticks){
 $('#canvasArticle').remove(); // this is my <canvas> element
 $('#canvasContainer').append('<canvas id="canvasArticle"><canvas>');
 var ctx = document.getElementById("canvasArticle");
+
+var momentDate = moment(data_arrival['main']['start'], 'YYYYMMDDHHmmss');
+var begin = momentDate.toDate();
+
+Date.prototype.mmyy = function() {
+  var mm = this.getMonth() + 1; // getMonth() is zero-based
+  var dd = this.getDate();
+
+  return [(mm>9 ? '' : '0') + mm,
+          this.getFullYear()
+        ].join('-');
+};
+xticks = []
+console.log(begin.getDate());
+for (i=0; i<Object.keys(ticks).length;i++) {
+  var temp = new Date(begin);
+  temp.setDate(temp.getDate()+parseInt(ticks[i]));
+  xticks.push(temp.mmyy());
+}
 
 params = {
     type: 'bar',
@@ -31,7 +50,12 @@ params = {
               scaleLabel: {
                 display: true,
                 labelString: 'time'
-              }
+              },
+            ticks: {
+                    callback: function(label, index, labels) {
+                        return xticks[label];
+                    }
+                  }
             }]
         }
     }

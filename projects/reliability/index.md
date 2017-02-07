@@ -47,7 +47,7 @@ measure of information reliability and source trustworthiness, and yields intere
 
 <p>
 <form id="articleSearch" class=".generic-form" data-search-form >
-  <input type="name" placeholder="Enter Wikipedia article entry..." data-search-input id="input-qt"/>
+  <input type="name" placeholder="Enter Wikipedia article entry, for example Barack Obama, Prison Break,..." data-search-input id="input-qt"/>
   <input type="submit"  id="query-sb" />
 </form>
 </p>
