@@ -59,5 +59,4 @@ Explore parameters of the model trained on Wikipedia corpus by typing title of a
 </form>
 </p>
 <div id="canvasContainer">
-<canvas id="canvasArticle" width="400" height="400"></canvas>
 </div>
