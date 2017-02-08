@@ -5,7 +5,7 @@ categories: projects
 date: 2016-10-17
 author: "behzad_tabibian"
 no_logo: true
-search_omit: true
+search_omit: false
 redirect_from:
   - /distil_reliable_knowledge/
 ---
