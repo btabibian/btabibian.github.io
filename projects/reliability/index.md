@@ -7,6 +7,7 @@ author: "behzad_tabibian"
 no_logo: true
 redirect_from:
   - /distil_reliable_knowledge/
+share: true
 ---
 
 -----
