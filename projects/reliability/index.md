@@ -7,7 +7,6 @@ author: "behzad_tabibian"
 no_logo: true
 redirect_from:
   - /distil_reliable_knowledge/
-share: true
 ---
 
 -----
@@ -19,6 +18,7 @@ share: true
 | Le Song      | Bernhard Schölkopf     |   Manuel Gomez-Rodriguez  |
 
 {% include social-share.html %}
+
 -----
 <div class="notice .text-justify">
 <p>
