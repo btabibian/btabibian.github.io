@@ -19,9 +19,9 @@ redirect_from:
 
 
 -----
-<p align="center">
+<div align="center">
 {% include social-share.html %}
-</p>
+</div>
 <div class="notice .text-justify">
 <p>
 Online knowledge repositories typically rely on their users or dedicated editors to evaluate the reliability of their contents. These <i>explicit</i> feedback mechanisms can be viewed as noisy measurements of both information reliability and information source trustworthiness. Can we leverage these noisy measurements, often biased, to distill a robust, unbiased and interpretable measure of both notions?
