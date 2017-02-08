@@ -19,7 +19,7 @@ redirect_from:
 
 
 -----
-<p>
+<p align="center">
 {% include social-share.html %}
 </p>
 <div class="notice .text-justify">
