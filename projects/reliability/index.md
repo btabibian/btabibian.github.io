@@ -18,7 +18,7 @@ share: true
 | Behzad Tabibian       | Isabel Valera | Mehrdad Farajtabar |
 | Le Song      | Bernhard Schölkopf     |   Manuel Gomez-Rodriguez  |
 
-
+{% include social-share.html %}
 -----
 <div class="notice .text-justify">
 <p>
