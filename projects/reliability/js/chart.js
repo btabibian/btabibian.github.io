@@ -32,9 +32,22 @@ function showWikiArticle(evt){
   console.log();
 
 }
+function create_title(article_topics, topics,tag) {
+tag.append('<h5>Topics in document (bag of words):</h5>');
+tag.append('<ul class="post-list">');
+console.log(article_topics);
+ss = article_topics.sort(function(a,b){return -a["membership_value"]+b["membership_value"]});
+for (k=0; k<article_topics.length; k++)
+{
+  tag.append("<li>"+topics[ss[k]["topic_id"]]+" (<b>"+ss[k]["membership_value"]+"</b>).</li>")
+}
+tag.append('</ul>');
+}
 
-function plot(data_arrival,data_removal,ticks){
+function plot(data_arrival,data_removal,article_topics,ticks,topics){
 $('#canvasContainer').empty();
+
+create_title(article_topics,topics,$('#canvasContainer'));
 $('#canvasContainer').append('<canvas id="canvasArticle"><canvas>');
 var ctx = document.getElementById("canvasArticle");
 
@@ -120,4 +133,112 @@ for (i = 0; i<data_removal['payload'].length; i++){
 }
 chart = new Chart(ctx, params);
 $('#canvasContainer').append('<p>Select a bar to view corresponding revision of <b>'+Title+'</b>\'s article on Wikipedia.</p>');
+}
+
+function create_Fulltitle(topics,tag) {
+tag.append('<h5>Topics (bag of words):</h5>');
+tag.append('<ul class="post-list">');
+for (k=0; k<Object.keys(topics).length; k++)
+{
+  tag.append("<li> <b> Topic"+(k+1)+" </b> "+topics[String(k)]+".</li>")
+}
+tag.append('</ul>');
+}
+
+
+function plotDomain(data_arrival,data_removal,topics){
+  $('#canvasContainerSource').empty();
+  $('#canvasContainerSource').append('<div class="leftcanv"><canvas id="canvasSourceArr"><canvas></div>');
+
+  var ctx = document.getElementById("canvasSourceArr");
+
+  labels = [];
+  for (i=0; i<Object.keys(topics).length;i++)
+  {
+    labels.push("Topic "+(i+1));
+  }
+  arr_arr = []
+  for (i=0; i<data_arrival["payload"].length;i++)
+  {
+    arr_arr.push(data_arrival["payload"][i]['value_']);
+  }
+
+  var data = {
+    labels: labels,
+    datasets: [
+        {
+            label: "Arrival params",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: arr_arr
+        }
+    ]
+  };
+  params = {
+     type: 'radar',
+     data: data,
+     options: {
+       scale:{
+         ticks: {
+           min : 0,
+           max : 3.0,
+           maxTicksLimit:5
+         }
+       }
+     }
+   };
+  chart = new Chart(ctx, params);
+
+
+$('#canvasContainerSource').append('<div class="rightcanv"><canvas id="canvasSourceRem"><canvas></div>');
+
+  var ctx = document.getElementById("canvasSourceRem");
+
+
+  labels = [];
+  for (i=0; i<Object.keys(topics).length;i++)
+  {
+    labels.push("Topic "+(i+1));
+  }
+  arr_arr = []
+  for (i=0; i<data_removal["payload"].length;i++)
+  {
+    arr_arr.push(data_removal["payload"][i]['value_']);
+  }
+
+  var data = {
+    labels: labels,
+    datasets: [
+        {
+            label: "Removal params",
+            backgroundColor: "rgba(255,99,132,0.2)",
+            borderColor: "rgba(255,99,132,1)",
+            pointBackgroundColor: "rgba(255,99,132,1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(255,99,132,1)",
+            data: arr_arr
+        }
+    ]
+  };
+  params = {
+     type: 'radar',
+     data: data,
+     options: {
+       scale:{
+         ticks: {
+           min : 0,
+           max : 0.01,
+           maxTicksLimit:5
+         }
+       }
+     }
+   };
+  chart = new Chart(ctx, params);
+  console.log(topics);
+create_Fulltitle(topics,$('#canvasContainerSource'));
 }
