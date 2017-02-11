@@ -27,15 +27,10 @@ function showWikiArticle(evt){
               }
 }
 );
-
-
-  console.log();
-
 }
 function create_title(article_topics, topics,tag) {
 tag.append('<h5>Topics in document (bag of words):</h5>');
 tag.append('<ul class="post-list">');
-console.log(article_topics);
 ss = article_topics.sort(function(a,b){return -a["membership_value"]+b["membership_value"]});
 for (k=0; k<article_topics.length; k++)
 {
@@ -239,6 +234,5 @@ $('#canvasContainerSource').append('<div class="rightcanv"><canvas id="canvasSou
      }
    };
   chart = new Chart(ctx, params);
-  console.log(topics);
 create_Fulltitle(topics,$('#canvasContainerSource'));
 }
