@@ -3,7 +3,7 @@ topics = null;
 $(function() {
   $(document).on("submit", "#articleSearch",function(e) {
     e.preventDefault();
-    article_name = $( "input:first" ).val();
+    article_name = $( "input[name=articleTxt]" ).val();
     if (kernelLocation == null) {
       retKernel = $.get("http://rel.is.tuebingen.mpg.de/kernels/removal", function(data){
         kernelLocation= data['payload'][0];

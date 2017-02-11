@@ -47,26 +47,6 @@ measure of information reliability and source trustworthiness, and yields intere
 
 ## Wikipedia Demo
 
-### Articles
-
-<p>
-Explore parameters of the model trained on Wikipedia corpus by typing title of an entry on Wikipedia in following text box.
-</p>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-<script src="./js/chart.js"></script>
-<script src="./js/requests.js"></script>
-
-<p>
-<form id="articleSearch" class=".generic-form" data-search-form >
-  <input type="name" placeholder="Enter Wikipedia article entry, for example Barack Obama, Prison Break,..." data-search-input id="input-qt"/>
-  <input type="submit"  id="query-sb" />
-</form>
-</p>
-<div id="canvasContainer">
-</div>
-
-----
-
 ### Domains
 
 <p>
@@ -83,4 +63,24 @@ Explore site parameters by typing domain name in following text box.
 </form>
 </p>
 <div id="canvasContainerSource">
+</div>
+
+----
+
+### Articles
+
+<p>
+Explore parameters of the model trained on Wikipedia corpus by typing title of an entry on Wikipedia in following text box.
+</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="./js/chart.js"></script>
+<script src="./js/requests.js"></script>
+
+<p>
+<form id="articleSearch" class=".generic-form" data-search-form >
+  <input name="articleTxt" type="name" placeholder="Enter Wikipedia article entry, for example Barack Obama, Prison Break,..." data-search-input id="input-qt"/>
+  <input type="submit"  id="query-sb" />
+</form>
+</p>
+<div id="canvasContainer">
 </div>
