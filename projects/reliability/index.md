@@ -6,9 +6,10 @@ date: 2016-10-17
 author: "behzad_tabibian"
 no_logo: true
 redirect_from:
-  - /distil_reliable_knowledge/
+ - /distil_reliable_knowledge/
 image:
- - feature: "Reliability_screen.png"
+ feature: "Reliability_screen.png"
+
 ---
 
 -----
