@@ -8,7 +8,7 @@ no_logo: true
 redirect_from:
   - /distil_reliable_knowledge/
 image:
- - feature: Reliability_screen.png
+ - feature: "Reliability_screen.png"
 ---
 
 -----
