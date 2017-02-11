@@ -135,7 +135,7 @@ tag.append('<h5>Topics (bag of words):</h5>');
 tag.append('<ul class="post-list">');
 for (k=0; k<Object.keys(topics).length; k++)
 {
-  tag.append("<li> <b> -Topic "+(k+1)+"- </b> "+topics[String(k)]+".</li>")
+  tag.append("<li> <b> Topic "+(k+1)+" </b> "+topics[String(k)]+".</li>")
 }
 tag.append('</ul>');
 }
