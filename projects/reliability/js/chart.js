@@ -21,7 +21,7 @@ function showWikiArticle(evt){
             success: function(data){
                   k = Object.keys(data["query"]["pages"])[0];
                   revid = data["query"]["pages"][k]["revisions"][0]["revid"];
-                  final_link = "https://en.wikipedia.org/w/index.php?title="+Title+"&oldid="+revid
+                  final_link = "https://en.m.wikipedia.org/w/index.php?title="+Title+"&oldid="+revid
                   $('#articleIFrame').remove(); // this is my <canvas> element
                   $('#canvasContainer').append('<iframe src="'+final_link+'" id="articleIFrame" width = "100%" class = "display_website"></iframe>');
               }
