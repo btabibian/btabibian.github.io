@@ -162,7 +162,7 @@ function plotDomain(data_arrival,data_removal,topics){
     labels: labels,
     datasets: [
         {
-            label: "Arrival params",
+            label: "Follow up rate",
             backgroundColor: "rgba(179,181,198,0.2)",
             borderColor: "rgba(179,181,198,1)",
             pointBackgroundColor: "rgba(179,181,198,1)",
@@ -209,7 +209,7 @@ $('#canvasContainerSource').append('<div class="rightcanv"><canvas id="canvasSou
     labels: labels,
     datasets: [
         {
-            label: "Removal params",
+            label: "Refutation rate",
             backgroundColor: "rgba(255,99,132,0.2)",
             borderColor: "rgba(255,99,132,1)",
             pointBackgroundColor: "rgba(255,99,132,1)",
