@@ -72,9 +72,6 @@ Explore site parameters by typing domain name in following text box.
 <p>
 Explore parameters of the model trained on Wikipedia corpus by typing title of an entry on Wikipedia in following text box.
 </p>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-<script src="./js/chart.js"></script>
-<script src="./js/requests.js"></script>
 
 <p>
 <form id="articleSearch" class=".generic-form" data-search-form >
