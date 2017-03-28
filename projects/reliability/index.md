@@ -9,7 +9,7 @@ redirect_from:
  - /distil_reliable_knowledge/
 image:
  feature: "Reliability_screen.png"
-
+excerpt: "In this work we use evaluation mechanisms in online knowledge platforms, like Wikipedia, to distill an interpretable measure of information reliability and source trustworthiness."
 ---
 <div align="center">
 {% include social-share.html %}
