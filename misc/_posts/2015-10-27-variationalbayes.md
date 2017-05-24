@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Tutorial: Variational Bayes on Bayesian Gaussian density estimation"
 subtitle: ""
 tags: [Bayesian, stats]
@@ -11,6 +11,7 @@ parent: "./misc"
 img: [
 ]
 author: "behzad_tabibian"
+
 ---
 **This notebook is based on description of variational Bayes entry on wikipedia.**
 
