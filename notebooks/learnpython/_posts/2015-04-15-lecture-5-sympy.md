@@ -13,7 +13,7 @@ parent: "learningPython"
 img: [
 Sympy.png,
 ]
-
+layout: single
 github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-5-Sympy.ipynb
 author: "behzad_tabibian"
 ---

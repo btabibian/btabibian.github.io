@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: single
 title: Classics of CS - Episode 2 - Computing Machinery and Intelligence [Updated]
 categories: notes
 date: 2012-06-17
 img: ["https://sites.google.com/site/btabibian/_/rsrc/1337312262807/notes/classicsofcs-episode2-computingmachineryandintelligence/Alan_Turing_photo.jpg"]
 author: "behzad_tabibian"
+comments: true
 ---
 <div style="display:inline;float:right;margin:5px 10px"><a href="http://en.wikipedia.org/wiki/Alan_Turing" imageanchor="1" rel="nofollow" target="_blank"><img alt="Alan Turing" border="0" height="200" src="https://sites.google.com/site/btabibian/_/rsrc/1337312262807/notes/classicsofcs-episode2-computingmachineryandintelligence/Alan_Turing_photo.jpg"/></a></div>Alan Turing is definitely in my top 10 favourite scientists. Not only because of ground breaking work in foundation of computer science but because of his power in abstracting problems. Of course, once you could <i>see the right</i> thing everything else will follow. In this episode of <a href="../../notes/classicsofcs-epsiode1-theemprorsoldcloth/index.html">Classics of CS</a> I am going to review one of his most famous writings, <a href="http://www.cs.swarthmore.edu/~dylan/Turing.html" rel="nofollow" target="_blank">Computing Machinery and Intelligence</a>.
 <br>

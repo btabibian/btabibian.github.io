@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "03-Convex-Optimization-Problems"
 tags: [ipython, convex, blog]
 categories: [optimization_]

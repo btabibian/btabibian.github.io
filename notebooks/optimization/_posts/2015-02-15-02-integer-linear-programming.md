@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "02-Integer-Linear-Programming"
 tags: [ipython, convex, blog]
 categories: [optimization_hw]

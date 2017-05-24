@@ -16,6 +16,7 @@ scipy.png,
 
 github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-3-Scipy.ipynb
 author: "behzad_tabibian"
+layout: single
 ---
 # SciPy - Library of scientific algorithms for Python
 

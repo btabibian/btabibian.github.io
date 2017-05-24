@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "01-Simplex-Method"
 tags: [ipython, convex, blog]
 categories: [optimization_hw]

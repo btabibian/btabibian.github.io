@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Distilling Information Reliability \n and Source Trustworthiness from Digital Traces"
 categories: projects
 date: 2016-10-17
@@ -11,15 +11,23 @@ image:
  feature: "Reliability_screen.png"
 excerpt: "In this work we use evaluation mechanisms in online knowledge platforms, like Wikipedia, to distill an interpretable measure of information reliability and source trustworthiness."
 ---
-<div align="center">
-{% include social-share.html %}
-</div>
------
 
-|   |   |   |
-| :------------- |:-------------:| -------------:|
-| Behzad Tabibian       | Isabel Valera | Mehrdad Farajtabar |
-| Le Song      | Bernhard Schölkopf     |   Manuel Gomez-Rodriguez  |
+-----
+<table>
+<tbody>
+<tr>
+      <td align="left"><b>Behzad Tabibian </b></td>
+      <td align="center"><b>Isabel Valera</b></td>
+      <td align="right"><b>Mehrdad Farajtabar</b></td>
+    </tr>
+    <tr>
+          <td align="left"><b>Le Song</b> </td>
+          <td align="center"><b>Bernhard Schölkopf</b></td>
+          <td align="right"><b>Manuel Gomez-Rodriguez</b></td>
+        </tr>
+</tbody>
+</table>
+
 
 -----
 
@@ -39,11 +47,31 @@ measure of information reliability and source trustworthiness, and yields intere
 
 -----
 
-|   |   |   |    |
-| :-------------: |:-------------:|:-------------:| :-------------:|
-| [<i class="fa fa-github-square fa-2x"></i>](https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21105187&authkey=AOSpfWbzkkFlVek){: .btn .btn--success}  | [<i class="fa fa-file-pdf-o fa-2x"></i>](http://arxiv.org/abs/1610.07472){: .btn .btn--success}  | [<i class="fa fa-table fa-2x"></i>](https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21105188&authkey=AIRYm2WFwWq7lCI){: .btn .btn--success} | [<i class="fa fa-slideshare fa-2x"></i>](https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21106377&authkey=ALpQI7Sw7QYFc20){: .btn .btn--success}
+<table>
+<tbody align="center">
+<tr>
+      <td > 
+      <a href="https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21105187&authkey=AOSpfWbzkkFlVek" class=".btn .btn--light-outline"><i class="fa fa-file-pdf-o fa-2x"></i></a>
+      </td>
+      <td>
+        <a href="http://arxiv.org/abs/1610.07472" class=".btn .btn--danger"><i class="fa fa-file-pdf-o fa-2x"></i></a>
+      </td>
+      
+      <td>
+        <a href="https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21105188&authkey=AIRYm2WFwWq7lCI" class=".btn .btn--danger"><i class="fa fa-table fa-2x"></i></a>
+      </td>
+      
+      <td>
+        <a href="https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21106377&authkey=ALpQI7Sw7QYFc20" class=".btn .btn--danger"><i class="fa fa-slideshare fa-2x"></i></a>
+      </td>
+    </tr>
+<tr>
+</tr>
+</tbody>
+</table>
 
------
+
+
 
 ## Wikipedia Demo
 
@@ -52,7 +80,12 @@ measure of information reliability and source trustworthiness, and yields intere
 <p>
 Explore site parameters by typing domain name in following text box.
 </p>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="./js/moment.min.js"></script>
 <script src="./js/chart.js"></script>
 <script src="./js/requests.js"></script>
 
@@ -81,3 +114,8 @@ Explore parameters of the model trained on Wikipedia corpus by typing title of a
 </p>
 <div id="canvasContainer">
 </div>
+
+<div align="center">
+{% include social-share.html %}
+</div>
+

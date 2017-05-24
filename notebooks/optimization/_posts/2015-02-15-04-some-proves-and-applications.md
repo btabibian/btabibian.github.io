@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "04-Some-proves-and-Applications"
 tags: [ipython, convex, blog]
 categories: [optimization_]

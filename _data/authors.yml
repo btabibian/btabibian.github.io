@@ -3,6 +3,8 @@
 behzad_tabibian:
   name: Behzad Tabibian
   web: http://btabibian.com
-  email: me@btabibian.com
-  bio: "An observer, student of science and philosophy"
+  email: me+site@btabibian.com
+  bio: "I am a Phd Student at Max Planck Institute - Intelligent Systems, working with Dr. Manuel Gomez-Rodriguez and Bernhard Schölkopf. I am interested in Machine Learning and Social Netwroks."
   twitter: btabibian
+  linkedin: btabibian
+  avatar : "/images/btabibian.jpg"

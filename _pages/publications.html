@@ -1,0 +1,12 @@
+---
+layout: single
+title: Publications
+kind: homepage
+search_omit: true
+no_logo: true
+permalink: /publications
+---
+
+{% for paper in site.data.papers %}
+  {% include pub-single.html %}
+{% endfor %}

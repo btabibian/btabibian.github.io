@@ -1,21 +1,19 @@
 # Site navigation links
-- title: Home
-  url: /
+main:
+  - title: Home
+    url: /
 
-- title: About me
-  url: /about/
+  - title: About me
+    url: /about/
 
-- title: Publications
-  url: /publications/
+  - title: Publications
+    url: /publications/
 
-- title: Notes
-  url: /notes/
+  - title: Notes
+    url: /notes/
 
-- title: Optimization
-  url: /notebooks/optimization/
+  - title: Optimization
+    url: /notebooks/optimization/
 
-- title: Python
-  url: /notebooks/learnpython/
-
-- title: Search
-  url: /search/
+  - title: Python
+    url: /notebooks/learnpython/

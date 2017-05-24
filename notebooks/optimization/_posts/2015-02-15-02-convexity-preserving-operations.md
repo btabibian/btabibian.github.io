@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "02-Convexity-Preserving-Operations"
 tags: [ipython, convex, blog]
 categories: [optimization_]

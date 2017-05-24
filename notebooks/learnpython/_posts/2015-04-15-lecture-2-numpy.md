@@ -16,6 +16,7 @@ numpy.jpeg,
 
 github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-2-Numpy.ipynb
 author: "behzad_tabibian"
+layout: single
 ---
 # Numpy -  multidimensional data arrays
 

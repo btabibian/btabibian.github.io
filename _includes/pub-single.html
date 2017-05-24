@@ -1,0 +1,49 @@
+{% if post.header.teaser %}
+  {% capture teaser %}{{ paper.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if include.teaser %}
+  {% assign teaser = include.teaser %}
+{% endif %}
+
+{% if paper.id %}
+  {% assign title = paper.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = paper.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h3 class="archive__item-title" itemprop="headline">
+        <a href="{{ paper.link }}">{{ title }}</a>
+    </h3>
+    {% if paper.read_time %}
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+    {% if paper.abstract %}<p class="archive__item-excerpt" itemprop="description">{% include figure image_path=paper.image class="pull-left-third" width="40%" %}{{ paper.abstract | markdownify | strip_html }}</p>{% endif %}
+  </article>
+  
+
+  <div class="social-icons">
+  {% if paper.venue %}
+   <a href="{{paper.venue_link}}" title="Venue" target="_blank" class="btn btn--inverse"><i class="fa fa-map-marker"></i>   {{paper.venue}}</a>
+  {% endif %}
+  
+  {% if paper.bib %}
+  <a href="./bibfiles/{{paper.bib}}" title="bibtex" class="btn btn--info"><i class="fa fa-bars"></i>   Bibtex</a>
+  {% endif%}
+  
+  
+  {% if paper.page %}
+  <a href="{{paper.page}}" title="Webpage"  class="btn btn--info"><i class="fa fa-link"></i>   Webpage</a>
+  {% endif%}
+  
+  {% if paper.page %}
+  <a href="{{paper.poster}}" title="Poster"  class="btn btn--info"><i class="fa fa-bar-chart"></i> Poster </a>
+  {% endif%}
+  </div>
+  
+</div>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: archive
 title: Introduction to Scientific Programming
 kind: homepage
 redirect_from: "/notebooks/learnpython/scientific-computing/2015/04/15/lecture-0-scientific-computing-with-python.html"
@@ -11,13 +11,13 @@ no_logo: true
 
 
 {% assign sorted_posts = site.posts | sort:"title" %}
-<ul class="post-list">
+<div class="grid__wrapper">
+  
 {% for post in sorted_posts %}
-{% if post.categories contains 'scientific-computing' %}
-<li><article><a href="{{ site.url }}{{ post.url }}"><h5 id="heading-5">{{post.title }}</h5> <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d,     %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt" max-height="inherit"><p class="pull-left"><figure class="pull-left-third"><a href="{{ site.url }}{{ post.url }}">  <img src="{{baseurl}}/notebooks/learnpython/images/{{ post.img[0]}}" alt=""/></a></figure></p>{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape    _once }}
-</span>{% endif %}
-
-</a></article></li>
-{% endif %}
+  {% if post.categories contains 'scientific-computing' %}
+  {% assign teaser =  "/notebooks/learnpython/images/" | append: {{post.img[0]}} %}
+  {% include archive-single.html type="grid" teaser=teaser %}
+  {% endif %}
 {% endfor %}
-</ul>
+
+</div>

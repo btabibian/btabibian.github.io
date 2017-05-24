@@ -16,6 +16,7 @@ matplotlib.png,
 
 github: https://github.com/btabibian/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
 author: "behzad_tabibian"
+layout: single
 ---
 # matplotlib - 2D and 3D plotting in Python
 

@@ -1,10 +1,11 @@
 ---
-layout: post
 title: John McCarthy's legacy
 categories: notes
 date: 2011-10-27
 img: ["http://www-formal.stanford.edu/jmc/jmcbw.jpg"]
 author: "behzad_tabibian"
+layout: single
+comments: true
 ---
 <div style="display:inline;float:left;margin-top:5px;margin-right:10px;margin-bottom:0px;margin-left:0px"><code><a href="http://www-formal.stanford.edu/jmc/jmcbw.jpg" imageanchor="1" rel="nofollow"><img alt="John McCarthy" border="0" height="200" src="http://www-formal.stanford.edu/jmc/jmcbw.jpg" width="142"/></a></code></div><div>qctober was a sad month for all those in computers. John McCarthy designer of LISP programmming language passed away on October 24, 2011. From <a href="http://blogs.msdn.com/b/shawnhar/" rel="nofollow" target="_blank">Shawn Hargreaves blog</a> my attention was drawn to the paper <a href="http://www-formal.stanford.edu/jmc/recursive/recursive.html" rel="nofollow" target="_blank">Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I</a> and specifically the part describing memory management. </div><div><br/></div><div>For those of you familiar with garbage collection mechanisms in languages such as C# and Java you will probably find this description interesting given that it was proposed for computers with limited resources at the time it was designed(single digit kilobytes of memory). </div>
 
