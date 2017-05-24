@@ -1,31 +1,11 @@
 ---
-layout: page
+layout: single
 title: Publications
-kind: homepage
 search_omit: true
 no_logo: true
+permalink: /publications
 ---
-<ul class="post-list">
+
 {% for paper in site.data.papers %}
-<li><article><a href="{{paper.link}}"><h5 id="heading-5">
-{{paper.title }}</h5>
-<span class="entry-date"><time datetime="{{ paper.date | date_to_xmlschema }}">{{ paper.date | date: "%B %d,     %Y" }}</time></span>
-<span class="excerpt" max-height="inherit"><p class="pull-left"><figure class="pull-left-third"><a href="{{paper.link}}">  <img src="{{ paper.image}}" alt=""/></a></figure></p><p align="justify">{{ paper.abstract  }}</p>
-</span>
-<div class="social-icons">
-{% if paper.venue %}
-<a href="{{paper.venue_link}}" title="Venue" target="_blank"><i class="fa fa-map-marker"></i>   {{paper.venue}}</a>
-{% if paper.bib %}
-<a href="./bibfiles/{{paper.bib}}" title="bibtex"><i class="fa fa-bars"></i>   Bibtex</a>
-{% endif%}
-{% endif%}
-{% if paper.page %}
-<a href="{{paper.page}}" title="Webpage"><i class="fa fa-link"></i>   Webpage</a>
-{% endif%}
-{% if paper.page %}
-<a href="{{paper.poster}}" title="Poster"><i class="fa fa-bar-chart"></i> Poster </a>
-{% endif%}
-</div>
-</a></article></li>
+  {% include pub-single.html %}
 {% endfor %}
-</ul>
