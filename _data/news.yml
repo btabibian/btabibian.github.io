@@ -1,3 +1,9 @@
+- title: Tutorial on LDA
+  date: 31 May 2017
+  abstract: I gave a short tutorial on Latent Dirichlet Allocation to our department. In <a href="/misc/lda">this blog post</a>, I covered the material I presented, including derivation of Variational Inference for LDA and small sample code implementing the algorithm.
+  link: "/misc/lda"
+
+
 - title: Applied ML Days @ EPFL
   date: 24 January 2017
   abstract: I will be attending ML Days conference at EPFL in Lausanne, Switzerland. I will also present a <a href="https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21106073&authkey=AFxUOQa4pDDVNsk">poster</a> on our latest project on <a href="/projects/reliability">Information Reliability and Source Trustworthiness</a>.
