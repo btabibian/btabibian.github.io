@@ -51,7 +51,7 @@ measure of information reliability and source trustworthiness, and yields intere
 <tbody align="center">
 <tr>
       <td > 
-      <a href="https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21105187&authkey=AOSpfWbzkkFlVek" class=".btn .btn--light-outline"><i class="fa fa-file-pdf-o fa-2x"></i></a>
+      <a href="https://onedrive.live.com/download?cid=712F893E56B9B053&resid=712F893E56B9B053%21105187&authkey=AOSpfWbzkkFlVek" class=".btn .btn--light-outline"><i class="fa fa-github fa-2x"></i></a>
       </td>
       <td>
         <a href="http://arxiv.org/abs/1610.07472" class=".btn .btn--danger"><i class="fa fa-file-pdf-o fa-2x"></i></a>

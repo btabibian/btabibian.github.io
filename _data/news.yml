@@ -1,7 +1,7 @@
-- title: Tutorial on LDA
-  date: 31 May 2017
-  abstract: I gave a short tutorial on Latent Dirichlet Allocation to our department. In <a href="/misc/lda">this blog post</a>, I covered the material I presented, including derivation of Variational Inference for LDA and small sample code implementing the algorithm.
-  link: "/misc/lda"
+- title: 2017 Machine Learning Summer School
+  date: 19 June 2017
+  abstract: I am part of organization team for <a href="http://mlss.tuebingen.mpg.de/2017/">MLSS2017</a>. The MLSS is a renowned venue for graduate students, researchers, and professionals. It offers an opportunity to learn about fundamental and advanced aspects of machine learning, data analysis and inference, from intellectual leaders of the field.
+  link: "http://mlss.tuebingen.mpg.de/2017/"
 
 
 - title: Applied ML Days @ EPFL
@@ -15,9 +15,9 @@
   abstract: Our paper on Information Reliability and Source Trustworthiness has been accepted at <a href="http://www.www2017.com.au/">WWW 2017</a>, preprint available on  <a href="https://arxiv.org/abs/1610.07472">Arxiv</a>. Code and data will be published soon.
   image: "/images/Reliability_icon.png"
   link: "https://arxiv.org/abs/1610.07472"
-
-- title: NIPS 2016
-  date: 5 December 2016
-  abstract: Krikamol Muandat and I were NIPS workflow team members in 2016, read NIPS blog post <a href="http://www.tml.cs.uni-tuebingen.de/team/luxburg/misc/nips2016/index.php">here</a>. Exhibition of rejects are published <a href="http://users.cecs.anu.edu.au/~williams/sdr16.html">here</a>. More information will be published soon!
-  image: "/images/review_2016.png"
-  link: "http://www.tml.cs.uni-tuebingen.de/team/luxburg/misc/nips2016/index.php"
+#
+#- title: NIPS 2016
+#  date: 5 December 2016
+#  abstract: Krikamol Muandat and I were NIPS workflow team members in 2016, read NIPS blog post <a href="http://www.tml.cs.uni-tuebingen.de/team/luxburg/misc/nips2016/index.php">here</a>. Exhibition of rejects are published <a href="http://users.cecs.anu.edu.au/~williams/sdr16.html">here</a>. More information will be published soon!
+#  image: "/images/review_2016.png"
+#  link: "http://www.tml.cs.uni-tuebingen.de/team/luxburg/misc/nips2016/index.php"
