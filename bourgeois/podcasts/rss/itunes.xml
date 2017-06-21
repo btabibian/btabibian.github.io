@@ -12,7 +12,7 @@
 <itunes:name>B. Tabibian</itunes:name>
 <itunes:email>btabibian@gmail.com</itunes:email>
 </itunes:owner>
-<itunes:image href="https://assets.podomatic.net/ts/21/63/83/m-machine/640x640_12214359.jpg"/>i
+<itunes:image href="http://bourgeois.btabibian.com/artworks/bourgeoislogo.png"/>i
 <itunes:category text="Education">
   <itunes:category text="Higher Education"/>
 </itunes:category>
@@ -26,8 +26,8 @@
 <title>قسمت صفر، سرآغاز</title>
 <itunes:author>B. Tabibian; &amp; M. Machine-chian</itunes:author>
 <itunes:summary><![CDATA[بعد از چهارسال بالاخره پادکست بورژوا راه افتاد. در قسمت صفر سعی کردیم باب گفتگو رو باز کرده و قدری هم راجع به خودمون و اینکه چطور به اینجا رسیدیم صحبت کنیم.]]></itunes:summary>
-<itunes:image href="http://btabibian.com/bourgeois/artwork/"/>
-<enclosure length="64733998" type="audio/mp3" url="https://m-machine.podomatic.com/enclosure/2017-06-21T00_38_07-07_00.mp3"/>
+<itunes:image href="http://bourgeois.btabibian.com/artworks/bourgeoislogo.png"/>
+<enclosure length="64733998" type="audio/mp3" url="http://bourgeois.btabibian.com/podcasts/01+RadioBourgeois.mp3"/>
 <pubDate>Tue, 21 Jun 2017 09:00:00 GMT</pubDate>
 <itunes:duration>44:54</itunes:duration>
 <itunes:explicit>no</itunes:explicit>
