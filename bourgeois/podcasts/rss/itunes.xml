@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+<title>رادیو بور‍ژوا</title>
+<link>https://bourgeois.ir/podcast</link>
+<language>fa</language>
+<copyright>&#x2117; &amp; bourgeois.ir</copyright>
+<itunes:subtitle>پادکست بورژوا، مجله آنلاین حوزه اندیشه</itunes:subtitle>
+<itunes:author>B. Tabibian &amp M. Machine-chian</itunes:author>
+<itunes:summary>در رادیو بورژوا، بهزاد طبیبیان، دانشجوی دکترای انستیتو مکس پلانک، و محمد ماشینچیان، سردبیر بورژوا، راجع به موضوعات و مباحث روز در حوزه اندیشه گفتگو میکنند.</description>
+<itunes:owner>
+<itunes:name>B. Tabibian</itunes:name>
+<itunes:email>btabibian@gmail.com</itunes:email>
+</itunes:owner>
+<itunes:image href="http://btabibian.com/bourgeois/artwork/"/>
+<itunes:category text=“Culture”/>
+<itunes:category text=“Economics”/>
+<itunes:category text=“Philosophy”/>
+<itunes:explicit>no</itunes:explicit>
+<item>
+<title>قسمت صفر، سرآغاز</title>
+<itunes:author>B. Tabibian; &amp; M. Machine-chian</itunes:author>
+<itunes:summary><![CDATA[بعد از چهارسال بالاخره پادکست بورژوا راه افتاد. در قسمت صفر سعی کردیم باب گفتگو رو باز کرده و قدری هم راجع به خودمون و اینکه چطور به اینجا رسیدیم صحبت کنیم.]] ></itunes:summary>
+<itunes:image href="http://btabibian.com/bourgeois/artwork/"/>
+<enclosure length="64733998" type="audio/mp3” url="http://btabibian.com/bourgeois/podcasts/01_RadioBourgeois/"/>
+<pubDate>Tue, 21 Jun 2017 09:00:00 GMT</pubDate>
+<itunes:duration>44:54</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+</item>
+</channel>
+</rss>
+
