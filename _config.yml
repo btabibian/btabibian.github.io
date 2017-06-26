@@ -79,8 +79,8 @@ analytics:
 author:
   name             : "Bezhzad Tabibian"
   avatar           : "/images/btabibian.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a Phd Student at Max Planck Institute - Intelligent Systems, working with Dr. Manuel Gomez-Rodriguez and Bernhard Schölkopf"
-  location         : 
+  bio              : "Phd Student at Max Planck Institute - Intelligent Systems, working on intersection of Machine Learning and Networks"
+  location         : "Tuebingen, Germany"
   email            : "me+site@btabibian.com"
   uri              : "http://btabibian.com"
   bitbucket        :
