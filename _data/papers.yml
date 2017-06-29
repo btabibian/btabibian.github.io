@@ -45,7 +45,7 @@ system could be amenable to verification techniques."
   authors: Khoshnam Shojaei, Alireza Mohammad Shahri, Behzad Tabibian
   date: 12 August 2012
   abstract: "This paper addresses the trajectory tracking control problem of nonholonomic robotic systems in the presence of modeling uncertainties. A tracking controller is proposed such that it combines the inverse dynamics control technique and an adaptive robust PID control strategy to preserve robustness to both parametric and nonparametric uncertainties. A SPR-Lypunov stability analysis demonstrates that tracking errors are uniformly ultimately bounded (UUB) and exponentially converge to a small ball containing the origin. The proposed inverse dynamics tracking controller is successfully applied to a nonholonomic wheeled mobile robot (WMR) and experimental results are presented to validate the effectiveness of the proposed controller."
-  image: "https://9d4vkq.bn1302.livefilestore.com/y3mBGWRRLRTBZjISA_HGCWPugG4iWli5g9M0CHeKX-spOvhtefaiN4UuoLoXdevX1oipjxumJPc6WmLNt-eAXBI_MAEIMNdivO-kQL0OtK52V4XNviWUY6bR8IrWxl6q5bLGwbmeqtTrblCPKSpWJ7d5TdA5flBJJyaYsimjNIhvt0?width=324&height=255&cropmode=none"
+  image: "/images/robot_design.png"
   link: "http://link.springer.com/article/10.1007/s10846-012-9762-x"
   venue: Journal of Intelligent & Robotic Systems (2013)
   venue_link: "http://www.springer.com/engineering/robotics/journal/10846"
@@ -73,7 +73,7 @@ behaviour algorithms. As a team, our primary research interests are centered on
 issues of robot learning, especially for effective autonomous decision making and
 strategic behaviour in continually changing worlds."
   link: "http://www.ipab.inf.ed.ac.uk/robocup/pubs/EdinfernoTDDoc.pdf"
-  image: "https://nzou8q.bn1302.livefilestore.com/y3m2Rt9jOd0VpNICFjk1EbVFfsqq79vKzwA8iSPpm_EXKZbpUouzCUYTPx8DRiHOM6XpukF5Hm2G6_kI-tfYdOSu5cWdf1IsOS53E2Php5UowTRi_FQE7fFgbevyXI715VjZhCfSNV9AgocOcHVuF7E0_XQPz-LcawrSvOJg9YVrKE?width=768&height=637&cropmode=none"
+  image: "/images/adaptive_traj.png"
   venue: 2011 Robocup, Istanbul
   page: "http://wcms.inf.ed.ac.uk/ipab/robocup"
   venue_link: "http://www.robocup2011.org/en/"
@@ -82,7 +82,7 @@ strategic behaviour in continually changing worlds."
   authors: Khoshnam Shojaei, Alireza Mohammad Shahri, Ahmadreza Tarakameh and Behzad Tabibian
   date: 3 June 2010
   abstract: "This paper presents an adaptive trajectory tracking controller for a non-holonomic wheeled mobile robot (WMR) in the presence of parametric uncertainty in the kinematic and dynamic models of the WMR and actuator dynamics. The adaptive non-linear control law is designed based on input–output feedback linearization technique to get asymptotically exact cancellation for the uncertainty in the given system parameters. In order to evaluate the performance of the proposed controller, a non-adaptive controller is compared with the adaptive controller via computer simulation results. The results show satisfactory trajectory tracking performance by virtue of SPR-Lyapunov design approach. In order to verify the simulation results, a set of experiments have been carried out on a commercial mobile robot. The experimental results also show the effectiveness of the proposed controller."
-  image: "https://vqxg4w.bn1302.livefilestore.com/y3mQNLjt9J-1HBvEn2BTYlhLa6lO7SN_gu6awodyN1xDoOONecovqEIKAdMmyIpBRYZGspAZAcy0pFHZRjrMqyO7DAz2_s4egCKm8zkZgI3pueh182HpUIW8hbPSJFP3dBNM1VTKSw36sNcdZZmBQ4CfA3bBt85zwTr7HsNAtnJTf4?width=719&height=261&cropmode=none"
+  image: "/images/adaptive_traj.png"
   link: "https://www.cambridge.org/core/journals/robotica/article/adaptive-trajectory-tracking-control-of-a-differential-drive-wheeled-mobile-robot/9564B0ED9ACC0905B6C93C5738B32909"
   venue: Robotica (2011)
   venue_link: "https://www.cambridge.org/core/journals/robotica"
