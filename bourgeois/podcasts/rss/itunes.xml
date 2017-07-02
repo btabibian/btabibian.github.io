@@ -2,12 +2,13 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
 <channel>
 <title>رادیو بور‍ژوا</title>
+<subtitle>فصل صفر</subtitle>
 <link>https://bourgeois.ir</link>
 <language>fa</language>
 <copyright>&#x2117;  &amp; &#169; 2017 bourgeois.ir</copyright>
 <itunes:subtitle>پادکست بورژوا، مجله آنلاین حوزه اندیشه</itunes:subtitle>
 <itunes:author>B. Tabibian; &amp; M. Machine-chian</itunes:author>
-<itunes:summary>در رادیو بورژوا، بهزاد طبیبیان، دانشجوی دکترای انستیتو مکس پلانک، و محمد ماشینچیان، سردبیر بورژوا، راجع به موضوعات و مباحث روز در حوزه اندیشه گفتگو میکنند.</itunes:summary>
+<itunes:summary>در رادیو بورژوا، بهزاد طبیبیان، دانشجوی دکترای انستیتو مکس پلانک، و محمد ماشینچیان، سردبیر بورژوا، راجع به موضوعات و مباحث روز در حوزه اندیشه گفتگو میکنند. در فصل صفر تلاش ما دریافت نظرات و بهبود کیفیت رادیوبورژواست.</itunes:summary>
 <itunes:owner>
 <itunes:name>B. Tabibian</itunes:name>
 <itunes:email>btabibian@gmail.com</itunes:email>
@@ -30,6 +31,17 @@
 <enclosure length="64733998" type="audio/mp3" url="http://bourgeois.btabibian.com/podcasts/01+RadioBourgeois.mp3"/>
 <pubDate>Tue, 21 Jun 2017 09:00:00 GMT</pubDate>
 <itunes:duration>44:54</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+</item>
+<item>
+<title>قسمت اول، انحصار</title>
+<itunes:author>B. Tabibian; &amp; M. Machine-chian</itunes:author>
+<itunes:summary><![CDATA[در دومین برنامه از فصل صفر رادیو بورژوا بهزاد طبیبیان و محمد ماشین‌چیان راجع به انحصار گفتگو می‌کنند.
+در فصل صفر تلاش ما دریافت نظرات و بهبود کیفیت رادیوبورژواست. با شرکت در نظرسنجی‌ها بما کمک کنید.]]></itunes:summary>
+<itunes:image href="http://bourgeois.btabibian.com/artworks/bourgeoislogo_large.png"/>
+<enclosure length="17901582" type="audio/mp3" url="http://bourgeois.btabibian.com/podcasts/02+RadioBourgeois.mp3"/>
+<pubDate>Sun, 2 Jul 2017 09:00:00 GMT</pubDate>
+<itunes:duration>37:10</itunes:duration>
 <itunes:explicit>no</itunes:explicit>
 </item>
 </channel>
