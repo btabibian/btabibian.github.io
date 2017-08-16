@@ -23,7 +23,8 @@
     {% if paper.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if paper.abstract %}<p class="archive__item-excerpt" itemprop="description">{% include figure image_path=paper.image class="pull-left-third" width="40%" %}{{ paper.abstract | markdownify | strip_html }}</p>{% endif %}
+    {% include figure image_path=paper.image class="archive__item-image" width="40%" %}
+    {% if paper.abstract %}<p class="archive__item-excerpt" itemprop="description">{{ paper.abstract | markdownify | strip_html }}</p>{% endif %}
   </article>
   
 
