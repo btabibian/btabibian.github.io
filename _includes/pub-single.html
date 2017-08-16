@@ -20,6 +20,13 @@
     <h3 class="archive__item-title" itemprop="headline">
         <a href="{{ paper.link }}">{{ title }}</a>
     </h3>
+    <h6>
+      {% assign authors = paper.authors | split: ',' %}
+      {% for author in authors %}
+        {% assign au = site.data.paper_authors[author] %}
+        <a href="{{au.link}}" title={{au.name}} target="_blank" class="btn btn--inverse"><i class="fa fa-user"></i>   {{au.name}}</a>
+      {% endfor %}
+    </h6>
     {% if paper.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
