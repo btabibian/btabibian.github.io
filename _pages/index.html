@@ -29,14 +29,8 @@ He should also suspect himself as he performs his critical examination of it, so
   {% include news-single.html %}
 {% endfor %}
 
-<!-- <a name="news"></a>
-<h4 id="heading-4">Recent News</h4>
-<ul class="post-list">
-{% for event in site.data.news %}
-<li><article><a href="{{event.link}}"><h5 id="heading-5">{{event.title }}</h5> <span class="entry-date"><time datetime="{{ event.date | date_to_xmlschema }}">{{ event.date | date: "%B %d,  %Y" }}</time></span> <span class="excerpt" max-height="inherit">{% if event.image %}<p class="pull-left"><figure class="pull-left-third"><a href="{{event.link}}">  <img src="{{ event.image}}" alt=""/></a></figure></p>{% endif %}</span>
-</a><p align="justify">{{ event.abstract }}</p>
-</article></li>
-{% endfor %}
-</ul>i
--->
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_articles | default: "Recent Posts" }} </h3>
 
+{% for post in site.data.articles  %}
+  {% include news-single.html %}
+{% endfor %}

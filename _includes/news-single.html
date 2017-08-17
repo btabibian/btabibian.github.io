@@ -16,6 +16,8 @@
         <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h3>
+    <h5 class="archive__date" itemprop="date"><time datetime="{{ post.date | date_to_xmlschema }}" style="text-align:right">{{ post.date | date: "%B %d,  %Y" }}</time></h5>
+    
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}

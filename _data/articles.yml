@@ -1,0 +1,5 @@
+- title: Tutorial on Latent Dirichlet Allocation
+  date: 1 July 2017
+  abstract: I gave a tutorial on Latent Dirichlet Allocation as part of PhD tutorials at our department. Here you can find the contents I covered in this talk.
+  image: /misc/images/2017-05-31-lda_files/LDA_graph.png
+  link: misc/lda/
