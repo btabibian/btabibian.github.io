@@ -13,6 +13,13 @@ My name is <b>Behzad Tabibian</b>,  I am a PhD student at Max Planck Institute, 
 
 
 
+
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_news | default: "Recent Posts" }}</h3>
+
+{% for post in site.data.news  %}
+  {% include news-single.html %}
+{% endfor %}
 <div  id="main_imagediv">
 {% include figure image_path="./images/tunnel.JPG" onclick="hide_image()"%}
 </div>
@@ -22,13 +29,6 @@ My name is <b>Behzad Tabibian</b>,  I am a PhD student at Max Planck Institute, 
 Thus the duty of man who investigates the writings of scientists, if learning the truth is his goal, is to make himself an enemy of all that he reads, and, applying his mind to the core and margins of its content, attack it from every side. <br>
 He should also suspect himself as he performs his critical examination of it, so that he may avoid falling into either prejudice or leniency. </br> <a href="http://en.wikipedia.org/wiki/Alhazen"> Ibn al Haytham </a> 965-1040 </blockquote>
 </div>
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_news | default: "Recent Posts" }}</h3>
-
-{% for post in site.data.news  %}
-  {% include news-single.html %}
-{% endfor %}
-
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }} </h3>
 
 {% for post in site.data.articles  %}
