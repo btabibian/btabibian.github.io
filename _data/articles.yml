@@ -1,6 +1,6 @@
 - title: Hacking into Evolutionary Dynamics
   date: 10 August 2017
-  abstract: This notebook contains some implementations of algorithms and ideas discussed in <a href="https://www.amazon.de/Evolutionary-Dynamics-Exploring-Equations-Life/dp/0674023382">"Evolutionary Dynamics"</a> by <a href="https://ped.fas.harvard.edu/">M. Novak</a>. For better undrestanding of the code and equtions please consult first five chapters of the referenced book.
+  abstract: This notebook contains some implementations of algorithms and ideas discussed in <a target="_blank" href="https://www.amazon.de/Evolutionary-Dynamics-Exploring-Equations-Life/dp/0674023382">"Evolutionary Dynamics"</a> by <a href="https://ped.fas.harvard.edu/" target="_blank">M. Novak</a>. For better undrestanding of the code and equtions please consult first five chapters of the referenced book.
   link: https://github.com/btabibian/misc_notebooks/blob/master/Nature-Cooperation.ipynb
 - title: Tutorial on Latent Dirichlet Allocation
   date: 1 July 2017
