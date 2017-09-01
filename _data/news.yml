@@ -1,3 +1,9 @@
+- title: Design and Analysis of the NIPS 2016 Review Proces
+  date: 30 August 2017
+  abstract: In this report, we analyze several aspects of the data collected during the review process, including an experiment investigating the efficacy of collecting ordinal rankings from reviewers (vs. usual scores aka cardinal rankings). Our goal is to check the soundness of the review process we implemented and, in going so, provide insights that may be useful in the design of the review process of subsequent conferences. We introduce a number of metrics that could be used for monitoring improvements when new ideas are introduced. 
+  image: "/images/review_2016.png"
+  link: "/projects/nips2016"
+
 - title: 2017 Machine Learning Summer School
   date: 19 June 2017
   abstract: I am part of organization team for <a href="http://mlss.tuebingen.mpg.de/2017/">MLSS2017</a>. The MLSS is a renowned venue for graduate students, researchers, and professionals. It offers an opportunity to learn about fundamental and advanced aspects of machine learning, data analysis and inference, from intellectual leaders of the field.
