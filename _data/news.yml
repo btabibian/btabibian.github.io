@@ -1,4 +1,4 @@
-- title: Design and Analysis of the NIPS 2016 Review Proces
+- title: Design and Analysis of the NIPS 2016 Review Process
   date: 30 August 2017
   abstract: In this report, we analyze several aspects of the data collected during the review process, including an experiment investigating the efficacy of collecting ordinal rankings from reviewers (vs. usual scores aka cardinal rankings). Our goal is to check the soundness of the review process we implemented and, in going so, provide insights that may be useful in the design of the review process of subsequent conferences. We introduce a number of metrics that could be used for monitoring improvements when new ideas are introduced. 
   image: "/images/review_2016.png"
