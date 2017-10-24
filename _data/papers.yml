@@ -1,3 +1,8 @@
+- title: Leveraging the Crowd to Detect and Reduce the Spread of Fake News and Misinformation
+  authors: JKim,BTabibian,AOh,BSchoelkopf,MGomez
+  link: http://www.wsdm-conference.org/2018/
+  date: 24-10-2017
+  abstract: "Online social networking sites are experimenting with the following <i>crowd-powered</i> procedure to reduce the spread of fake news andmisinformation: whenever a user is exposed to a story through her feed, she can flag the story as misinformation and, if the story receives <i>enough</i> flags, it is sent to a trusted third party for fact checking. If this party identifies the story as misinformation, it is marked as <i>disputed</i>. However, given the uncertain number of exposures, the high cost of fact checking, and the trade-off between flags and exposures, the above mentioned procedure requires careful reasoning and smart algorithms which, to the best of our knowledge, do not exist to date. In this paper, we first introduce a flexible representation of the above procedure using the framework of marked temporal point processes. Then, we develop a scalable online algorithm, <i>Curb</i>, to select <i>which</i> stories to send for fact checking and <i>when</i> to do so to efficiently reduce the spread of misinformation with provable guarantees. In doing so, we need to solve a novel stochastic optimal control problem for stochastic differential equations with jumps, which is of independent interest. Experiments on two real-world datasets gathered from Twitter and Weibo show that our algorithm may be able to effectively reduce the spread of misinformation."
 - title: Design and Analysis of the NIPS 2016 Review Process
   authors: NShah,BTabibian,KMuandet,IGuyon,ULuxburg
   link: "https://arxiv.org/pdf/1708.09794.pdf"
