@@ -1,3 +1,8 @@
+- title: Leveraging the Crowd to Detect and Reduce the Spread of Fake News and Misinformation <i>Prioritising Online Content Workshop</i> at NIPS 2017.
+  date: Nov. 17, 2017
+  abstract: We will present our recent paper Leveraging the Crowd to Detect and Reduce the Spread of Fake News and Misinformation at 2017 NIPS workshop on Priorotising Online Content. More information to follow.
+  link: "http://www.k4all.org/event/prioritising/"
+
 - title: Leveraging the Crowd to Detect and Reduce the Spread of Fake News and Misinformation @ WSDM 2018
   date: 22 October 2017
   abstract: Our paper, Leveraging the Crowd to Detect and Reduce the Spread of Fake News and Misinformation, has been accepted (for a long talk) at <i>2018 ACM Web Search and Data Mining conference</i>, Los Angles CA, USA. More information including preprint of the paper will be released soon.
@@ -19,10 +24,10 @@
   image: "/images/review_2016.png"
   link: "/projects/nips2016"
 
-- title: 2017 Machine Learning Summer School
-  date: 19 June 2017
-  abstract: I am part of organization team for <a href="http://mlss.tuebingen.mpg.de/2017/">MLSS2017</a>. The MLSS is a renowned venue for graduate students, researchers, and professionals. It offers an opportunity to learn about fundamental and advanced aspects of machine learning, data analysis and inference, from intellectual leaders of the field.
-  link: "http://mlss.tuebingen.mpg.de/2017/"
+#- title: 2017 Machine Learning Summer School
+#  date: 19 June 2017
+#  abstract: I am part of organization team for <a href="http://mlss.tuebingen.mpg.de/2017/">MLSS2017</a>. The MLSS is a renowned venue for graduate students, researchers, and professionals. It offers an opportunity to learn about fundamental and advanced aspects of machine learning, data analysis and inference, from intellectual leaders of the field.
+#  link: "http://mlss.tuebingen.mpg.de/2017/"
 
 
 #- title: Applied ML Days @ EPFL
