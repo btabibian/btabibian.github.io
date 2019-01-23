@@ -1,3 +1,8 @@
+- title: Enhancing human learning via spaced repetition optimization @ PNAS
+  date: 23 January 2018
+  abstract: Our paper, "Enhancing human learning via spaced repetition optimization", has been accepted at <i>Proceedings of National Academy of Sciences of the United States of America</i>.
+  link: "Enhancing human learning via spaced repetition optimization"
+
 - title: Design and Analysis of the NIPS 2016 Review Process Accepted at JMLR
   date: 24 July 2018
   abstract: In this paper, we analyze several aspects of the data collected during the review process, including an experiment investigating the efficacy of collecting ordinal rankings from reviewers (vs. usual scores aka cardinal rankings). Our goal is to check the soundness of the review process we implemented and, in going so, provide insights that may be useful in the design of the review process of subsequent conferences. We introduce a number of metrics that could be used for monitoring improvements when new ideas are introduced. 
