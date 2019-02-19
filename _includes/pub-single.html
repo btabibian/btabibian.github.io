@@ -52,6 +52,10 @@
   {% if paper.poster %}
   <a href="{{paper.poster}}" title="Poster"  class="btn btn--info"><i class="fa fa-bar-chart"></i> Poster </a>
   {% endif%}
-  </div>
   
+  {% if paper.related %}
+  <a href="./bibfiles/{{paper.related_link}}" title="bibtex" class="btn btn--info"><i class="fa fa-comments"></i>   {{paper.related}}</a>
+  {% endif%}
+  </div>
+
 </div>

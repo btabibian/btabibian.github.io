@@ -2,9 +2,11 @@
   authors: BTabibian,UU,ADe,AZare,BSchoelkopf,MGomez
   page: http://learning.mpi-sws.org/memorize/
   link: https://www.pnas.org/content/early/2019/01/18/1815156116
-  venue: Proceedings of the National Academy of Sciences of the United States of America
+  venue: Proceedings of National Academy of Sciences
   venue_link: http://www.pnas.org
   date: 23-01-2018
+  related: PNAS Commentary
+  related_link: https://www.pnas.org/content/early/2019/02/15/1900370116 
   abstract: "Understanding human memory has been a long-standing problem in various scientific disciplines. Early works focused on characterizing human memory using small-scale controlled experiments and these empirical studies later motivated the design of spaced repetition algorithms for efficient memorization. However, current spaced repetition algorithms are rule-based heuristics with hard-coded parameters, which do not leverage the automated fine-grained monitoring and greater degree of control offered by modern online learning platforms. In this work, we develop a computational framework to derive optimal spaced repetition algorithms, specially designed to adapt to the learners’ performance. A large-scale natural experiment using data from a popular language-learning online platform provides empirical evidence that the spaced repetition algorithms derived using our framework are significantly superior to alternatives."
   image: "/images/memorize.jpg" 
 - title: Leveraging the Crowd to Detect and Reduce the Spread of Fake News and Misinformation
