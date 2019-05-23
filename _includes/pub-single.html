@@ -16,7 +16,7 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
+
     <h3 class="archive__item-title" itemprop="headline">
         <a href="{{ paper.link }}">{{ title }}</a>
     </h3>
@@ -33,26 +33,26 @@
     {% include figure image_path=paper.image class="archive__item-image" width="40%" %}
     {% if paper.abstract %}<p class="archive__item-excerpt" itemprop="description">{{ paper.abstract | markdownify | strip_html }}</p>{% endif %}
   </article>
-  
+
 
   <div class="social-icons">
   {% if paper.venue %}
    <a href="{{paper.venue_link}}" title="Venue" target="_blank" class="btn btn--inverse"><i class="fa fa-map-marker"></i>   {{paper.venue}}</a>
   {% endif %}
-  
+
   {% if paper.bib %}
   <a href="./bibfiles/{{paper.bib}}" title="bibtex" class="btn btn--info"><i class="fa fa-bars"></i>   Bibtex</a>
   {% endif%}
-  
-  
+
+
   {% if paper.page %}
   <a href="{{paper.page}}" title="Webpage"  class="btn btn--info"><i class="fa fa-link"></i>   Webpage</a>
   {% endif%}
-  
+
   {% if paper.poster %}
   <a href="{{paper.poster}}" title="Poster"  class="btn btn--info"><i class="fa fa-bar-chart"></i> Poster </a>
   {% endif%}
-  
+
   {% if paper.related %}
   <a href="{{paper.related_link}}" title="bibtex" class="btn btn--info"><i class="fa fa-comments"></i>   {{paper.related}}</a>
   {% endif%}
