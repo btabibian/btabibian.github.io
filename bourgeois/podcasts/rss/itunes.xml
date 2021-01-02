@@ -7,6 +7,8 @@
 <link>https://bourgeois.ir</link>
 <language>fa</language>
 <copyright>&#x2117;  &amp; &#169; 2017 bourgeois.ir</copyright>
+  
+<itunes:type>episodic</itunes:type>
 <itunes:subtitle>پادکست بورژوا، مجله آنلاین حوزه اندیشه</itunes:subtitle>
 <itunes:author>B. Tabibian; &amp; M. Machine-chian</itunes:author>
 <itunes:summary>در رادیو بورژوا، بهزاد طبیبیان، دانشجوی دکترای انستیتو مکس پلانک، و محمد ماشینچیان، سردبیر بورژوا، راجع به موضوعات و مباحث روز در حوزه اندیشه گفتگو میکنند. در فصل صفر تلاش ما دریافت نظرات و بهبود کیفیت رادیوبورژواست.</itunes:summary>
@@ -14,6 +16,7 @@
 <itunes:name>B. Tabibian</itunes:name>
 <itunes:email>btabibian@gmail.com</itunes:email>
 </itunes:owner>
+<description><![CDATA[پادکست بورژوا]]></description>
 <itunes:image href="http://bourgeois.btabibian.com/artworks/bourgeoislogo_large.png"/>i
 <itunes:category text="Education">
   <itunes:category text="Higher Education"/>
