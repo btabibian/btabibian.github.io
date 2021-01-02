@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
 <channel>
+
 <title>رادیو بور‍ژوا</title>
 <subtitle>فصل صفر</subtitle>
 <link>https://bourgeois.ir</link>
@@ -32,6 +33,7 @@
 <pubDate>Tue, 21 Jun 2017 09:00:00 GMT</pubDate>
 <itunes:duration>44:54</itunes:duration>
 <itunes:explicit>no</itunes:explicit>
+<guid isPermaLink="false">bourgeois.btabibian.com/0a04b101-58b0-46e0-81a4-b4aea9ce9dae</guid>
 </item>
 <item>
 <title>قسمت اول، انحصار</title>
@@ -43,6 +45,7 @@
 <pubDate>Sun, 2 Jul 2017 09:00:00 GMT</pubDate>
 <itunes:duration>37:10</itunes:duration>
 <itunes:explicit>no</itunes:explicit>
+<guid isPermaLink="false">bourgeois.btabibian.com/70d55394-fd7d-4e96-9425-d5be27967e81</guid>
 </item>
 <item>
 <title>قسمت سوم، کریپتوکارنسی</title>
@@ -54,6 +57,7 @@
 <pubDate>Sat, 24 Feb 2018 09:00:00 GMT</pubDate>
 <itunes:duration>1:10:52</itunes:duration>
 <itunes:explicit>no</itunes:explicit>
+<guid isPermaLink="false">bourgeois.btabibian.com/8a9cadc5-365b-4169-be58-324c7845a78a</guid>
 </item>
 </channel>
 </rss>
